@@ -1,8 +1,10 @@
 {
-    "at":  "2026-11-18 22:30:59",
+    "at":  "2026-11-19 02:22:57",
     "kinds":  [
-
+                  "ntfy-down",
+                  "pub-read",
+                  "subj-gap"
               ],
-    "ntfyDown":  false,
-    "text":  ""
+    "ntfyDown":  true,
+    "text":  "ntfy.sh が返さない（HTTP 000）。押し送りは黙って届かない"
 }
