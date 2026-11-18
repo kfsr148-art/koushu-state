@@ -70,6 +70,11 @@
         "message":  "札の複数行が切れる件の直し・task-notification を枠にしない直し・check.yml の結果（PASS）・⑤のヨシ待ち\n印: y1118-1440\n待っているのは：⑤古い声の除去のヨシ（「y1118-1440 にヨシ」）。消す物＝直下の古い声（IMA ADPCM の adv*.wav.wav）9,479本・計459MB（甲＝同名の m4a がある 5,548本・289MB／乙＝計画から外れた古い方言の声 3,931本・170MB）。一覧は reports/old-voices-to-delete-y1118.txt（push 済み）。場面の声など非 adv の .wav.wav は消さない。検査（check.yml 44242964232・ba987f5d）は PASS・配信済みなので、ヨシが出れば消して push する。\n見込み: 15分（14:47 追記：panel v161 の push が通った＝6e7f3269。ヨシが出るまで⑤は止まる）\n要点：三（check.yml の見込みと結果）：y1118-1425 の見込みの終わりは 14:45 と書いたが、実際は 14:29 に終わった（走り 44242964232＝05:15:24Z→05:29:53Z＝14分29秒。内訳：scope 43秒・check 13分・deploy 35秒）。結果は success。check は速い版でなくフル版の長さ（⑦21視野）で 111.8秒の駆動、④音声…\n答え方：「y1118-1440 にヨシ」で進めます。裸の「ヨシ」は、いちばん新しい待ちへのヨシとして通ります。"
     },
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795018457,
+        "message":  "00:34 の札（出し直し）koushu-state へ移した・入力欄の止まりに Enter 一打\n印: y1119-0034\n完了: ①kfsr148-art/koushu-state を作った（00:30・.nojekyll）。②押しの共通の手 git-push.ps1 で、状態と札12本（state・notices・notices-archive・archive-count・latest-name・seen・board・usage・pipe-warn・ntfy-sent・status・estimates）を koushu-state へ押すようにした（他は本体へ）。③パネル v165：読み先13本を koushu-state へ（push 00:32）。最初の押しは 403 にならなかった。入力欄の止まり：input-stall.ps1（UI Automation で入力欄を読む／Enter 一打）と見張りの Check-InputStall（合図 Stop・StopFailure のまま同じ字が30秒以上→Enter 一打・日本語を含む10字以上だけ）。\n（00:22〜01:10 は見張りの予定の上限2分で札を作る回が切られ、出ていなかった。01:12 に出し直した）"
+    },
+    {
         "title":  "🪟 止まっとるかも：公開が 21 分押せていません（パネルは接続不良・連絡なしになります）",
         "time":  1795018237,
         "message":  "止まっとるかも：公開が 21 分押せていません（パネルは接続不良・連絡なしになります）\n手を入れて直すまで消えません（パネルの赤い行に残ります）。"
@@ -265,11 +270,6 @@
         "message":  "止まっとるかも：雲の走り待ち y1118-1745：v1507 の新しい声1本（advy-f65076e7）を雲で作っている（voice-m4a.yml dial・44269451016）・始まり 17:43・見込み 17:57・過ぎた 9分\n手を入れて直すまで消えません（パネルの赤い行に残ります）。"
     },
     {
-        "title":  "🪟 止まっとるかも：雲の走り待ち y1118-1745：v1507 の新しい声1本（advy-f65076e7）を雲で作っている（voice-m4a.yml dial・44269451016）・始まり 17:43・見込み 17:57・過ぎた 2分",
-        "time":  1794992403,
-        "message":  "止まっとるかも：雲の走り待ち y1118-1745：v1507 の新しい声1本（advy-f65076e7）を雲で作っている（voice-m4a.yml dial・44269451016）・始まり 17:43・見込み 17:57・過ぎた 2分\n手を入れて直すまで消えません（パネルの赤い行に残ります）。"
-    },
-    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794992200,
         "message":  "作法40を3分に直した・ready の表示を別の字にした・v1507 の新しい声1本を雲で作っている\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 一、CLAUDE.md の作法40 を直した：「3分以内で済む物は手前で走らせる（見張りは最後の返りから3分以上返らない窓を固まりと見なして Esc を送る・#51267）。3分を超える物は雲（gh workflow run）へ。手元でしか出来ない物だけ local-run＋kumo-set -Workflow local:…」。作法41 の閾値も「5分」から「3分を超える重い計算」に揃えた（commit 3b33ba25・push 済み）。\n二、雲が終わって続き待ち（ready）の間は、パネルに「雲は終わった・続きを始める待ち \u003c印\u003e：\u003c題\u003e」と出す直し：kumo-wait.ps1 の Get-KumoOverlay で ready の字を waiting（雲の走り待ち）と分けた（控え kumo-wait.ps1.bak-20261118rd・構文OK・常駐を起こし直した）。作り値の試し：waiting →「雲の走り待ち y-test：作り値の走り」／ready →「雲は終わった・続きを始める待ち y-test：作り値の走り」。\n三、v1507 の新しい声：①台本へ足した（voice-advice-dial.json／voice-advice-dial.txt／voice-plan/dial.txt・読み＝「…なんじゅんめまで、とは決めないとよ、おまえさん。」・名は advy-f65076e7 と一致を確認）。②voice-m4a.yml を kind=dial で起こした（44269451016・17:43）。計画のうち他の声は既に在るので作るのはこの1本だけ。③次：出来た m4a を取り込み→台帳（voice-used.txt）を作り直し→koushu-handan.html（v1507）・ver.txt と一緒に commit→push→check.yml（フル）→PASS と配信。stable は動かさない。\n方言56通り：この三件の後に再開（本人の指示の順）。大阪×番頭は「だんさん・でおます・ねん／どない不使用・おます等は一つの字に一つだけ」で案を作り直し、reports/v1508-senba-butler-osaka.txt（120本の前→後）に出した（直した字 93本・残る 3本は手で直す）。\nファイル: CLAUDE.md・~/.claude/kumo-wait.ps1（bak-20261118rd）・voice-advice-dial.json・voice-advice-dial.txt・voice-plan/dial.txt・reports/v1508-senba-butler-osaka.txt"
@@ -318,10 +318,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794985451,
         "message":  "run_in_background をやめる仕組み（局所の長い仕事は台帳へ）・作法40・残った裏の仕事の片付け・v1507 の着手\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 調べた\n完了: 着手：三（残っている裏の仕事の片付け）→一（局所の長い仕事を「台帳＋見張りが受信箱へ一行」で起こす仕組み）→二（CLAUDE.md 作法40）→四の順。"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794984729,
-        "message":  "写せます（2件）"
     }
 ]
