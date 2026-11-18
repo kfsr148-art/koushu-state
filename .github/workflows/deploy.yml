@@ -1,0 +1,33 @@
+# 返事パネルの状態と札を配る（2026-11-19）。枝から配る形は一時間10回の上限があるので使わず、Actions の走り一本で配る。
+name: 配信
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 配る物を組む（.git と .github を除く・.nojekyll を必ず置く）
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' ./ _site/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+      - id: deployment
+        uses: actions/deploy-pages@v4
