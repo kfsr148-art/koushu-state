@@ -34,7 +34,7 @@
         "time":  1795093932,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n新しい形へ移すための一覧（仕掛け29本と見張りの台本を外す・残す・作り直すに分ける）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 調べた\n完了: 着手。何も直さず、仕掛けと台本と押しの設定を数える。\n\n［🔎 調べました］\n新しい形へ移すための一覧（仕掛け29本と見張りの台本を外す・残す・作り直すに分けた）\n何も直していない。今動いている物：なし。止まっている物：なし。\n押しの設定：agentPushNotifEnabled は true で入っている（inputNeededNotifEnabled も true、remoteControlAtStartup も true）。本家の押しは Remote Control が繋がっている間だけ届く。\n仕掛け29本：残す20（turn-mark 8・turn-push 6・rewake・block-wait・tool-mark 2・frame-in・inbox-feed の読み）／作り直す5（hook-notice 4本は題の印だけに、idle-card は一つの書き手に）／外す4（idle-log・stop-guard・inbox-feed の stop・stop-steps）。\n予定表と常駐：作り直す4（watch-notify・inbox-watch・kumo-wait・daily-reboot の reboot-hold）／外す3（daily-notice の 😺・pipe-check・shiyou-docs の claude -p）／残りは残す。\n台本75本：外す13・作り直す10・残す43・走らない道具9（ほかにリポジトリの state-decide.js と panel.html を作り直す）。外すと止まる物は一つずつ報告に書いた。\n気づいた事：札を書く物が今7つあり、どれも notify-record を錠なしで呼ぶ（21:00 の札の消えの元）。本家の押しは繋がりが切れた間は届かないので、その間の 🪟 は ntfy が要る。\n報告：reports/y1119-2205.md",
         "eid":  "e1795093929",
-        "pushedAt":  0
+        "pushedAt":  1795093941
     },
     {
         "title":  "✅ 終わりました（返事不要）",
