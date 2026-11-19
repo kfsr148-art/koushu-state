@@ -4,7 +4,7 @@
         "time":  1795100657,
         "message":  "使用量の止まりを rewake で起こす・台帳照合の取り下げ\n台帳の照合はしない・ヨシ待ちを解いた（yoshi-open.tsv を空に）。StopFailure に rewake-limit.js を掛けた：使用量の止まりなら戻る刻＋2分まで待ち、exit 2 で窓を起こして「続きをせよ」と渡す。作り値5通り PASS（A：4秒後に戻る→5.1秒で exit 2）。\nファイル: rewake-limit.js（新）／settings.json（StopFailure に1件・写し .bak-20261120）／job-steps.txt／yoshi-open.tsv（写し .bak-20261120）／reports/y1119-2315-2.md\n実測: 作り値 A〜E 全PASS・settings.json は JSON として有効・差分は足した11行\n実機: 使用量が上限で止まったあと、戻る刻＋2分に窓が落ちず起きて続きを始めること。rewake.log に「[使用量] 待ちを始めた」→「起こした（exit 2）」が付くこと。付かなければ StopFailure では asyncRewake が走らない。※いまの窓はフックを読んでいない可能性があり、確実なのは次に立つ窓から。",
         "eid":  "e1795100654",
-        "pushedAt":  0
+        "pushedAt":  1795100666
     },
     {
         "title":  "👀 見てください（返事不要）",
