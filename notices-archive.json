@@ -1,5 +1,10 @@
 [
     {
+        "title":  "🪟 時間切れ：固まり（最後の返り 17:56）（再挑戦 1/3）",
+        "time":  1794992344,
+        "message":  "最後に命令が返ったのは 17:56（3分前）で、3分たっても次が返らないので切りました（開始から 3分）。切った枠は受信箱へ戻しました（再挑戦 1/3）。\n同じ字の枠を切ったのは、48時間で 1 回目です。\n\n── 切れた枠（先頭200字）──\n【Codeタブへ】\n一、見張りの固まりの見極めで、足跡の最後が Stop（返事を終えて手番を閉じた）なら固まりと見なさない。数えるのは手番の途中（最後が PreToolUse・PostToolUse 等）だけ。Stop は手番が正しく終わった時だけ鳴り、Esc や誤りでは鳴らない。\n二、17:46 に切って受信箱へ戻した枠は 17:44 に済んでいるので、やり直さず台帳を済みにする。声の雲の走りを…\n\n── どこまで進んだか ──\n台帳：未了 88件／この枠の行は「未了：受領」\n足跡：最後は 17:58:13 heartbeat／この枠に入ってから 命令 0回・返り 0回\n\n＊claude の子を 0本落として、Esc を一打送りました。\n＊記録は ~/.claude/inbox-watch.log。\n"
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794992200,
         "message":  "作法40を3分に直した・ready の表示を別の字にした・v1507 の新しい声1本を雲で作っている\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 一、CLAUDE.md の作法40 を直した：「3分以内で済む物は手前で走らせる（見張りは最後の返りから3分以上返らない窓を固まりと見なして Esc を送る・#51267）。3分を超える物は雲（gh workflow run）へ。手元でしか出来ない物だけ local-run＋kumo-set -Workflow local:…」。作法41 の閾値も「5分」から「3分を超える重い計算」に揃えた（commit 3b33ba25・push 済み）。\n二、雲が終わって続き待ち（ready）の間は、パネルに「雲は終わった・続きを始める待ち \u003c印\u003e：\u003c題\u003e」と出す直し：kumo-wait.ps1 の Get-KumoOverlay で ready の字を waiting（雲の走り待ち）と分けた（控え kumo-wait.ps1.bak-20261118rd・構文OK・常駐を起こし直した）。作り値の試し：waiting →「雲の走り待ち y-test：作り値の走り」／ready →「雲は終わった・続きを始める待ち y-test：作り値の走り」。\n三、v1507 の新しい声：①台本へ足した（voice-advice-dial.json／voice-advice-dial.txt／voice-plan/dial.txt・読み＝「…なんじゅんめまで、とは決めないとよ、おまえさん。」・名は advy-f65076e7 と一致を確認）。②voice-m4a.yml を kind=dial で起こした（44269451016・17:43）。計画のうち他の声は既に在るので作るのはこの1本だけ。③次：出来た m4a を取り込み→台帳（voice-used.txt）を作り直し→koushu-handan.html（v1507）・ver.txt と一緒に commit→push→check.yml（フル）→PASS と配信。stable は動かさない。\n方言56通り：この三件の後に再開（本人の指示の順）。大阪×番頭は「だんさん・でおます・ねん／どない不使用・おます等は一つの字に一つだけ」で案を作り直し、reports/v1508-senba-butler-osaka.txt（120本の前→後）に出した（直した字 93本・残る 3本は手で直す）。\nファイル: CLAUDE.md・~/.claude/kumo-wait.ps1（bak-20261118rd）・voice-advice-dial.json・voice-advice-dial.txt・voice-plan/dial.txt・reports/v1508-senba-butler-osaka.txt"
@@ -243,10 +248,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794961092,
         "message":  "声をAACで作る（雲の走り待ち）\n（札が立たないまま次の仕事へ移っていた分）\n完了: pull 済み・走り中のため dial は起こさず雲待ちへ再登録"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794960185,
-        "message":  "声をAACで作る：convert（今の声のAAC化）の雲の走りを待っている（v1506）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 二度目に届いた同じ指示（y1118-0500 が止まっている件）は、一件目と同じ。二重に起こさず、状態だけ確認した。塞がっていた訳＝私が長い手番の中で待っていた。部品974本は push 済み（main は origin と同じ）。convert は in_progress。\n実測: voice-m4a.yml の走り＝convert 実行中1本・parts 成功。job.yml の走りは無し。\nファイル: reports/y1118-0900.md CLAUDE.md（作法38）"
     }
 ]
