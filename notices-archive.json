@@ -1,5 +1,11 @@
 [
     {
+        "title":  "☁️ 雲の走りが落ちた（y1119-0414）",
+        "time":  1795055472,
+        "message":  "件名: v1508 検査と配信（check.yml）\n結果: failure\n印: y1119-0414",
+        "eid":  ""
+    },
+    {
         "title":  "✅ 戻りました（subj-gap・9分）",
         "time":  1795055438,
         "message":  "連携の見張りの訴えが消えました。\n\n・subj-gap・9分\n\n＊全部の記録は ~/.claude/pipe-warn.log にあります。\n",
@@ -247,10 +253,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959649,
         "message":  "声をAACで作る：部品の雲の走りを待っている（v1506・声の詰め方を変える）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: AAC 48kbps に決定（今の ADPCM の0.53倍・24kHzのまま・つなぎのずれ0）。道具（voice-m4a.yml・tools/voice-m4a.js・voice-plan）を push し、部品の声を雲で作成中。本体の写し w10 に m4a から読む再生を当て済み（構文 NG 0）。次：convert→dial→本体への取り込み（m4a の名簿・check・pack-site の直し）→Safari 確認（macOS の WebKit）→公開の荷の数え。\nファイル: .github/workflows/voice-m4a.yml tools/voice-m4a.js voice-plan/ pack-site.js scratchpad/w10"
-    },
-    {
-        "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
-        "time":  1794944224,
-        "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
     }
 ]
