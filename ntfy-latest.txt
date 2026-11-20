@@ -1,6 +1,3 @@
-😽 終わったにゃ、写して（2026-11-20 18:00:25・1通）
+☁️ 雲の走りが落ちた（y1120-1800）（2026-11-20 18:11:23・1通）
 ----------------------------------------
-見込みの種類は走りの jobs から・関門が札を捨てる道を全部並べて揃える
-一：見込みと鳴らす敷居の種類を、雲の scope の答えで決める形にした。scope-pick.js が回の種類（honta/panel/report）を出し、check.yml の仕事の名に「check（種類:…）」「deploy（種類:…）」と載せ、見張りは待っている走りの jobs から読む（読めるまでは一番長い種類・読めた後に見込みを出し直す）。雲の走りで名が評価され、見張りが jobs から honta を読めたことを確かめた。／二：札を捨てる道を全部並べた（報告の表）。関門が止めた済んだ仕事の✅・😽（再起動の戻りなど）は捨てず控え（card-outbox・held）に置き、段の台帳が畳まれたら出す形に揃えた（2時間たてば注記つきで出す）。途中の札（⏳・🕒・🔗・同じ仕事の途中の終わりの札・「完了：着手」だけ）は今のまま載せない。
-ファイル: .github/workflows/check.yml・scope-pick.js・scope-pick-test.js・kumo-wait.ps1・card-gate.js・ntfy-say.ps1・notify-record.ps1・watch-notify.ps1・reports/y1120-1725.md
-実測: 雲の検査（11fe2389・本体の回）成功 14分10秒。仕事の名は check（種類:honta）／deploy（種類:honta）で、kumo-kind-jobs.tsv に出所 jobs の行が入った。作り値 test-kind 10件・test-park 9件・test-fast 6件・test-cloud 4件・scope-pick 16件＋種類5件 すべて PASS。常駐は起こし直し済み。
+​
