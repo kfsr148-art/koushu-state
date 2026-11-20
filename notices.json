@@ -4,7 +4,7 @@
         "time":  1795157051,
         "message":  "三段目（panel v181）の結果（reports/y1120-0700.md から）\n外した物：①settings.json の hook 3本＝idle-log.js（idle_prompt）・stop-gate の stop-guard.ps1・stop-gate の inbox-feed.ps1 -Kind stop（空になった組も畳んだ）。②予定表 ClaudeDailyNotice（朝晩の😺）と ClaudePipeCheck を登録から外した（XML を tasks-bak-20261120/ に書き出してから）。③shiyou-gendo.ps1 の shiyou-docs.js を呼ぶ一行（Claude Docs への使用限度の書き込み）。残した物：stop-steps・input-stall・send-text・ntfy-budget の hook／ClaudeShiyouGendo（ローカルの使用限度の一行を書く本体）。まとめた物：①tool-mark.ps1（道具の前後ごとに PowerShell を起こしていた）の hook 2本を外し、turn-mark.js が hook.log へ同じ形の一行を書く形に統べた（走りが二つ→一つ・作り値で書式一致・本物でも一回一行）。②😺の数（台帳の残り・今日の起こし直し）を foot-stats.js→state.json の foot→パネルの下の一行に移した（使用量は元からパネルの三本。のち台帳の残りは「順番待ち」に替わった）。③パネルの状態の小さい一行を「最後の合図：Stop（HH:MM:SS・N分前）」（合図が無くても「なし」）にした。版は panel v181（雲の検査 success・公開 181）。この札が一覧に無かった訳：その仕事の終わりの札は、段の台帳に雲待ちの段が残っていたため 07:16・07:18・07:42 に関門が「途中の札を出さない」と止め、のち次の仕事に抜かれて落ちた（今日の三度の穴の一つ）。後に先書きの控え（card-outbox）・-Gated・雲待ちの間は置いたまま一枚で出す形に直してある。\nファイル: reports/y1120-0700.md（元の報告）",
         "eid":  "e1795157048",
-        "pushedAt":  0
+        "pushedAt":  1795157060
     },
     {
         "title":  "✅ 終わりました（返事不要）",
