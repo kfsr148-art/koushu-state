@@ -4,7 +4,7 @@
         "time":  1795175169,
         "message":  "橋の枠 三：時計の待ちが起きなかった訳・時計の待ちで next・現況は待ち（時計）\n一：19:48 の時計の待ちが起きなかった訳＝見張り（kumo-wait.ps1）の Get-KumoRun が clock: を知らず、GitHub の workflow 名として引いて 404（kumo-wait.log に3分おきの例外）。例外で毎回戻るので、起きる刻を過ぎても台帳が waiting のまま ready にならず、窓を起こす道が動かなかった（時計の待ちは、これまで一度も窓を起こせていない作りだった）。二：Get-KumoRun に clock: の枝（起きる刻を過ぎたら ready）を足し、待ち手0本・窓が手すきなら見張りが next を送る（起きる刻を過ぎた時計の待ちは台帳が waiting のままでも数える）。三：時計の待ちの kumo の一行を「時計：…・起きる刻」にし、パネルの現況は「待ち（時計）」と出る。橋の文書の「窓から（札）」に札を書いた。\nファイル: kumo-wait.ps1・inbox-watch.ps1（~/.claude）・panel-check.js・reports/y1120-2025.md\n実測: 作り値 test-clock 6件：直した後 全部PASS／直す前は3件FAIL。panel-check --static 全て PASS。雲の検査（95e179c7）成功 6分53秒・ブラウザ込みの panel-check・widget-check とも全てPASS。常駐は起こし直し済み（20:32）。\n実機: 時計の待ち（kumo-set -Workflow clock:…）を登録した時、返事パネルの現況が「待ち（時計）」と出る／起きる刻を過ぎたら窓が自動で起きる（見張りが ready にして、待ち手が居なければ next を送る）。",
         "eid":  "e1795175166",
-        "pushedAt":  0
+        "pushedAt":  1795175177
     },
     {
         "title":  "🪟 異常です：週Fableの使用量が 80% を越えました",
