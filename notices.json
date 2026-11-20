@@ -4,7 +4,7 @@
         "time":  1795171210,
         "message":  "着手直後の「待ち」と赤い「見込み未記入」を出さない\n記録で辿った：18:58 の「待ち：残りの段 3」は、窓が動いているのに見張りが偽の「Interrupted」を書いたために出た（18:57:56 画面・18:58:17 記録。窓が grep の出力に Interrupted の字を出していた）。偽の中断を取らない形に直した（画面＝行頭の「⎿  Interrupted · …」だけ・記録＝道具の結果の行は除く）。作業中は着手から90秒以内の「見込み未記入」を赤くしない（panel v198・公開は198）。state-decide の「合図が3分以内なら作業中」は元から効いており、道具の合図が新しい場合の作り値を足した。段と見込みは同じ手で書く（作法45）。\nファイル: inbox-watch.ps1（~/.claude）・panel.html・panel-check.js・panel-ver.txt・state-decide-test.js・CLAUDE.md・reports/y1120-1945.md\n実測: 作り値 test-intr 直した後 全部PASS／直す前は3件FAIL。panel-check --static 全て PASS（⑤の十四 5件）。雲の検査（3f89b0bd・パネルだけの回）成功 7分03秒・ブラウザ込みの panel-check・widget-check とも全てPASS。公開 panel-ver.txt 198。常駐は起こし直し済み。\n実機: 着手の直後（着手から90秒以内・見込みを書く前）の返事パネルで、見込みの行が赤い「見込み未記入」でなく「見込み 記入待ち」／窓の出力に Interrupted の字が出ても「待ち：残りの段」にならない／版の字が panel v198。",
         "eid":  "e1795171208",
-        "pushedAt":  0
+        "pushedAt":  1795171227
     },
     {
         "title":  "✅ 終わりました（返事不要）",
