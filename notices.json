@@ -4,7 +4,7 @@
         "time":  1795167736,
         "message":  "パネルを変えた回は押す前に手元で panel-check を通す\n手元で panel-check を全部（ブラウザ込み）回すと13〜16分で5分を超えるので回さない。代わりに、ブラウザを使わない部分だけを秒で回す手（node panel-check.js --static）を足した。回るのは構文・三つの作り値の台・現況の組み立て・順番待ちの一覧・指さすの名・statusText の単体・版の三箇所で、v192 が落ちた statusText の単体も入っている。CLAUDE.md に作法43を足した（panel を変えた回は押す前に --static を回して PASS を見てから commit・全部は手元で回さない）。\nファイル: panel-check.js・CLAUDE.md・reports/y1120-1820.md\n実測: 手元の全部＝13〜16分（回さない）。node panel-check.js --static 全て PASS・3.7秒。雲の検査（69d873f5・panel-check.js を組み替えた回）成功 7分10秒で、ブラウザ込みの panel-check・widget-check とも全てPASS（移しは壊れていない）。雲の panel-check の段は約3分16秒。",
         "eid":  "e1795167734",
-        "pushedAt":  0
+        "pushedAt":  1795167750
     },
     {
         "title":  "🔎 調べました",
