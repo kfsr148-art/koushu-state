@@ -1,5 +1,12 @@
 [
     {
+        "title":  "✅ 戻りました（再起動・31分・帯の間に黙らせた物 1件）",
+        "time":  1795242736,
+        "message":  "再起動の静かな帯が明けました（11-21 15:00〜15:32・31分）。\n帯の間に黙らせた物：見張りの止まり（#29）\n＊claude が立ち、hook.log が動き出したのを見て明けとしました。",
+        "eid":  "",
+        "pushedAt":  0
+    },
+    {
         "title":  "✅ 戻りました（再起動から）",
         "time":  1795242395,
         "message":  "再起動から戻った（落としは 26分前・11-21 15:26）\n① 予定表 Claude* … 13件（無効 ClaudeSweepChecks）・最終結果は全て良い\n② 見張りの生存 … 0分前\n③ ntfy.sh の応答 … HTTP 200\n④ 公開側 … パネルが読む札（koushu-state の notices.json）のいちばん新しい札 11-21 15:00:13（26分前）／panel-ver.txt 200\n四つとも○。戻っている。",
@@ -271,13 +278,6 @@
         "message":  "見込みの種類は走りの jobs から・関門が札を捨てる道を全部並べて揃える\n一：見込みと鳴らす敷居の種類を、雲の scope の答えで決める形にした。scope-pick.js が回の種類（honta/panel/report）を出し、check.yml の仕事の名に「check（種類:…）」「deploy（種類:…）」と載せ、見張りは待っている走りの jobs から読む（読めるまでは一番長い種類・読めた後に見込みを出し直す）。雲の走りで名が評価され、見張りが jobs から honta を読めたことを確かめた。／二：札を捨てる道を全部並べた（報告の表）。関門が止めた済んだ仕事の✅・😽（再起動の戻りなど）は捨てず控え（card-outbox・held）に置き、段の台帳が畳まれたら出す形に揃えた（2時間たてば注記つきで出す）。途中の札（⏳・🕒・🔗・同じ仕事の途中の終わりの札・「完了：着手」だけ）は今のまま載せない。\nファイル: .github/workflows/check.yml・scope-pick.js・scope-pick-test.js・kumo-wait.ps1・card-gate.js・ntfy-say.ps1・notify-record.ps1・watch-notify.ps1・reports/y1120-1725.md\n実測: 雲の検査（11fe2389・本体の回）成功 14分10秒。仕事の名は check（種類:honta）／deploy（種類:honta）で、kumo-kind-jobs.tsv に出所 jobs の行が入った。作り値 test-kind 10件・test-park 9件・test-fast 6件・test-cloud 4件・scope-pick 16件＋種類5件 すべて PASS。常駐は起こし直し済み。",
         "eid":  "e1795165214",
         "pushedAt":  1795165225
-    },
-    {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1795163050,
-        "message":  "止まる前に出した札の重複を除く・まとめて写すの頭の現況\n①退避した「止まる前に出した札」を、同じ枠:の刻の新しい札が出る時は載せない形にした（件名の字でなく枠の刻・控えは note-missed-dropped.log に残る）。②まとめて写す・全部写すの頭の現況を、状態の言葉と終わる見込みの刻にした（panel v196・公開は196）。\nファイル: watch-notify.ps1・panel.html・panel-check.js・panel-ver.txt・reports/y1120-1705.md\n実測: 作り値7件 PASS（途中二本＋結果→0枚・件名違いでも同じ枠なら載せない・違う仕事は載る・枠なしは載る・二枠の片方一致は載せない）。雲の検査 成功 6分11秒（f37f8ac5・パネルだけの回。ce9af4ea の走りは直後の押しに取って代わられ cancelled）。公開 panel-ver.txt 196。panel-check の全部は手元13〜16分のため雲に任せた。\n実機: 返事パネルで「まとめて写す」を押して写した頭の一行が「現況：作業中・終わる見込み HH:MM（あとN分）」の形（件名の頭の一語でない）／版の字が panel v196。",
-        "eid":  "e1795163047",
-        "pushedAt":  1795163060
     },
     {
         "title":  "✅ 終わりました（返事不要）",
