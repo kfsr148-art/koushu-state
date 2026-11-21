@@ -2,10 +2,10 @@ stat: 作業中
 head: 作業中、、、。
 subj: 枠 四十三：守りの線（撤退予約線の守り版）を本体へ入れる
 sNow: 本体の工事（下請け Opus）：守りの助言に乙の骨組み・7枚の線・切る順・retreat-line の守りの一行／足す声… (1/4)
-mikomi: 150分 開始 23:23 終了予定 11/22 01:53
-rl: s 37% sr 11/22 02:20 w 38%
+mikomi: 150分 開始 23:27 終了予定 11/22 01:57
+rl: s 40% sr 11/22 02:20 w 38%
 fable: 24% リセット 11/23 20:00（API 23:22）
 card: 22:10 🙋 ヨシしてください / 枠 三十四：撤退予約線の守り版（7枚の線の裏づけが出ず、止まって訊く）
 reply: 2026-11-21 23:25:46 枠 四十三：守りの線（撤退予約線の守り版）を本体へ入れる
 replyBody: Pull/dry-run is running in the background; I'll continue when it completes.
-wait: 2
+wait: 3
