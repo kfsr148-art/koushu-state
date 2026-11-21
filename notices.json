@@ -6,6 +6,13 @@
         "eid":  "e1795266607"
     },
     {
+        "title":  "🕒 延びています",
+        "time":  1795295325,
+        "message":  "枠 七十七の続き：段を毎回計算・公開の版を運ぶ（panel v212）を公開した\n終了予定04:32を過ぎています（経過101分）",
+        "eid":  "e1795295319",
+        "pushedAt":  0
+    },
+    {
         "title":  "🪟 異常です（控えの預けが落ちました）",
         "time":  1795293905,
         "message":  "控えの預け（ClaudeHomeBackup・05:00）が今日の分を押せていません。\n最後に押せた日：2026-11-20\n記録の末尾：\n2026-11-22 05:01:01\thome-backup\t拾いが落ちた（終了コード -1）。45秒置いて一度だけ打ち直す\n2026-11-22 05:02:08\thome-backup\t終了コード 128：warning: in the working copy of \u0027after-reboot.ps1\u0027, LF will be replaced by CRLF the next time Git touches it warning: in the working copy of \u0027busy.txt\u0027, LF will … 末尾：fatal: adding files failed （全文は git-push-full.log）\n2026-11-22 05:02:09\thome-backup\t拾いが落ちた（終了コード 128）。日付は刻まず、次の回に持ち越す\n全文は ~/.claude/git-push-full.log",
@@ -277,13 +284,6 @@
         "message":  "橋の枠 六：センコが読んだ札を写した扱いに・枠 四の札の二度出し・窓が書く刻\nこの回は控えを書いていません（前の回の控えが残っています。中身は当てになりません）。",
         "eid":  "e1795178527",
         "pushedAt":  1795178538
-    },
-    {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1795178050,
-        "message":  "橋の枠 六：センコが読んだ札を写した扱いに・枠 四の札の二度出し・窓が書く刻\n初めて合図だけで届いた枠（合図 21:16:09 から約16秒で窓が動き出した）。一つ目：センコが読んだ札を写した扱いに。見張りが同じ ls-remote で枝 senko-read の頭の変わりを見て read.txt の刻（実物 2026-11-20 21:12:17）を取り、state.json の senkoReadAt に出す（窓は起こさない・枠の印も台帳も順番待ちも立てない）。panel v200（公開済み）はその刻までの札と知らせを「まとめて写す」を押した扱いにし、刻より新しい札は未写しのまま・手で押す道は今のまま。二つ目：枠 四の札は二度出ていた。21:00 に出ていたのに、控えの写しの指紋が合わず、件名が枠 五へ替わった時に退避し、枠G の直し（同じ枠の印）は今の控えと同じ時だけ効くので落とせず、21:12 の押し送りにもう一度入った。退避した控えの本文が、直近100本の出した札の本文に入っていれば載せない形に直した。三つ目：窓が書く刻は機械の刻（date）にする。誤っていた枠 五の札の見出しと報告の刻を直した。作法44 に六（センコが読んだ札）・七（刻は機械から）を足した。\nファイル: inbox-watch.ps1・watch-notify.ps1（~/.claude）・panel.html・panel-check.js・panel-ver.txt・CLAUDE.md・reports/y1120-2118.md\n実測: 作り値 test-read 9件・test-bell 11件・test-missed-dup 9件 PASS（二度出しは直す前の版で FAIL）。panel-check --static 全て PASS（⑤の十五）。雲の検査（e8069f4a）成功 6分53秒・ブラウザ込みの panel-check・widget-check とも全てPASS・公開 panel-ver.txt 200。合図→窓 約16秒・ls-remote 一回約0.6秒・read.txt 取得 2.6秒（変わった時だけ）。常駐は起こし直し済み。\n実機: センコが札を読んで senko-read/senko/read.txt を書き換えると、約30秒〜1分で返事パネルのまとめて写す・頭の猫と字・写せますが、その刻までの札と知らせを写した扱いにして残りが減る（刻より新しい札は残る）／版の字が panel v200。",
-        "eid":  "e1795178047",
-        "pushedAt":  1795178059
     },
     {
         "title":  "✅ 終わりました（返事不要）",
