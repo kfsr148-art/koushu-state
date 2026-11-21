@@ -6,6 +6,13 @@
         "eid":  "e1795266607"
     },
     {
+        "title":  "🪟 異常です（控えの預けが落ちました）",
+        "time":  1795293905,
+        "message":  "控えの預け（ClaudeHomeBackup・05:00）が今日の分を押せていません。\n最後に押せた日：2026-11-20\n記録の末尾：\n2026-11-22 05:01:01\thome-backup\t拾いが落ちた（終了コード -1）。45秒置いて一度だけ打ち直す\n2026-11-22 05:02:08\thome-backup\t終了コード 128：warning: in the working copy of \u0027after-reboot.ps1\u0027, LF will be replaced by CRLF the next time Git touches it warning: in the working copy of \u0027busy.txt\u0027, LF will … 末尾：fatal: adding files failed （全文は git-push-full.log）\n2026-11-22 05:02:09\thome-backup\t拾いが落ちた（終了コード 128）。日付は刻まず、次の回に持ち越す\n全文は ~/.claude/git-push-full.log",
+        "eid":  "",
+        "pushedAt":  0
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795293018,
         "message":  "枠 七十七の続き：段を毎回計算・公開の版を運ぶ（panel v212）を公開した\npanel v212（steps を state.json に・stepsOf で毎回計算・pubVer）を押し、雲の検査と state-deploy が成功、公開の panel-ver.txt が 212 になったのを curl で確かめた。札を橋に書いた。\nファイル: panel-core.js・panel-view.js・endat.js・panel.html・panel-check.js・panel-ver.txt・~/.claude の台本3本\n実測: panel-check --static 157項目 PASS・約30分",
