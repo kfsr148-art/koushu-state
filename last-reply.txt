@@ -1,16 +1,14 @@
-刻: 2026-11-23 07:49:01
-件名: 枠 百五十五：五つの印の選ぶ文案の本文を札に出し直す＋BASE_CURVE を新しい値に（v1519）＋相手あり測り甲案の実装（雲は一段目まで）
+刻: 2026-11-23 08:01:04
+件名: 枠 百五十六：返事パネルの影の一行を三つ目の箱「影の仕事」に替える（表の仕事・裏方と同じ形・ゲージ・走っている間だけ・$なし）
 
-The opponent-included measurement is running in the cloud, and I've stopped until it finishes. The `v1519` cloud check is still running too.
+Panel v224 is pushed, and the cloud check on it is registered as a wait. The panel's old one-line shadow display is now the third box, "影の仕事".
 
-Frame 155's remaining parts:
+- **Box:** it sits under 表の仕事 and 裏方. It has a header with "あと N分（HH:MM ごろ）", the current issue's name, and a gauge with N/M. No dollar amount is shown.
+- **When it appears:** it is only in the data while a shadow run is in progress and started within the last 10 minutes. It disappears when the run finishes. A run takes about 10 seconds, so it may rarely be on screen between 3-minute polls.
+- **Where the numbers come from:** the runner now writes a daily counter and start/end times next to `shadow-last.json`. M is today's issues taken and N is today's issues finished.
+- **Checks:** the old one-line element is removed. I added a static check (box present while running, gone when done, no money text, panel markup in place). Locally, `panel-check.js --static` passes in full. The cloud check is what remains.
 
-- **Question texts:** the choice texts for the five open cards (2124, 2127, 2131, 2154, 2055) were out as the first half, in one card with a heading per card.
-- **Base curve (v1519):** `BASE_CURVE` now holds the new values from the 30,000-hand re-measure. The `data-ver`, `verTag` and `ver.txt` all say 1519, and `serifu.txt` matches. It is pushed but not yet confirmed: the cloud check is still running and the published `ver.txt` still said 1518 at 07:47.
-- **Opponent-included measurement (design A):** the script is `scratchpad/jobs/yakuman-aite.js`, and the first stage is running in the cloud as run 45079773187.
-  - **Setup:** one seat per game is dealt a built hand, and that seat plays three ways: push, fold on riichi, and the normal machine player. The other three seats are the normal machine players. The three ways use the same wall.
-  - **First stage:** it covers kokushi with 10 and 11 types and four-concealed-triplets with 3 triplets + 2 pairs, 3 triplets + 1 pair, and 2 triplets + 3 pairs.
-  - **Local checks:** I confirmed the three ways get the same hand and seat (5 of 5 frames). I also fixed a crash when a drawn game continues into a repeat round.
-- **Sample size:** a local game took about 3 seconds, so one cloud run may give only about 100 games per frame and way. The design said about 700 are needed for ±3 points, so I expect to need several runs. I'll decide after seeing this run's table.
-
-When the run ends I'll read the table, confirm `v1519` is published, and post the frame 155 second-half card.
+**Still waiting on cloud:**
+- **v224 check:** it must pass, and then I'll put a test issue through the runner and confirm the box shows in `state.json`.
+- **v1519 base curve:** its check is still running, and I'll confirm the published `ver.txt` says 1519.
+- **Opponent-included measurement:** the first-stage run finishes around 08:13. I'll read the table and post the frame 155 second-half card.
