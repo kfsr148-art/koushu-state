@@ -1,31 +1,10 @@
-刻: 2026-11-22 21:54:45
+刻: 2026-11-23 03:39:43
 件名: 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子）で雲で測り直し、解説の文案を足す
 
-Frames 113 and 114 (parts ② and ③) are finished and reported.
+There's nothing new to start. The only inbox item was the 18:34 bridge bell from yesterday, and I've marked it handled.
 
-- **国士 (kokushi):** the win rate on 18 draws, playing alone, rises with the number of different terminal/honor tile types in the starting hand.
+- **Bridge doc:** its revision is still 394, which is my own last card write, so センコ hasn't added a frame since. I read it from a saved file that was cut off partway, so this rests on that revision number rather than a full read.
+- **Queue:** the ledger shows no steps, no cloud waits and nothing in the inbox.
+- **Waiting on you:** the question cards from earlier (印 y1122-2055, 2124, 2127, 2131, 2139, 2143, 2154).
 
-| Types in the hand | Win rate |
-|---|---|
-| 9 | 4.2% |
-| 10 | 9.7% |
-| 11 | 21.7% |
-| 12 | 47.3% |
-| 13 | 99.9% |
-
-  Whether the hand also has a pair of those tiles barely matters.
-- **四暗刻 (suuankou), self-draw wins only:**
-
-| Starting hand | Win rate |
-|---|---|
-| 3 triplets + 2 pairs | 47.5% |
-| 4 triplets, single wait | 38.1% |
-| 3 triplets + 1 pair | 20.6% |
-| 2 triplets + 3 pairs | 17.8% |
-| few pairs | 1–2% |
-
-- **Limits:** the simulation has no opponents, riichi calls or deal-ins. These numbers are an upper bound, so they are not yet grounds for moving the yakuman thresholds. The explanation text for frame 101 is drafted in `reports/y1122-2255-yakuman-rate.md` (three drafts, not applied).
-- **What I changed:** nothing in `koushu-handan.html` or the judgment logic.
-- **Your questions:** the card with the new questions is 印 y1122-2154: whether to put the explanation drafts into frame 101, and whether to add a run with opponents. Open questions from earlier cards (y1122-2055, 2124, 2127, 2131, 2139, 2143) are still unanswered.
-
-No frames I've received are left unstarted.
+Stopping here.
