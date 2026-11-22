@@ -7,7 +7,7 @@ omoteEnd: 03:40 (今の仕事なし＋順番待ち 1件×15分（直近24時間�
 uraEnd: なし (下請け 0本（1本 15分＝直近24時間 84本の中央値）・雲 0本)
 rl: s % sr  w 85%
 fable: 58% リセット 19:59（API 02:58）
-card: 11/22 21:56:46 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
+card: 11/23 03:27:36 🪟 窓を起こす待ち手が居ません（窓は手待ち・受… / 窓を起こす待ち手が居ません（窓は手待ち・受信箱の未処理 1件・雲待ち なし）
 ura: 下請け動作0／直近 11/22 18:26 Fix proposal… 終、11/22 18:25 Fix proposal… 終、11/22 18:23 Fix proposal… 終／雲 走り0・直近 11/22 21:56 自動検査と配信 成功、11/22 21:53 札と状態の配信 成功、11/22 21:50…
 reply: 2026-11-22 21:54:45 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子…
 replyBody: Frames 113 and 114 (parts ② and ③) are finished and reported. - **国士 (kokushi):** the win rate on 18 draws, playing alone, rises with the number of different terminal/honor tile types in the starting 
