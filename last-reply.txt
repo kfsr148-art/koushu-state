@@ -1,14 +1,22 @@
-刻: 2026-11-23 08:01:04
+刻: 2026-11-23 08:15:39
 件名: 枠 百五十六：返事パネルの影の一行を三つ目の箱「影の仕事」に替える（表の仕事・裏方と同じ形・ゲージ・走っている間だけ・$なし）
 
-Panel v224 is pushed, and the cloud check on it is registered as a wait. The panel's old one-line shadow display is now the third box, "影の仕事".
+Frames 155 and 156 are both finished and reported, and all my cloud checks passed. Nothing is waiting except your answers.
 
-- **Box:** it sits under 表の仕事 and 裏方. It has a header with "あと N分（HH:MM ごろ）", the current issue's name, and a gauge with N/M. No dollar amount is shown.
-- **When it appears:** it is only in the data while a shadow run is in progress and started within the last 10 minutes. It disappears when the run finishes. A run takes about 10 seconds, so it may rarely be on screen between 3-minute polls.
-- **Where the numbers come from:** the runner now writes a daily counter and start/end times next to `shadow-last.json`. M is today's issues taken and N is today's issues finished.
-- **Checks:** the old one-line element is removed. I added a static check (box present while running, gone when done, no money text, panel markup in place). Locally, `panel-check.js --static` passes in full. The cloud check is what remains.
+**Frame 155, second half**
+- **v1519:** `BASE_CURVE` now holds the new values from the 30,000-hand re-measure. The cloud check passed and the published `ver.txt` says 1519.
+- **Opponent-included measurement, first stage:** it ran in the cloud (1232 seconds, 4292 games, no failures), at about 286 games per frame per way, so the margin is ±3 to ±5 points.
+  - **Kokushi:** 10 types win 9.8–10.1% and 11 types win 26.8–28.3%. That matches or beats the solo-play figures (9.7% and 21.7%), because winning on opponents' discards offsets the interruptions.
+  - **Pushing costs points:** at 10 types, pushing straight through deals in 34.5% of games against 10.1% for the normal machine player, and averages 724 points against 2162. Folding on riichi deals in 23.0% and averages 1314. Win rates are about the same for all three.
+  - **Four concealed triplets:** with 3 triplets + 2 pairs the machine player wins 30.1% and my push 21.7% (difference −8.4 points ±5.3). About 60% of the push wins are cheap hands, because winning on a discard breaks the triplets. A version that refuses to win on discards isn't built.
+  - **Fold arm:** it never changes anything in these frames, because the hand never drops to two or more away from ready.
+  - **Baseline:** my "base" arm is the normal machine player given the same hand, not a seat that ignores the yakuman. That player chases kokushi and four concealed triplets on its own.
+- **Report:** `reports/y1123-0815-aite-result.md`, with both tables in the card.
 
-**Still waiting on cloud:**
-- **v224 check:** it must pass, and then I'll put a test issue through the runner and confirm the box shows in `state.json`.
-- **v1519 base curve:** its check is still running, and I'll confirm the published `ver.txt` says 1519.
-- **Opponent-included measurement:** the first-stage run finishes around 08:13. I'll read the table and post the frame 155 second-half card.
+**Frame 156:** the old one-line shadow display is now the third box, "影の仕事" (panel v224, cloud check passed, published). It shows only while a shadow run is going, with a gauge and no dollar amount. I checked it by briefly faking a running state; `state.json` carried the box and I restored the original afterwards.
+
+**Questions for you (印 y1123-0814):**
+- Should I add and run the second stage, plus the arm that refuses to win on discards for four concealed triplets?
+- Should I rewrite the kokushi and four-concealed-triplets explanation drafts (印 2154) with these opponent-included numbers?
+
+Open question cards: 2055, 2124, 2127, 2131, 2154, 0649, 0726, 0814.
