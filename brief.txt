@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 待機中
+head: 札まとめ中、、、。
 subj: 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子）で雲で測り直し、解説の文案を足す
 sNow:  (4/4)
 mikomi: 60分 開始 11/22 16:47 書いた 11/22 21:46 終わり 11/22 22:46
-omoteEnd: 03:53 (今の仕事なし＋順番待ち 1件×15分（直近24時間の29枠の中央値）・見込みと実測の比 1.2（直近24時間 4組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: 03:54 (今の仕事なし＋順番待ち 1件×15分（直近24時間の29枠の中央値）・見込みと実測の比 1.2（直近24時間 4組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 15分＝直近24時間 84本の中央値）・雲 0本)
 rl: s 0% sr 08:30 w 85%
 fable: 58% リセット 19:59（API 03:38）
 card: 11/23 03:27:36 🪟 窓を起こす待ち手が居ません（窓は手待ち・受… / 窓を起こす待ち手が居ません（窓は手待ち・受信箱の未処理 1件・雲待ち なし）
 ura: 下請け動作0／直近 11/22 18:26 Fix proposal… 終、11/22 18:25 Fix proposal… 終、11/22 18:23 Fix proposal… 終／雲 走り0・直近 11/22 21:56 自動検査と配信 成功、11/22 21:53 札と状態の配信 成功、11/22 21:50…
-reply: 2026-11-22 21:54:45 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子…
-replyBody: Frames 113 and 114 (parts ② and ③) are finished and reported. - **国士 (kokushi):** the win rate on 18 draws, playing alone, rises with the number of different terminal/honor tile types in the starting 
+reply: 2026-11-23 03:39:43 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子…
+replyBody: There's nothing new to start. The only inbox item was the 18:34 bridge bell from yesterday, and I've marked it handled. - **Bridge doc:** its revision is still 394, which is my own last card write, so
 wait: 1
