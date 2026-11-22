@@ -4,11 +4,11 @@ subj: 枠 百五十四：影の常駐を立てる（課題 koushu-ops を数分�
 sNow:  (3/3)
 mikomi: 40分 開始 07:30 書いた 07:31 終わり 08:11
 omoteEnd: 07:48 (今の仕事なし＋順番待ち 1件×14.7分（直近24時間の28枠の中央値）・見込みと実測の比 15.33（直近24時間 2組・参考：今の仕事の終わりには掛けない）)
-uraEnd: 09:27 (下請け 0本（1本 15分＝直近24時間 71本の中央値）・雲 1本（流れごと：較正の対局 125.2分＝直近7日 5本の中央値）)
+uraEnd: 09:27 (下請け 0本（1本 15分＝直近24時間 71本の中央値）・雲 2本（流れごと：自動検査と配信 2.5分＝直近30日 3本の中央値、較正の対局 125.2分＝直近7日 5本の中央値）)
 rl: s 10% sr 08:30 w 86%
 fable: 59% リセット 20:00（API 07:34）
 card: 11/23 07:28:19 👀 見てください（返事不要） / この間にまとまった知らせ 2本
-ura: 下請け動作0／直近 07:25 Design oppon… 終、11/22 18:26 Fix proposal… 終、11/22 18:25 Fix proposal… 終／雲 較正の対局 走行中（07:22〜）・直近 07:28 自動検査と配信 成功、07:24 猫牌率の測り直し 成功、07:23 自動検査と配信 …
+ura: 下請け動作0／直近 07:25 Design oppon… 終、11/22 18:26 Fix proposal… 終、11/22 18:25 Fix proposal… 終／雲 自動検査と配信 走行中（07:33〜）・較正の対局 走行中（07:22〜）・直近 07:28 自動検査と配信 成功、07:24 猫牌率の測り…
 reply: 2026-11-23 07:34:05 枠 百五十四：影の常駐を立てる（課題 koushu-ops を数分に一度見に行く…
 replyBody: Frame 154 is done and the card is out. The shadow runner now starts itself, and a test issue has been picked up and closed. - **Runner:** the scheduled task `ClaudeShadowRun` runs every 3 minutes with
 wait: 1
