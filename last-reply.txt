@@ -1,10 +1,18 @@
-刻: 2026-11-23 03:39:43
-件名: 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子）で雲で測り直し、解説の文案を足す
+刻: 2026-11-23 06:39:18
+件名: 枠 百五十二：百四十九の設計の段1（影）を始める。影の走りをパネルに一行・非公開の課題置き場・API鍵の確かめ
 
-There's nothing new to start. The only inbox item was the 18:34 bridge bell from yesterday, and I've marked it handled.
+The shadow runner works, the private issue repository exists, and panel v223 is pushed. I've stopped here to wait for the cloud check on v223, so frame 152 isn't finished yet.
 
-- **Bridge doc:** its revision is still 394, which is my own last card write, so センコ hasn't added a frame since. I read it from a saved file that was cut off partway, so this rests on that revision number rather than a full read.
-- **Queue:** the ledger shows no steps, no cloud waits and nothing in the inbox.
-- **Waiting on you:** the question cards from earlier (印 y1122-2055, 2124, 2127, 2131, 2139, 2143, 2154).
+- **API key:** `ANTHROPIC_API_KEY` is not set in the environment, in the user or machine environment variables, in `~/.claude/settings.json`, or in the repository `.env` files. I checked only whether it exists, not its value. The runner repeats this check before every run and stops if the key is found.
+- **Private repository:** I created `kfsr148-art/koushu-ops` (private) with a `shadow` label. This is the name センコ needs for the GitHub write access.
+- **Shadow runner:** `~/.claude/shadow-run.js` takes one open `shadow` issue and runs it as a single read-only `claude -p` call. A separate check then decides done or not from the line `済みの条件: 含む:<字>` in the issue body. It writes only to the issue and to `shadow-last.json`, never to the real ledgers, the bridge or the cards.
+- **First trial (issue #1):** the frame read the frame 136 report and answered 20.92%. The check passed and the issue closed. It took 14 seconds, 3 turns and about $0.06.
+- **Panel v223:** it shows one line under the usage bar, for example "影の走り：済（課題 #1・14秒・$0.06）・06:35". Locally, syntax and `panel-check.js --static` pass (I added `shadowLine` to the expected element order). The cloud check is registered as a wait.
 
-Stopping here.
+Still to do:
+- **Panel confirmation:** once the cloud check passes, confirm the line shows up in `state.json` at the next watcher pass, then send the card.
+- **Allowance usage:** the 5-hour and weekly allowance use is not measured yet. One run is too small to see, so I'll measure it from the next frames.
+- **Running the shadow:** nothing runs the shadow automatically yet. For now it is started by hand with `node ~/.claude/shadow-run.js`.
+- **Next frame:** the first frame for stage 2 is your call after you've seen the shadow results.
+
+The report is `reports/y1123-0640-shadow.md`.
