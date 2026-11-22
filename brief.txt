@@ -4,11 +4,11 @@ subj: 枠 百十三・百十四の②③：国士・四暗刻の線を、こち�
 sNow: 測りの台本二本（yakuman-kokushi-rate.js・yakuman-suuankou-rate.js）を書く… (0/4)
 mikomi: 60分 開始 16:47 書いた 21:46 終わり 22:46
 omoteEnd: 23:03 (今の仕事 残り4段（始まり 16:47・見込み 60分（21:46 に書いた））＋順番待ち 1件×17分（直近24時間の35枠の中央値）・見込みと実測の比 0.13（直近24時間 7組・参考：今の仕事の終わりには掛けない）)
-uraEnd: なし (下請け 0本（1本 15分＝直近24時間 111本の中央値）・雲 0本)
+uraEnd: 21:52 (下請け 0本（1本 15分＝直近24時間 111本の中央値）・雲 2本（流れごと：雲で回す 1.7分＝直近30日 1本の中央値、自動検査と配信 2.5分＝直近24時間 5本の中央値）)
 rl: s 63% sr 22:20 w 85%
-fable: 58% リセット 11/23 19:59（API 21:40）
+fable: 58% リセット 11/23 20:00（API 21:50）
 card: 11/22 21:48:17 🙋 ヨシしてください / この間にまとまった知らせ 4本
-ura: 下請け動作0／直近 18:26 Fix proposal… 終、18:25 Fix proposal… 終、18:23 Fix proposal… 終／雲 走り0・直近 21:47 自動検査と配信 成功、21:42 自動検査と配信 成功、21:35 自動検査と配信 成功
+ura: 下請け動作0／直近 18:26 Fix proposal… 終、18:25 Fix proposal… 終、18:23 Fix proposal… 終／雲 雲で回す 走行中（21:49〜）・自動検査と配信 走行中（21:49〜）・直近 21:47 自動検査と配信 成功、21:42 自動検査と配信 成功、21:35 自動…
 reply: 2026-11-22 21:49:38 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子…
-replyBody: Pushed (`09eac4844`) and the cloud wait is registered. The cloud job is now running both measurement scripts for frames 113 and 114 (part ②). The watcher will wake me when it finishes. Then I'll read 
+replyBody: Pushed (`09eac4844`) and the cloud wait is registered. The cloud job is now
 wait: 1
