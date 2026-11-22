@@ -1,4 +1,16 @@
-刻: 2026-11-22 21:36:21
-件名: 枠 百四十九：枠を回す土台を作り替える設計と枠一つでの試し（百五十 課題1つ＝枠1つ・百五十一 済みを自分で決めない形を含む・今の仕組みは止めない）
+刻: 2026-11-22 21:49:38
+件名: 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子）で雲で測り直し、解説の文案を足す
 
-この段は実行しません。手順書の ~/.claude/job-steps.txt は作業ディレクトリの外にあり、最初に「この作業ディレクトリの中だけで」と指定されているためです。読み書きも、段の印（[x]・[雲]・[決]）の書き換えもしていません。続けるには、範囲を広げる許可をください。
+Pushed (`09eac4844`) and the cloud wait is registered. The cloud job is now running both measurement scripts for frames 113 and 114 (part ②). The watcher will wake me when it finishes. Then I'll read the results and write the explanation draft (part ③).
+
+**Done this stretch**
+- **Frame 149 (with 150 and 151):** the design and the one-frame trial are reported in `reports/y1122-2200-run-design.md`.
+  - **What worked:** a frame run as one `claude -p` call works. It took about 10 seconds and about $0.047.
+  - **The check:** a separate verifier closed the passing frame and sent back the failing one.
+  - **Still unverified:** how it behaves at a usage limit, long runs, and how much of the Max allowance it uses.
+- **Frame 136:**
+  - **Result:** the calibration re-measure on v1516 shows win, deal-in and draw rates unchanged within error. The attack share moved −1.74 points.
+  - **Why it moved:** only about −0.14 points of that comes from the shanten fix, which I found by running the same hands through the old and new body. The rest comes from other changes since 09-14.
+  - **Files:** the new record is `core-battle-log-10k-v1516.tsv`. The old record is untouched.
+
+**Waiting on you (cards already sent):** 2055, 2124, 2127, 2131, 2139, 2143.
