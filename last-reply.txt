@@ -1,18 +1,19 @@
-刻: 2026-11-23 06:39:18
+刻: 2026-11-23 06:49:34
 件名: 枠 百五十二：百四十九の設計の段1（影）を始める。影の走りをパネルに一行・非公開の課題置き場・API鍵の確かめ
 
-The shadow runner works, the private issue repository exists, and panel v223 is pushed. I've stopped here to wait for the cloud check on v223, so frame 152 isn't finished yet.
+Frame 152 stage 1 (the shadow run) is done and the card is out. The panel line is live and the cloud check passed. The published panel is v223, and the line already shows in `state.json`.
 
-- **API key:** `ANTHROPIC_API_KEY` is not set in the environment, in the user or machine environment variables, in `~/.claude/settings.json`, or in the repository `.env` files. I checked only whether it exists, not its value. The runner repeats this check before every run and stops if the key is found.
-- **Private repository:** I created `kfsr148-art/koushu-ops` (private) with a `shadow` label. This is the name センコ needs for the GitHub write access.
-- **Shadow runner:** `~/.claude/shadow-run.js` takes one open `shadow` issue and runs it as a single read-only `claude -p` call. A separate check then decides done or not from the line `済みの条件: 含む:<字>` in the issue body. It writes only to the issue and to `shadow-last.json`, never to the real ledgers, the bridge or the cards.
-- **First trial (issue #1):** the frame read the frame 136 report and answered 20.92%. The check passed and the issue closed. It took 14 seconds, 3 turns and about $0.06.
-- **Panel v223:** it shows one line under the usage bar, for example "影の走り：済（課題 #1・14秒・$0.06）・06:35". Locally, syntax and `panel-check.js --static` pass (I added `shadowLine` to the expected element order). The cloud check is registered as a wait.
+- **API key:** `ANTHROPIC_API_KEY` is not set in the environment, in the user or machine environment variables, in `settings.json`, or in any `.env`. I checked only that it exists, not its value. The runner stops if it ever appears.
+- **Private repository:** `kfsr148-art/koushu-ops` is created and private, with a `shadow` label. This is the name センコ needs for the GitHub write access, and it's on the bridge card.
+- **First shadow frame:** issue #1 ran in 14 seconds for about $0.06, passed the check and closed. The panel now shows "影の走り：済（課題 #1・14秒・$0.06）・06:35".
+- **Allowance use:** the effect on the Max allowance isn't measured yet. One run is too small to show, so I'll measure from the next frames.
+- **Real ledgers untouched:** the shadow doesn't write to the real ledgers, the bridge or the cards.
 
-Still to do:
-- **Panel confirmation:** once the cloud check passes, confirm the line shows up in `state.json` at the next watcher pass, then send the card.
-- **Allowance usage:** the 5-hour and weekly allowance use is not measured yet. One run is too small to see, so I'll measure it from the next frames.
-- **Running the shadow:** nothing runs the shadow automatically yet. For now it is started by hand with `node ~/.claude/shadow-run.js`.
-- **Next frame:** the first frame for stage 2 is your call after you've seen the shadow results.
+The shadow only runs when started by hand with `node ~/.claude/shadow-run.js`; nothing starts it automatically yet.
 
-The report is `reports/y1123-0640-shadow.md`.
+Questions for you (card 印 y1123-0649):
+- Which frame goes first in stage 2?
+- May I set up an automatic runner that starts the shadow?
+- Should センコ create frames directly as issues in `koushu-ops`?
+
+Report: `reports/y1123-0640-shadow.md`. No frames are left unstarted. Open question cards: 2055, 2124, 2127, 2131, 2143, 2154, 0649.
