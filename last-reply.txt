@@ -1,35 +1,6 @@
-刻: 2026-11-22 12:23:31
+刻: 2026-11-22 12:29:45
 件名: 枠 八十八：履歴の書き換え（甲）の支度（丸ごとの写し・書き換え clone・検証）
 
-使用量のリセットの後、強制押しの手前で止まりました。雲の自動検査などを止める操作が、権限の分類器に拒否されたためです。
+The fetch of the rewritten history is running (it exceeded 2 minutes and went to the background). Remote refs are unchanged, and no workflows are running.
 
-**ここまでに済んだこと**
-- 雲の書き換えの走り（44971544425）は成功しました。検証は全部 PASS です。
-  - main・stable・check-pass の tree は同一でした。
-  - 声 21,258 本の欠けは 0 で、抜いたパスの残りも 0 でした。
-  - 置き場は 1,979.5MB から 1,259.5MB に減ります（減 720MB）。
-- 二つの bundle を VAIO へ取って、どちらも verify が通りました。
-  - 元（全部の枝とタグを含む丸ごとの写し）：`C:/Users/user/Desktop/mahjong/rewrite-1122/run-44971544425/orig/original-all.bundle`（1,976,323,274 バイト）
-  - 書き換え後：`C:/Users/user/Desktop/mahjong/rewrite-1122/run-44971544425/rew/rewritten-all.bundle`（1,256,872,801 バイト）
-- 蔵の枝とタグは、書き換えの元と一致しています。
-  - main：`5b35f67d`
-  - stable：`5f739372`
-  - check-pass：`2b96d99d`
-
-**止まった所**
-- 拒否されたのは、`gh workflow disable`（自動検査と配信・雲で回す・声をm4aで作る・較正など 8 本）です。理由は「監視を弱める操作」とされました。
-- 迂回はしません。本人が直接許可したのは「全部の枝とタグを書き換えて強制押しする」までで、検査の流れを止めることは名指しされていないためです。
-
-**決めてほしいこと**
-- 止める目的は、強制押しの最中に check.yml が `check-pass` を旧い commit へ動かしたり、雲の書き戻しが main に積んだりして、書き換えが崩れるのを防ぐことです。
-- 案A：workflow の停止も許可する。押した後は全部 `gh workflow enable` で戻します。
-- 案B：止めずに、`git push --atomic --force-with-lease` だけで押す。間に誰かが押していれば、押しは弾かれて何も変わりません。
-
-**残り（私が持っている物）**
-- 強制押しと、押した後の確認。
-- 札の書き出し。
-- 枠 九十二、`state-decide.js` と `CLAUDE.md` の直し。
-
-**その他**
-- 枠 七十二・七十三は、03:41 に受領して済んでいます。今回の「読んでやって」は、新しくやることがありません。
-- Fable の下請け 4 本（枠 百六・百八・百九・百二）は、使用量の上限で途中で止まっています。リセット後に続きを頼めます。
+Once the fetch finishes, the next step is the atomic force-push with leases on every ref. That push is still waiting on your answer about stopping the cloud workflows, so I'm not stopping them. I'm using the lease-protected push instead (the case-B option above).
