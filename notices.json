@@ -13,6 +13,13 @@
     },
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795334771,
+        "message":  "枠 百二十七：百十五の②（Mortal を雲で試す）を台帳に入れ、使う重みの出どころと決まりを確かめる\n枠 百二十七：①百十五の②を台帳に入れた（未了：本人の決め待ち・重みの出どころ）／②重みの出どころを配布元のモデルカードで確かめた：使う予定の Yuchen1457/mortal-582500 は『Akagi 連携の継続チェックポイント』で元は Akagi 側の重み（Mortal 作者は重みを公開していない）・学習の元は書かれていず・『再配布は repository owner が確認』は配布者自身。正当と言える重みが無いので雲では回さず止めた。③一局の秒数・雲で何局かは測っていない（重みを取っていない）。本人に訊く：正当な重みの当てがあるか／無ければ百十五の②は取り下げ、代案は公開統計（枠 百三十）。次は枠 百二十八\nファイル: reports/y1122-1700-mortal-weights.md・orders-open.tsv\n実測: 雲は回していない・雀魂には触れていない・重みは取っていない",
+        "eid":  "e1795334768",
+        "pushedAt":  0
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795334295,
         "message":  "枠 百二十六：手で捌いた枠が台帳からこぼれる穴（百十三・百十四の②③・百十七〜百二十三の突き合わせ）\n枠 百二十六：①百十三・百十四の②③を台帳に入れた（百二十五の後の順番待ち）／②百十七〜百二十三と前の枠の残りを突き合わせ、台帳に無かった三つ（百十三・百十四の②③・百十二の②＝本人の決め待ち・雲側の ntfy＝八十八の後）を入れた（作法45・state-decide.js・job-steps の畳みは済）／③百二十四の札のあと着手しなかった訳＝frame-in が断られたまま何も待たずに閉じ、札が出ても窓を起こす物が無かった。frame-in の断り文に時計の待ちを立てる手を足した／あわせて count が同じ分の決め待ち行に受領行を巻き込む不具合を直した（作り値11件 PASS）。残り：枠 百二十七（受領済み）\nファイル: ~/.claude/job-sync.js・orders-open.tsv・reports/y1122-1650-ledger-spill.md\n実測: 作り値11件 PASS（偽の置き場）・node --check 通る・所要 約25分（見込み30分）",
         "eid":  "e1795334291",
@@ -285,13 +292,6 @@
         "pushedAt":  0
     },
     {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1795202411,
-        "message":  "枠 十三：state.json に panelView を足す\n一・二：見張りが state.json に panelView（頭の字・まとめて写すの残り・出した刻）を足す。組む所は panel-view.js 一つ（panel.html の headText と同じ決まりの写し）。ずれは panel-check ⑤の十六（panel.html の headText を実際に動かして384組を突き合わせ）が見張る。三：senkoReadAt だけで数えた旨を basis に入れた。四：作法44 十一に足した。常駐を起こし直した（起動 04:16:42）。\nファイル: panel-view.js・panel-check.js・CLAUDE.md・inbox-watch.ps1（~/.claude）・reports/y1121-0415.md\n実測: panel-check --static 全て PASS（⑤の十六 384組 同じ）。state.json に panelView が出た（04:16）。\n実機: なし（本人の画面は変えていない）。センコが state.json の panelView を読んで、パネルの頭の字を言えること。",
-        "eid":  "e1795202408",
-        "pushedAt":  0
-    },
-    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795196768,
         "message":  "枠 十一：橋の札を消した件・件名のずれ\n見えていた画面が 2 枚から 1 枚になりました。claude のプロセスも 2 本から 1 本へ、同じだけ終わっています。\n閉じられたか、こちらで止めたものです。残っている物は無いので、手は要りません。",
@@ -374,12 +374,5 @@
         "message":  "この間にまとまった知らせ 2本\n\n［👀 見てください（返事不要）］\n順番待ちを見えるようにする・指さすの名\n一：様子を写すに「順番待ち：〈届いた刻〉〈件名〉」を一行ずつ出す形にした（数え手は orders-count.js の waitRows 一つ・数と一覧は同じ行）。13:05 の枠と 13:01 の🪟の後ろ半分は残っていない（済：13:04/13:05 の枠は 15:36/15:40 に自動で結べ、後ろ半分は 16:10 の札 y1120-1610 で済。枠の印が入る前の枠なので札が遅れて見えた）。二：指さすは見出しの帯に名（data-pname）を持たせ、いちばん近い名を読む形にした（「header」→「見出しの帯」）。公開は panel v197。\nファイル: panel.html・panel-check.js・panel-ver.txt・orders-count.js・orders-count-test.js・foot-stats.js・reports/y1120-1800.md\n実測: 雲の検査（da80c118・パネルだけの回）：最初の走りは widget-check が公開側 cat-sleep-white.png の HTTP 503（一時・無関係）で落ち、落ちた段を再実行して成功。再実行の所要 4分25秒（check 3分38秒・配信 38秒）、素の所要は約5〜6分（枠Cの宿題・見込み約8分より短い）。仕事の名は check（種類:panel）で、見張りが jobs から panel を読めた。orders-count-test 15件 合い・panel-check ⑤の十三 PASS。\n実機: 様子を写すで写した字の「札の結び」の下に「順番待ち：11-20 14:19　…」の行が並ぶ／指さすで見出しの帯（猫と返事パネルの字のまわり）を押すと部品の名が「見出しの帯」／版の字が panel v197。\n\n［✅ 終わりました（返事不要）］\n写せます（1件）",
         "eid":  "e1795166415",
         "pushedAt":  1795166429
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1795165217,
-        "message":  "見込みの種類は走りの jobs から・関門が札を捨てる道を全部並べて揃える\n一：見込みと鳴らす敷居の種類を、雲の scope の答えで決める形にした。scope-pick.js が回の種類（honta/panel/report）を出し、check.yml の仕事の名に「check（種類:…）」「deploy（種類:…）」と載せ、見張りは待っている走りの jobs から読む（読めるまでは一番長い種類・読めた後に見込みを出し直す）。雲の走りで名が評価され、見張りが jobs から honta を読めたことを確かめた。／二：札を捨てる道を全部並べた（報告の表）。関門が止めた済んだ仕事の✅・😽（再起動の戻りなど）は捨てず控え（card-outbox・held）に置き、段の台帳が畳まれたら出す形に揃えた（2時間たてば注記つきで出す）。途中の札（⏳・🕒・🔗・同じ仕事の途中の終わりの札・「完了：着手」だけ）は今のまま載せない。\nファイル: .github/workflows/check.yml・scope-pick.js・scope-pick-test.js・kumo-wait.ps1・card-gate.js・ntfy-say.ps1・notify-record.ps1・watch-notify.ps1・reports/y1120-1725.md\n実測: 雲の検査（11fe2389・本体の回）成功 14分10秒。仕事の名は check（種類:honta）／deploy（種類:honta）で、kumo-kind-jobs.tsv に出所 jobs の行が入った。作り値 test-kind 10件・test-park 9件・test-fast 6件・test-cloud 4件・scope-pick 16件＋種類5件 すべて PASS。常駐は起こし直し済み。",
-        "eid":  "e1795165214",
-        "pushedAt":  1795165225
     }
 ]
