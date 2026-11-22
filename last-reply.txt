@@ -1,19 +1,9 @@
-刻: 2026-11-23 06:49:34
-件名: 枠 百五十二：百四十九の設計の段1（影）を始める。影の走りをパネルに一行・非公開の課題置き場・API鍵の確かめ
+刻: 2026-11-23 07:23:05
+件名: 枠 百五十三：記録の置き換え・傾きの取り直し（雲）・相手ありの測りの設計と雲・五つの印の本文を札に・作法46のstableの字
 
-Frame 152 stage 1 (the shadow run) is done and the card is out. The panel line is live and the cloud check passed. The published panel is v223, and the line already shows in `state.json`.
+The Fable design agent is running, and the `neko.yml` cloud run is still going. Both are waiting. I'm stopping here until one of them reports back.
 
-- **API key:** `ANTHROPIC_API_KEY` is not set in the environment, in the user or machine environment variables, in `settings.json`, or in any `.env`. I checked only that it exists, not its value. The runner stops if it ever appears.
-- **Private repository:** `kfsr148-art/koushu-ops` is created and private, with a `shadow` label. This is the name センコ needs for the GitHub write access, and it's on the bridge card.
-- **First shadow frame:** issue #1 ran in 14 seconds for about $0.06, passed the check and closed. The panel now shows "影の走り：済（課題 #1・14秒・$0.06）・06:35".
-- **Allowance use:** the effect on the Max allowance isn't measured yet. One run is too small to show, so I'll measure from the next frames.
-- **Real ledgers untouched:** the shadow doesn't write to the real ledgers, the bridge or the cards.
+- **Done:** I fixed the stable-version text in `CLAUDE.md` (v1516, commit `c53acc71e`). I replaced `core-battle-log-10k.tsv` with the v1516 record; the old one stays in git history. I also pulled the full text of the five open question cards (2055, 2124, 2127, 2131, 2154) into one file for the card.
+- **Waiting:** `neko.yml` is re-measuring the base curve from the replaced record (30,000 child hands, not 50,000 random ones). The Fable agent is writing the opponent-included yakuman design in `reports/y1123-0740-aite-design.md`. I'll post the card once both results are in.
 
-The shadow only runs when started by hand with `node ~/.claude/shadow-run.js`; nothing starts it automatically yet.
-
-Questions for you (card 印 y1123-0649):
-- Which frame goes first in stage 2?
-- May I set up an automatic runner that starts the shadow?
-- Should センコ create frames directly as issues in `koushu-ops`?
-
-Report: `reports/y1123-0640-shadow.md`. No frames are left unstarted. Open question cards: 2055, 2124, 2127, 2131, 2143, 2154, 0649.
+Fable usage isn't measured yet, because the agent hasn't finished.
