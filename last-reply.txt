@@ -1,6 +1,9 @@
-刻: 2026-11-22 12:29:45
+刻: 2026-11-22 12:31:10
 件名: 枠 八十八：履歴の書き換え（甲）の支度（丸ごとの写し・書き換え clone・検証）
 
-The fetch of the rewritten history is running (it exceeded 2 minutes and went to the background). Remote refs are unchanged, and no workflows are running.
+前の取り込み（`git fetch`）は、170 秒の上限で途中で切れていました。書き換え後の history は、まだ VAIO の git に入っていません。切り離して走らせ直しました（pid 8560）。終わり待ちは登録済みで、見込みは 12 分です。
 
-Once the fetch finishes, the next step is the atomic force-push with leases on every ref. That push is still waiting on your answer about stopping the cloud workflows, so I'm not stopping them. I'm using the lease-protected push instead (the case-B option above).
+- **終わったら**：`fetch.log` で、取り込んだ 8 本（main・stable・check-pass・`backup-main-0918`・`backup-main-1111`・`keep-voices`・`claude/git-push-lock-alignment-lzcte6`・rescue タグ）の頭が、書き換えの検証と一致するかを確かめます。
+- **次に**：走りが動いていないことと、蔵の頭が元のままなことを確かめて、リース付きの強制押し（`git push --atomic --force-with-lease`）で全部の枝とタグを押します。
+
+雲の流れを止める操作は分類器に拒否されたので、止めずに押します。間に誰かが押していれば、押しは弾かれて何も変わりません。
