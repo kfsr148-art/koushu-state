@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 検査中
+head: 検査中、、、。
 subj: 枠 百五十二：百四十九の設計の段1（影）を始める。影の走りをパネルに一行・非公開の課題置き場・API鍵の確かめ
-sNow: API鍵の確かめ（環境・設定・.env）と非公開課題置き場の手段を調べる (0/4)
+sNow: 試して札を出す (3/4)
 mikomi: 60分 開始 06:32 書いた 06:33 終わり 07:33
-omoteEnd: 07:48 (今の仕事 残り4段（始まり 06:32・見込み 60分（06:33 に書いた））＋順番待ち 1件×15分（直近24時間の25枠の中央値）・見込みと実測の比 15.33（直近24時間 2組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: 07:48 (今の仕事 残り1段（始まり 06:32・見込み 60分（06:33 に書いた））＋順番待ち 1件×15分（直近24時間の25枠の中央値）・見込みと実測の比 15.33（直近24時間 2組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 15分＝直近24時間 70本の中央値）・雲 0本)
 rl: s 4% sr 08:30 w 86%
 fable: 58% リセット 19:59（API 06:30）
 card: 11/23 03:27:36 🪟 窓を起こす待ち手が居ません（窓は手待ち・受… / 窓を起こす待ち手が居ません（窓は手待ち・受信箱の未処理 1件・雲待ち なし）
 ura: 下請け動作0／直近 11/22 18:26 Fix proposal… 終、11/22 18:25 Fix proposal… 終、11/22 18:23 Fix proposal… 終／雲 走り0・直近 11/22 21:56 自動検査と配信 成功、11/22 21:53 札と状態の配信 成功、11/22 21:50…
-reply: 2026-11-23 03:39:43 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子…
-replyBody: There's nothing new to start. The only inbox item was the 18:34 bridge bell from yesterday, and I've marked it handled. - **Bridge doc:** its revision is still
+reply: 2026-11-23 06:39:18 枠 百五十二：百四十九の設計の段1（影）を始める。影の走りをパネルに一行・非公開…
+replyBody: The shadow runner works, the private issue repository exists, and panel v223 is pushed. I've stopped here to wait for the cloud check on v223, so frame 152 isn't finished yet. - **API key:** `ANTHROPI
 wait: 1
