@@ -1,19 +1,16 @@
-刻: 2026-11-23 07:34:05
-件名: 枠 百五十四：影の常駐を立てる（課題 koushu-ops を数分に一度見に行く軽い形）・課題で枠を直に立てる形・段2の最初の枠
+刻: 2026-11-23 07:49:01
+件名: 枠 百五十五：五つの印の選ぶ文案の本文を札に出し直す＋BASE_CURVE を新しい値に（v1519）＋相手あり測り甲案の実装（雲は一段目まで）
 
-Frame 154 is done and the card is out. The shadow runner now starts itself, and a test issue has been picked up and closed.
+The opponent-included measurement is running in the cloud, and I've stopped until it finishes. The `v1519` cloud check is still running too.
 
-- **Runner:** the scheduled task `ClaudeShadowRun` runs every 3 minutes with no window. It is light on purpose:
-  - **Empty check:** with no open shadow issue it ends in about 1 second.
-  - **No double run:** a lock stops a second copy from starting.
-  - **Quiet hours:** it does nothing between 02:55 and 04:45.
-  - **API key:** it refuses to run if `ANTHROPIC_API_KEY` is ever set.
-  - **Offline:** if `gh` fails, it treats that as no issue and exits quietly.
-- **Test:** I created issue #2 the way センコ would. The runner picked it up within about 1–2 minutes and finished in 8 seconds for about $0.054. The check passed and the issue closed.
-- **Panel line:** `shadow-last.json` is updated, and the panel line (「影の走り：済（課題 #2・8秒・$0.05）・07:33」) should appear at the next watcher pass.
-- **センコ posting frames as issues:** `koushu-ops` is already open to their GitHub write access. The bridge and bell stay as they are during the shadow period.
-- **Stage 2:** frame 153's part 3 already finished the old way, so the next light frame that arrives becomes the first stage-2 frame.
+Frame 155's remaining parts:
 
-The shadow is read-only, so frames that need writing wait for stage 3. Report: `reports/y1123-0735-shadow-daemon.md`.
+- **Question texts:** the choice texts for the five open cards (2124, 2127, 2131, 2154, 2055) were out as the first half, in one card with a heading per card.
+- **Base curve (v1519):** `BASE_CURVE` now holds the new values from the 30,000-hand re-measure. The `data-ver`, `verTag` and `ver.txt` all say 1519, and `serifu.txt` matches. It is pushed but not yet confirmed: the cloud check is still running and the published `ver.txt` still said 1518 at 07:47.
+- **Opponent-included measurement (design A):** the script is `scratchpad/jobs/yakuman-aite.js`, and the first stage is running in the cloud as run 45079773187.
+  - **Setup:** one seat per game is dealt a built hand, and that seat plays three ways: push, fold on riichi, and the normal machine player. The other three seats are the normal machine players. The three ways use the same wall.
+  - **First stage:** it covers kokushi with 10 and 11 types and four-concealed-triplets with 3 triplets + 2 pairs, 3 triplets + 1 pair, and 2 triplets + 3 pairs.
+  - **Local checks:** I confirmed the three ways get the same hand and seat (5 of 5 frames). I also fixed a crash when a drawn game continues into a repeat round.
+- **Sample size:** a local game took about 3 seconds, so one cloud run may give only about 100 games per frame and way. The design said about 700 are needed for ±3 points, so I expect to need several runs. I'll decide after seeing this run's table.
 
-No received frames are left. Open question cards: 2055, 2124, 2127, 2131, 2154, 0726.
+When the run ends I'll read the table, confirm `v1519` is published, and post the frame 155 second-half card.
