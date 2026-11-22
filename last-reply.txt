@@ -1,9 +1,20 @@
-刻: 2026-11-23 07:23:05
+刻: 2026-11-23 07:27:08
 件名: 枠 百五十三：記録の置き換え・傾きの取り直し（雲）・相手ありの測りの設計と雲・五つの印の本文を札に・作法46のstableの字
 
-The Fable design agent is running, and the `neko.yml` cloud run is still going. Both are waiting. I'm stopping here until one of them reports back.
+Frame 153 is done and the card is out. All five parts are finished, and `koushu-handan.html` is unchanged.
 
-- **Done:** I fixed the stable-version text in `CLAUDE.md` (v1516, commit `c53acc71e`). I replaced `core-battle-log-10k.tsv` with the v1516 record; the old one stays in git history. I also pulled the full text of the five open question cards (2055, 2124, 2127, 2131, 2154) into one file for the card.
-- **Waiting:** `neko.yml` is re-measuring the base curve from the replaced record (30,000 child hands, not 50,000 random ones). The Fable agent is writing the opponent-included yakuman design in `reports/y1123-0740-aite-design.md`. I'll post the card once both results are in.
+- **Record:** `core-battle-log-10k.tsv` now holds the v1516 re-measure (commit 558634b07). The old record stays in git history.
+- **Base-curve re-measure:** I ran it in the cloud on the replaced record, 30,000 child hands re-judged on v1518. These are battle-record hands, not 50,000 random ones.
+  - The attack-judgment rate fell 1–2 points overall. For example, 猫牌 at 2 tiles went 24.98 → 22.54, 枝豆 at 3 pairs 46.37 → 43.52, and AI at 0 tiles 61.40 → 56.86.
+  - The shares of hands in each bucket barely moved. `BASE_CURVE` in the body is not rewritten.
+- **Five question cards:** the full text of 2055, 2124, 2127, 2131 and 2154 is in the card, one heading per stamp.
+- **作法46:** the stable text now reads v1516 (c53acc71e).
+- **Opponent-included measurement design:** `reports/y1123-0740-aite-design.md`, written by a Fable subagent.
+  - It recommends three machine-played opponents plus one seat aiming at a yakuman, in three arms: push through, fold when a riichi comes, and the normal machine player. Implementation is about 70 minutes plus about 75 minutes of cloud time for the first stage.
+  - That one call used about 130,000 tokens over a little more than 2 minutes. I couldn't measure how much it took off the weekly allowance, so the one-line cost note you asked for is only that.
 
-Fable usage isn't measured yet, because the agent hasn't finished.
+New questions (印 y1123-0726):
+- Should the new base-curve values go into `BASE_CURVE`? That would be v1519, numbers only.
+- Should I implement the opponent-included measurement now? It would be Sonnet, about 70 minutes.
+
+No received frames are left. Open question cards: 2055, 2124, 2127, 2131, 2154, 0649, 0726.
