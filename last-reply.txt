@@ -1,16 +1,31 @@
-刻: 2026-11-22 21:49:38
+刻: 2026-11-22 21:54:45
 件名: 枠 百十三・百十四の②③：国士・四暗刻の線を、こちらの条件（13枚・赤5入り・子）で雲で測り直し、解説の文案を足す
 
-Pushed (`09eac4844`) and the cloud wait is registered. The cloud job is now running both measurement scripts for frames 113 and 114 (part ②). The watcher will wake me when it finishes. Then I'll read the results and write the explanation draft (part ③).
+Frames 113 and 114 (parts ② and ③) are finished and reported.
 
-**Done this stretch**
-- **Frame 149 (with 150 and 151):** the design and the one-frame trial are reported in `reports/y1122-2200-run-design.md`.
-  - **What worked:** a frame run as one `claude -p` call works. It took about 10 seconds and about $0.047.
-  - **The check:** a separate verifier closed the passing frame and sent back the failing one.
-  - **Still unverified:** how it behaves at a usage limit, long runs, and how much of the Max allowance it uses.
-- **Frame 136:**
-  - **Result:** the calibration re-measure on v1516 shows win, deal-in and draw rates unchanged within error. The attack share moved −1.74 points.
-  - **Why it moved:** only about −0.14 points of that comes from the shanten fix, which I found by running the same hands through the old and new body. The rest comes from other changes since 09-14.
-  - **Files:** the new record is `core-battle-log-10k-v1516.tsv`. The old record is untouched.
+- **国士 (kokushi):** the win rate on 18 draws, playing alone, rises with the number of different terminal/honor tile types in the starting hand.
 
-**Waiting on you (cards already sent):** 2055, 2124, 2127, 2131, 2139, 2143.
+| Types in the hand | Win rate |
+|---|---|
+| 9 | 4.2% |
+| 10 | 9.7% |
+| 11 | 21.7% |
+| 12 | 47.3% |
+| 13 | 99.9% |
+
+  Whether the hand also has a pair of those tiles barely matters.
+- **四暗刻 (suuankou), self-draw wins only:**
+
+| Starting hand | Win rate |
+|---|---|
+| 3 triplets + 2 pairs | 47.5% |
+| 4 triplets, single wait | 38.1% |
+| 3 triplets + 1 pair | 20.6% |
+| 2 triplets + 3 pairs | 17.8% |
+| few pairs | 1–2% |
+
+- **Limits:** the simulation has no opponents, riichi calls or deal-ins. These numbers are an upper bound, so they are not yet grounds for moving the yakuman thresholds. The explanation text for frame 101 is drafted in `reports/y1122-2255-yakuman-rate.md` (three drafts, not applied).
+- **What I changed:** nothing in `koushu-handan.html` or the judgment logic.
+- **Your questions:** the card with the new questions is 印 y1122-2154: whether to put the explanation drafts into frame 101, and whether to add a run with opponents. Open questions from earlier cards (y1122-2055, 2124, 2127, 2131, 2139, 2143) are still unanswered.
+
+No frames I've received are left unstarted.
