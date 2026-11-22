@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🪟 窓を起こし直しました（固まり）",
+        "time":  1795159516,
+        "message":  "台帳に走っている枠があるのに、足跡が 24分ぶん増えていません。\n見たもの … hook.log（と、有れば窓の出しの記録）の最終書き\n敷居 10分／いま 24分\n\n落として ClaudeCodeAtLogon で起こし直しました。記録は ~/.claude/inbox-watch.log。\n",
+        "eid":  ""
+    },
+    {
         "title":  "🔁 落とします（定時）",
         "time":  1795158014,
         "message":  "定時の再起動（枠 2026-11-20 15・11-20 16:00）\n空き 3917MB ／ claude 1本・私用 698MB\n空きメモリ 3917MB ／ 全体 8071MB\n見送り 2/3回\n最後の更新：2026-11-20 14:41:23  claude update：終了コード 0・Successfully updated from 2.1.328 to version 2.1.329（78秒）\n台帳の未了0・走っている道具なし・押し残し0［台帳の未了 120件（訳にしない）・ヨシ待ち 3件（訳にしない）］\n60秒後に落ちる。戻りは「✅ 戻りました（再起動から）」で知らせる。\n",
@@ -247,10 +253,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959649,
         "message":  "声をAACで作る：部品の雲の走りを待っている（v1506・声の詰め方を変える）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: AAC 48kbps に決定（今の ADPCM の0.53倍・24kHzのまま・つなぎのずれ0）。道具（voice-m4a.yml・tools/voice-m4a.js・voice-plan）を push し、部品の声を雲で作成中。本体の写し w10 に m4a から読む再生を当て済み（構文 NG 0）。次：convert→dial→本体への取り込み（m4a の名簿・check・pack-site の直し）→Safari 確認（macOS の WebKit）→公開の荷の数え。\nファイル: .github/workflows/voice-m4a.yml tools/voice-m4a.js voice-plan/ pack-site.js scratchpad/w10"
-    },
-    {
-        "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
-        "time":  1794944224,
-        "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
     }
 ]
