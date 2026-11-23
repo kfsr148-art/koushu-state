@@ -1,22 +1,10 @@
-刻: 2026-11-23 10:43:02
-件名: 枠 百五十九：週の枠が残りわずか（Fableを含む）。2131の書き広げは20:00の後・他は今進める・95%で止まる
+刻: 2026-11-23 11:00:01
+件名: 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
 
-Frames 157, 159 and 160 are finished, with cards on the panel and one combined card on the bridge. Nothing I've received is left. 2131 waits until after the 20:00 reset, as 159 said.
+Frame 167 is done: the shelf has a new issue. I created #8 in `koushu-ops` with the 棚 label (usual type, measuring in the cloud, about 3%). It carries your text, its finish condition and the bridge-frame mark, and the card and bridge note are out.
 
-**Stage 2 results (opponents present, about 190 games per frame and arm):**
-- **Kokushi:** the shape that matters is how many different terminal/honor tile types you hold. At 9 types it wins about 2%, so it isn't worth chasing. At 10 types it wins about 10%, at 11 about 27% and at 12 about 75%. Pushing or folding doesn't change the win rate compared with the normal machine player; pushing only raises deal-ins (at 10 types: 34.5% pushing, 23.0% folding, 10.1% machine).
-- **Four concealed triplets:** the normal machine player is best. With 3 triplets + 2 pairs it averaged 17,871 points, against 13,693 for pushing. Shapes with 2 or fewer triplets win only a few percent and lose points when pushed.
-- **Skipping rons (frame 160, Fable's design):** the threshold and expected-value arms score about the same as pushing. Always skipping raises the yakuman rate to 32.7% but drops points to 10,301.
+When it runs, it adds a "always discard on 九種九牌" arm at 9, 10 and 11 types, and counts how often the machine player discards at 10 types. If playing on turns out better, I'll ask before changing the lookout-tower answer or the advice wording.
 
-The rewritten explanation drafts, with these numbers, are in the 157 card and `reports/y1123-1040-aite-final.md`. They are not in the body's help text yet.
+The shelf now holds 5 issues, about 33% of a week. Weekly use is 90%.
 
-**Other results:**
-- **2124:** the choices are already in the body and live (v1520).
-- **2127 (kuitan):** 乙 was chosen. For hands with 0–1 yaochu tiles, 8 of 17 wins were naki tanyao (47%).
-- **Voice double-reading:** none left; I checked all 23,677 voice-script texts.
-- **159:** the card lists what's postponed (the 2131 expansion, with its size estimate) and what's done. Weekly use is 90%, so the 95% stop hasn't triggered.
-- **160:** the card carries both Fable answers, including the recommended way for センコ to post issues.
-
-New question (印 y1123-1041): may the kokushi/four-triplets explanation go into frame 101's help text, and is the wording right?
-
-Open question cards: 0649, 0726, 0814, 0927, 1041.
+Open question cards: 0649, 0726, 0814, 0927, 1041. Nothing received is left.
