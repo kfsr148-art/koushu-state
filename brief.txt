@@ -4,11 +4,11 @@ subj: 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時
 sNow:  (1/1)
 mikomi: 15分 開始 10:15 書いた 10:17 終わり 10:32
 omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の31枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
-uraEnd: 10:27 (下請け 0本（1本 2分＝直近24時間 52本の中央値）・雲 1本（流れごと：雲で回す 13.9分＝直近30日 2本の中央値）)
+uraEnd: 10:27 (下請け 0本（1本 2.1分＝直近24時間 51本の中央値）・雲 1本（流れごと：雲で回す 13.9分＝直近30日 2本の中央値）)
 rl: s 27% sr 13:50 w 90%
 fable: 60% リセット 20:00（API 10:16）
-card: 11/23 10:18:15 🙋 ヨシしてください / この間にまとまった知らせ 3本
+card: 11/23 10:22:17 ✅ 終わりました（返事不要） / 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）…
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 雲で回す 走行中（10:13〜）・直近 10:12 札と状態の配信 成功、10:10 札と状態の配信 成功、10:06 札と状態の配信 成功
 reply: 2026-11-23 10:17:49 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1…
-replyBody: Frame 166 is done and its card is out. The shelf's dispatcher runs as practice swings only, with your three answers applied: - **Window:** it only acts from 8 hours to 1 hour before the weekly reset. 
+replyBody: Frame 166 is done and its card is out. The shelf's dispatcher runs as practice swings only, with your three answers applied: - **Window:** it only acts from 8 hours to 1 hour before the weekly rese
 wait: 0
