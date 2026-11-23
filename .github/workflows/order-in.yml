@@ -55,7 +55,10 @@ jobs:
           EOF
           # heredoc の字下げを外す
           sed -i 's/^          //' /tmp/prompt.txt
-          claude -p "$(cat /tmp/prompt.txt)" --allowedTools "Read,Write,Edit,Glob,Grep,Bash(git:*),Bash(node:*),Bash(ls:*),Bash(cat:*),Bash(mkdir:*),Bash(date:*)" --max-turns 40 --output-format text
+          claude --version
+          claude -p "$(cat /tmp/prompt.txt)" --allowedTools "Read,Write,Edit,Glob,Grep,Bash(git:*),Bash(node:*),Bash(ls:*),Bash(cat:*),Bash(mkdir:*),Bash(date:*)" --max-turns 40 --output-format stream-json --verbose > /tmp/run.jsonl 2> /tmp/run.err || echo "claude -p が失敗扱いで終わった（rc=$?）"
+          grep -a '"type":"result"' /tmp/run.jsonl | tail -n 1 | cut -c1-400 || true
+          tail -n 3 /tmp/run.err | cut -c1-300 || true
       - name: 札が書けたかを確かめる
         run: |
           f="senko/cards/${{ steps.t.outputs.stamp }}.md"
@@ -64,16 +67,22 @@ jobs:
             printf '枠の結果：札が書かれなかった\n\n未了：claude-code-action が札を書かずに終わりました（走りを見てください）。\n' > "$f"
           fi
           echo "札: $f"; head -n 6 "$f"
-      - name: 札を押して配信を起こす
+      - name: 走りの控えを札に足し、rl と札の一覧を更新して押し、配信を起こす
         run: |
           git config user.name "koushu-order-bot"
           git config user.email "koushu-order-bot@users.noreply.github.com"
-          git add senko/cards
-          git commit -q -m "枠の札 ${{ steps.t.outputs.now }}（雲で実行）" || { echo "押す物が無い"; exit 0; }
+          f="senko/cards/${{ steps.t.outputs.stamp }}.md"
+          cp "$f" /tmp/card.md
           for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            mkdir -p senko/cards && cp /tmp/card.md "$f"
+            node tools/order-finish.js /tmp/run.jsonl "$f" --apply
+            git add senko/cards state.json notices.json
+            git commit -q -m "枠の札 ${{ steps.t.outputs.now }}（雲で実行・走りの控えと rl を付けた）" || { echo "押す物が無い"; exit 0; }
             if git push -q origin HEAD:main; then echo "押した"; break; fi
-            git pull -q --rebase origin main || true; sleep 4
+            echo "押せなかった（$i 回目）→ 最新の main へ載せ直す"; sleep 4
           done
+          cp "$f" /tmp/card-final.md 2>/dev/null || true
           gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY" || true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
