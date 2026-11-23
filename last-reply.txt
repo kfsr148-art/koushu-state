@@ -1,16 +1,15 @@
-刻: 2026-11-23 12:41:50
-件名: 枠 百八十四：棚 #10 に足す（ヨシの釦と橋の答えの二重を防ぐ）
+刻: 2026-11-23 12:44:06
+件名: 枠 百八十五：橋の『窓へ（枠）』の受領済み・札済みの枠を『済んだ枠』へ移す（週93%のため棚へ回す）
 
-Frames 181 through 184 are done, each with its card. All four are working at the script level; the real センコ→shelf route (181) hasn't been used yet. Weekly use is 93%, with 95% as the stop line. Nothing received is left.
+Frame 185 is received, not done. I put the job on the shelf as issue #13, to run after the 20:00 weekly reset. The card is out.
 
-- **181 (shelf intake without waking me):** センコ writes shelf items into `senko/shelf-in.md` on the `senko` branch, one per block with 題/本文/型/見積もり/済みの条件. When the branch head changes, `senko-peek.js` checks whether `bell.txt` changed.
-  - **Real bell:** it wakes the window as before.
-  - **Shelf-only change:** it creates the shelf issues in `koushu-ops` by script. It doesn't wake me, post a card or add a queue entry. Duplicates are stopped by a fingerprint at the end of the issue body, a log file and a search of existing issues.
-  - **Checks:** my five fake-environment checks passed: first run, shelf-only addition, same item twice, return to an earlier form, bell change. The watcher was restarted at 12:36:02.
-  - **Public:** `koushu-state` is public, so whatever is in `shelf-in.md` is public.
-  - **Not tried yet:** the real route, until センコ writes the first `shelf-in.md`.
-- **182 (received-frames line in the digest):** `senko/digest.md` now has a line "受領：最後に受け取った枠 N（刻）／まだ受け取っていない枠：…". It is computed from the ledger on every push. It showed 12:36 as "not yet received" until I processed that bell.
-- **183 (digest in the commit message):** the digest's whole text is now in the commit message of each digest push, so `list_commits` with `path=senko/digest.md` and `perPage=1` reads it all. The first line stays "state.json：いまの様子を更新". At 12:40:03 it showed zero cards, because センコ had moved the read stamp to 12:39:30 and the older cards dropped out.
-- **184 (answered-mark rule on shelf issue #10):** added to the ヨシ-button issue: the watcher remembers which pending marks already have an answer, drops a second answer, and sets the button to 答え済み. This card went the quiet way, as a shelf-only change.
+- **Why not now:** weekly use is 93%. The job means reading about 1,400 blocks in sections, matching each frame's receipt and card, moving them while checking a hash before and after, and it would likely stop partway on what's left today. Frame 159's rule is not to start big new work near 95%.
+- **Not a script job:** the bridge document can only be written through my window's Claude Docs tool, not by the watcher's scripts alone. So the move is a window job that uses weekly usage. The daily repeat has to be a shelf issue I get woken for, not a standalone script.
+- **Issue #13:** labelled 棚 and 棚-戻りの後, usual type, about 6%. It notes the section-by-section read, the unchanged-content move, and the card write target id, `mtwtpzz7n17.94`.
+- **Question (印 y1123-1243):** do you want one pass in the window after the reset and then a daily run when I'm idle? Or should センコ create the "済んだ枠" section first and give me its id, with the moving still done by me?
 
-Open question cards: 0649, 0726, 0814, 0927.
+**Frame 181 confirmed live:** センコ wrote to `senko/shelf-in.md` and the script created issue #12 (a design to put the job list into one `koushu-ops` issue, read-only) at 12:41:57. It didn't wake me and posted no card.
+
+Weekly use is 93%. Nothing received is left.
+
+Open question cards: 0649, 0726, 0814, 0927, 1243.
