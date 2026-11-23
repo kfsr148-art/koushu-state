@@ -3,12 +3,12 @@ head: 作業中、、、。
 subj: 枠 百七十四：棚 #10 に足す＝指さすで押した部品の名を state.json に載せる
 sNow:  (1/1)
 mikomi: 5分 開始 11:43 書いた 11:44 終わり 11:49
-omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: 12:00 (今の仕事なし＋順番待ち 1件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 38% sr 13:50 w 91%
-fable: 60% リセット 19:59（API 11:38）
+fable: 60% リセット 19:59（API 11:48）
 card: 11/23 11:46:10 ✅ 終わりました（返事不要） / 枠 百七十四：棚 #10 に足す＝指さすで押した部品の名を state.json に載せる
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
 reply: 2026-11-23 11:44:22 枠 百七十四：棚 #10 に足す＝指さすで押した部品の名を state.json…
 replyBody: Frame 174 is done and its card is out. I added your 指さす request to shelf issue #10 and read it back; it stays on the shelf, nothing started. When the 指さす (point) button is pressed, the part's name goe
-wait: 0
+wait: 1
