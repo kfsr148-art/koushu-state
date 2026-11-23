@@ -49,7 +49,7 @@ jobs:
           cat > /tmp/prompt.txt <<EOF
           あなたは koushu-handan（麻雀の攻守判断のアプリ）の仕事を、窓を通さず雲で一件ずつ実行する係です。
           一、./senko/order-in.md を読み、そこに書かれた枠（本人の決め）を実行してください。やる範囲は枠に書かれた物だけです（頼まれていない改善はしない）。
-          二、koushu-handan は ./handan/ に取得してあります。読むのも調べるのも書くのもここで行ってください。koushu-handan.html を変える枠は、./handan/.claude/skills/koushu-handan-dev/SKILL.md と ./handan/CLAUDE.md の作法に従ってください。koushu-handan へ git push してよい鍵が付いています。押す時は ./handan/CLAUDE.md と SKILL.md の作法（版の三箇所の同時更新・構文検査・commit メッセージ）に従い、枠が『使い捨ての枝』など押す先を指定している時はその枝だけに押して main には触らないでください。押した commit の sha（と枝の名）を札に書いてください。【枠 二百二十四の間だけ】枠の冒頭に「この枠は main へ押してよい」とある時は、枠に書かれた検査が全部通った場合に限り main へ押してよい（通らなければ押さず、札に理由を書く）。鍵そのものは札にもログにも出さないでください。
+          二、koushu-handan は ./handan/ に取得してあります。読むのも調べるのも書くのもここで行ってください。koushu-handan.html を変える枠は、./handan/.claude/skills/koushu-handan-dev/SKILL.md と ./handan/CLAUDE.md の作法に従ってください。koushu-handan へ git push してよい鍵が付いています。押す時は ./handan/CLAUDE.md と SKILL.md の作法（版の三箇所の同時更新・構文検査・commit メッセージ）に従い、枠が『使い捨ての枝』など押す先を指定している時はその枝だけに押して main には触らないでください。押した commit の sha（と枝の名）を札に書いてください。鍵そのものは札にもログにも出さないでください。
           三、終わったら札を一枚、./senko/cards/${STAMP}.md に書いてください。形は：一行目に題（『枠 〈名〉の結果』）、空行のあと、した事（二文以内）、触ったファイル、確かめた事、残り（無ければ『残り0件』）。できなかった事は『未了：理由』と書き、黙って落とさないでください。
           四、秘密（鍵・トークン・ntfy の話題名）は札にもファイルにも書かないでください。
           EOF
