@@ -37,6 +37,13 @@
     },
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795396937,
+        "message":  "枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）\n\n完了: 枠 百六十五：『返事パネル』の字の下の空きに、今走っている仕事一つの週の使用量を出す（panel v226・雲の検査 success・公開 panel-ver.txt 226）。見込み＝赤の太字『見込み 約N%』（似た見込み時間の終わった仕事3件以上の実測の中央値から・実測が無い間は『見込み —』）／今まで＝灰の小さい字『今まで M%』（仕事の始まりの週%との差・1%未満は『1%未満』）／仕事が無い時は出さない・金額は出さない。材料：見張りの呼び（panel-view.js）が ~/.claude/job-week.json に始まりの週%を控え、仕事が終わるたび job-week-history.tsv に（見込み分・増えた週%・経過分）を一行貯める（棚の見積もりの学びにも使う）。state.json 実地：今の仕事に『見込み —・今まで 1%未満』が載り、始まりの週は 90%。週%は整数なので粗い\nファイル: panel.html・panel-core.js・panel-view.js・panel-ver.txt・panel-check.js\n実測: 手元 panel-check --static 全PASS（週の使用量の作り値5通り）／雲 check.yml success／公開 panel-ver.txt 226／state.json の panelView.weekJob 実地\n実機: 公開のパネルで猫が走っている間、『返事パネル』の字のすぐ下に赤の太字の『見込み —』（実測が3件たまるまで）とその下に灰色の『今まで N%』が出る。仕事が無い時は出ない。版 panel v226",
+        "eid":  "e1795396934",
+        "pushedAt":  0
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795395401,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n写せます（52件）\n\n［✅ 終わりました（返事不要）］\n枠 百六十四：16:47の行（雲側ntfy三か所）は甲だが今はやらず棚へ・台帳の行を『棚へ移した』で閉じる・センコが課題を立てる道は橋の『影の課題』の枠\n\n完了: 枠 百六十四：一、16:47 の行は甲（雲側の ntfy：check.yml 二か所と release-stable.ps1:111 を push-plan に通す）を、今はやらず棚へ移した：koushu-ops に印『棚』の課題 #7（型ふだん・見積もり約4%・済みの条件と橋枠の印つき）を立て、台帳の 2026-11-22 16:47:42 の行を『済（棚へ移した：koushu-ops #7・枠 百六十四）』で閉じた（台帳は .bak-20261123-1647 に控えた）。これで順番待ちの 16:47 の行は無くなり、見込みが延び続ける事は止まる。二、センコが課題を立てる道は、橋の『影の課題』の枠（題：／本文：／済みの条件:）で。窓が合図を受けた時に gh issue create で koushu-ops に立てる。二重は本文末の『橋枠:』印で防ぎ、枠の頭が『棚へ』の時は印を『棚』にする。この手順を今から守る（作法44 の字は変えていない）\nファイル: koushu-ops 課題 #7・台帳 orders-open.tsv（.bak 付き）\n実測: gh issue create で #7 を確かめた／台帳の行の状態を『済』に替えた（行は一本だけ）",
         "eid":  "e1795395399",
@@ -309,13 +316,6 @@
         "pushedAt":  1795295360
     },
     {
-        "title":  "🪟 異常です（控えの預けが落ちました）",
-        "time":  1795293905,
-        "message":  "控えの預け（ClaudeHomeBackup・05:00）が今日の分を押せていません。\n最後に押せた日：2026-11-20\n記録の末尾：\n2026-11-22 05:01:01\thome-backup\t拾いが落ちた（終了コード -1）。45秒置いて一度だけ打ち直す\n2026-11-22 05:02:08\thome-backup\t終了コード 128：warning: in the working copy of \u0027after-reboot.ps1\u0027, LF will be replaced by CRLF the next time Git touches it warning: in the working copy of \u0027busy.txt\u0027, LF will … 末尾：fatal: adding files failed （全文は git-push-full.log）\n2026-11-22 05:02:09\thome-backup\t拾いが落ちた（終了コード 128）。日付は刻まず、次の回に持ち越す\n全文は ~/.claude/git-push-full.log",
-        "eid":  "",
-        "pushedAt":  0
-    },
-    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795293018,
         "message":  "枠 七十七の続き：段を毎回計算・公開の版を運ぶ（panel v212）を公開した\npanel v212（steps を state.json に・stepsOf で毎回計算・pubVer）を押し、雲の検査と state-deploy が成功、公開の panel-ver.txt が 212 になったのを curl で確かめた。札を橋に書いた。\nファイル: panel-core.js・panel-view.js・endat.js・panel.html・panel-check.js・panel-ver.txt・~/.claude の台本3本\n実測: panel-check --static 157項目 PASS・約30分",
@@ -355,13 +355,6 @@
         "time":  1795274295,
         "message":  "枠 四十三〜五十：守りの線（v1514）・パネル v203（ヨシ待ちの絵・畳み・裏方・全部終わる刻）を公開した\n枠 四十三（守りの線 v1514・声 28＋652本・荷 約810MB）・四十九（雲の検査の落ちの元＝基本28本の台帳漏れ・直して通った）・四十五〜五十（パネル v203）を押して公開した。札を橋に書いた。\nファイル: advice-tone-core.js・koushu-handan.html・panel.html・panel-view.js・endat.js・voice-*.txt・voice-used.txt ほか\n実測: 雲の検査 f6aabc2d・6b471125 とも成功",
         "eid":  "e1795274292",
-        "pushedAt":  0
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1795266735,
-        "message":  "写せます（52件）",
-        "eid":  "e1795266733",
         "pushedAt":  0
     }
 ]

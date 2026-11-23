@@ -1,5 +1,11 @@
 [
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795166417,
+        "message":  "この間にまとまった知らせ 2本\n\n［👀 見てください（返事不要）］\n順番待ちを見えるようにする・指さすの名\n一：様子を写すに「順番待ち：〈届いた刻〉〈件名〉」を一行ずつ出す形にした（数え手は orders-count.js の waitRows 一つ・数と一覧は同じ行）。13:05 の枠と 13:01 の🪟の後ろ半分は残っていない（済：13:04/13:05 の枠は 15:36/15:40 に自動で結べ、後ろ半分は 16:10 の札 y1120-1610 で済。枠の印が入る前の枠なので札が遅れて見えた）。二：指さすは見出しの帯に名（data-pname）を持たせ、いちばん近い名を読む形にした（「header」→「見出しの帯」）。公開は panel v197。\nファイル: panel.html・panel-check.js・panel-ver.txt・orders-count.js・orders-count-test.js・foot-stats.js・reports/y1120-1800.md\n実測: 雲の検査（da80c118・パネルだけの回）：最初の走りは widget-check が公開側 cat-sleep-white.png の HTTP 503（一時・無関係）で落ち、落ちた段を再実行して成功。再実行の所要 4分25秒（check 3分38秒・配信 38秒）、素の所要は約5〜6分（枠Cの宿題・見込み約8分より短い）。仕事の名は check（種類:panel）で、見張りが jobs から panel を読めた。orders-count-test 15件 合い・panel-check ⑤の十三 PASS。\n実機: 様子を写すで写した字の「札の結び」の下に「順番待ち：11-20 14:19　…」の行が並ぶ／指さすで見出しの帯（猫と返事パネルの字のまわり）を押すと部品の名が「見出しの帯」／版の字が panel v197。\n\n［✅ 終わりました（返事不要）］\n写せます（1件）",
+        "eid":  "e1795166415"
+    },
+    {
         "title":  "☁️ 雲の走りが落ちた（y1120-1800）",
         "time":  1795165872,
         "message":  "件名: 順番待ちを様子を写すに・指さすの名（panel v197 の雲の検査待ち）\n結果: failure\n印: y1120-1800",
@@ -246,10 +252,5 @@
         "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
         "time":  1794944224,
         "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
-    },
-    {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1794942979,
-        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声の詰め方の比べ（AAC・24kHzのまま）を雲で実行中\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 乙はやめ、24kHzのまま AAC（m4a）24k／32k／48k と Opus（参考）で今の声を作り直し、大きさと音の差を測る雲の台本（scratchpad/jobs/codec-compare.js）を押した（9a81cf73）。今の声（字数の違う6本）を ADPCM から復号して各形式へ。iPhone の Safari で聞き比べ・つなぎ（decodeAudioData で繋ぐ）を試せるページ reports/codec-test/index.html も同じ走りが書く。声づくりには進まない（本人が見てから）。\nファイル: scratchpad/jobs/codec-compare.js\n\n［👀 見てください（返事不要）］\n声の詰め方の比べ（AAC）の結果を知らせた\nreports/codec-test/result.md と cloud-codec-compare-20261117-190408.md を読んだ。合計 今357KB／aac24 98KB（0.27）／aac32 127KB（0.36）／aac48 188KB（0.53）／opus24 91KB。つなぎのずれは全部0。声は本人が聞いてから作る。\nファイル: reports/y1118-0420.md／report-latest.md／work-note.txt\n実測: 雲の走り 53秒・終了コード0\n実機: iPhone で reports/codec-test/index.html を開き、六本を今／aac24／aac32／aac48 で聞き比べ、許せる最小の段を言う\n未検収: 声の聞き比べ（人手待ち）"
     }
 ]
