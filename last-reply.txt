@@ -1,10 +1,14 @@
-刻: 2026-11-23 11:00:01
-件名: 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
+刻: 2026-11-23 11:08:38
+件名: 枠 百六十八：印 y1123-1041 の答え（解説でなく助言の特殊な形に国士・四暗刻の文を入れる・56人は20:00の後2131と一緒）
 
-Frame 167 is done: the shelf has a new issue. I created #8 in `koushu-ops` with the 棚 label (usual type, measuring in the cloud, about 3%). It carries your text, its finish condition and the bridge-frame mark, and the card and bridge note are out.
+Frame 168 is received and answered, with nothing added to the body yet. The card shows the seven draft lines in full and asks about wording.
 
-When it runs, it adds a "always discard on 九種九牌" arm at 9, 10 and 11 types, and counts how often the machine player discards at 10 types. If playing on turns out better, I'll ask before changing the lookout-tower answer or the advice wording.
+- **Where they go:** into the advice's special-hand forms, next to the existing kokushi and yakuman-hint lines, not into the help-text explanation. The 56-person versions wait until after 20:00 and go with 2131.
+- **The seven lines:** I rewrote them in the Zunda standard tone, using the numbers from the opponent measurements. They cover kokushi at 9, 10, 11 and 12 types, and four concealed triplets at 3+2, 3+1, and 2 or fewer.
+- **What I'm asking (印 y1123-1108):**
+  - May the seven lines go in as written?
+  - Should the 10-type line wait until the shelf run that measures always discarding on 九種九牌 (issue #8) has been done?
 
-The shelf now holds 5 issues, about 33% of a week. Weekly use is 90%.
+I'll build it, including a new voice for the standard tone only, once you answer. Weekly use is 90% and nothing received is left.
 
-Open question cards: 0649, 0726, 0814, 0927, 1041. Nothing received is left.
+Open question cards: 0649, 0726, 0814, 0927, 1041 (answered in 168), 1108.
