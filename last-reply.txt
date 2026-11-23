@@ -1,12 +1,8 @@
-刻: 2026-11-23 13:05:07
+刻: 2026-11-23 15:30:39
 件名: 枠 百八十七：棚 #13（橋の片付け）に本人の答えを書き足す（戻りの後に一度・その後は一日に一度）
 
-Frame 187 is done, and its panel card went quiet as a shelf-only update.
+The inbox is clear and nothing new has come in. The bridge document's latest entry is my own card for frame 187, so no new frames are waiting. The only inbox line was the 09:26 bell, which I handled hours ago and have now ticked off. The queue is empty, with no waits or open steps.
 
-I wrote your answer to question 1243 into shelf issue #13 and read it back. The bridge cleanup runs once in the window after the 20:00 reset, then once a day when I'm idle, through the shelf dispatcher. センコ doesn't create the "済んだ枠" section; whatever job moves the frames creates it if missing, and the card write target stays at `mtwtpzz7n17.94`. I marked question 1243 answered.
-
-The daily trigger isn't built, because the dispatcher is still on practice swings. I'll add it together with the step that actually wakes shelf items.
-
-Weekly use is 93%. Nothing received is left.
+Weekly use is 94%, one point from the 95% stop line. The weekly reset is still 20:00. Nothing is running in the cloud.
 
 Open question cards: 0649, 0726, 0814, 0927.
