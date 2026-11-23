@@ -1,11 +1,15 @@
-刻: 2026-11-23 12:45:28
-件名: 棚の素振り（課題 #14 に替わった）を札に一行（棚の出し入れの形＝静かに）
+刻: 2026-11-23 12:50:50
+件名: 枠 百八十六：見積もりを足して週95%を越える枠は手を付けず棚へ回す決め（作法47）・百八十五の書き直し
 
-The new practice-swing note is recorded, and I'm leaving it there.
+Frame 186 is done and its card is out. The weekly rule is now in `CLAUDE.md`, pushed as 作法47.
 
-It says that if anything were woken now it would be issue #14 (about 1%, adding frame numbers to the digest's "not yet received" line). Only about 2% of the week is free after the reserve, and nothing is woken yet. A swing note for a new issue the same day now goes the quiet way, like other shelf-only updates: no card, no push, a record only. The first one (12:23) went out as a visible card.
+**The rule:**
+- **Before starting a frame:** I estimate its cost as a share of the week. I use the median from similar finished jobs in `job-week-history.tsv`, or a guess while there are fewer than 3, and I lean high when unsure.
+- **If the estimate plus the current week percentage goes over 95%:** I don't start it. I put it on the shelf in `koushu-ops`. If it's a heavy reading job it gets the 棚-戻りの後 label.
+- **Recording it:** the card and the digest's state line say "棚へ回した：枠 N（見積もり M%・今の週 W%）". The digest line comes from `shelf-turned.txt` for six hours. It already shows frame 185 now (the check ran on live data).
+- **Unchanged:** frames that stay under 95% run as before. Anything you ask me to shelve goes on the shelf whatever its size. The 95% stop and the dispatcher rule for leftovers before the reset are written into the same section.
 
-Issue #14 came from センコ's `shelf-in.md`, created by the script without waking me. It asks for frame numbers, taken from the bell text, in the digest's "not yet received" line. It stays on the shelf.
+**Frame 185 rewritten:** it was an estimated 6% on top of 93% this week, so 99%, over the limit. Shelving it follows the new rule. The card now says the earlier decision was my judgment because no rule existed yet. The shelf issue is #13.
 
 Weekly use is 93%. Nothing received is left.
 
