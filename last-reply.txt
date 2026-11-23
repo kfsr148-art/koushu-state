@@ -1,13 +1,19 @@
-刻: 2026-11-23 09:49:22
-件名: 枠 百六十四：16:47の行（雲側ntfy三か所）は甲だが今はやらず棚へ・台帳の行を『棚へ移した』で閉じる・センコが課題を立てる道は橋の『影の課題』の枠
+刻: 2026-11-23 09:53:49
+件名: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
 
-Frame 164 is done and posted to the bridge. I'm now waiting on the cloud again.
+Frames 161, 162 and 163 now have their cards, and I'm waiting only on the cloud.
 
-- **164 一:** the 16:47 ntfy fix goes to the shelf, as `koushu-ops` issue #7 (usual type, about 4%), not run now. The ledger row for 2026-11-22 16:47:42 is closed as 棚へ移した. I saved a backup of the ledger first. The panel waiting list no longer carries it, so its time estimate should stop stretching.
-- **164 二:** センコ posts shadow frames in the bridge, and I create the issue in `koushu-ops` when I read the bell. The issue body ends with the 橋枠 mark so it isn't created twice, and a frame headed 棚へ gets the 棚 label. I follow this from now on.
+- **Panel v225 is live:** the cloud check passed and the published panel says 225. The body is at v1520, so the 2124 choices are live too.
+- **Shelf:** four shelf issues are up in `koushu-ops` (#4 to #7), about 30% of a week in total. Right now only #4 would fit in the remaining 6% of the week.
+- **Open questions (印 y1123-0953):** the dispatcher stays at practice-swing stage and wakes nothing until you answer three things:
+  - Is the 8-hours-to-1-hour-before-reset window with a ×1.5 safety factor right?
+  - Should Fable-type items start only when I give them the 棚-今週 label?
+  - Should the first week be practice swings only?
 
-**Still waiting on the cloud:**
-- **Measurement runs:** the skip-rule comparison is running, and the queued run behind it is for the panel v225 push. The second-stage run (`yakuman-aite2.js`) was cancelled earlier and needs a manual restart once the queue clears.
-- **Panel v225:** its cloud check isn't finished, and the published panel still says 224.
+**Still running in the cloud:**
+- **Skip-rule comparison (`aite3`):** still running.
+- **Stage 2 (`aite2`):** it must be started by hand once the queue is empty. Queued runs replace each other, so I'm doing it alone.
 
-When they finish I'll start the second-stage run alone, then read the results and write the 157, 159, 160 and 162 cards.
+When `aite3` finishes I'll read the table and write the 157, 159 and 160 cards, including the rewritten kokushi and four-concealed-triplets explanation.
+
+Open question cards: 0649, 0726, 0814, 0953.
