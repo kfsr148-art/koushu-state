@@ -3,12 +3,12 @@ head: 作業中、、、。
 subj: 枠 百八十：koushu-state の main に senko/digest.md を一枚置き、札や状態が変わるたびに書き直す
 sNow:  (1/1)
 mikomi: 45分 開始 12:23 書いた 12:32 終わり 13:17
-omoteEnd: なし (今の仕事なし＋順番待ち 0件×10分（直近24時間の39枠の中央値・合図1件は数えない）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: 12:47 (今の仕事なし＋順番待ち 2件×10分（直近24時間の39枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 2分＝直近24時間 44本の中央値）・雲 0本)
-rl: s 53% sr 13:50 w 92%
-fable: 60% リセット 20:00（API 12:20）
+rl: s 54% sr 13:50 w 93%
+fable: 60% リセット 20:00（API 12:34）
 card: 11/23 12:28:46 ✅ 終わりました（返事不要） / この間にまとまった知らせ 5本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 12:24 自動検査と配信 成功、12:23 札と状態の配信 成功、12:21 札と状態の配信 取り消し
-reply: 2026-11-23 12:26:29 棚の素振り：起こすならどれかを札に一行出す（仕事にしない）
-replyBody: Frame 179 is done, plus the practice-swing note that arrived with it. The 177 quiet path is still unconfirmed. - **179:** I created `koushu-ops` issue #11 with the 棚 label (usual type, about 2%). It p
-wait: 1
+reply: 2026-11-23 12:33:19 枠 百八十：koushu-state の main に senko/digest…
+replyBody: Frame 180 is built and its card is out. `senko/digest.md` is live on `koushu-state` main. - **Where:** https://github.com/kfsr148-art/koushu-state/blob/main/senko/digest.md. The raw form is `raw.githu
+wait: 2
