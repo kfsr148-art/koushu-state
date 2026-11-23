@@ -3,3 +3,5 @@
 一、koushu-handan の ver.txt（本体の版）と panel-ver.txt（パネルの版）を読む。
 二、koushu-handan の CLAUDE.md の見出し（## で始まる行）の数を数える。
 三、札に、読んだ二つの版と見出しの数を一行ずつ書く。残りは『残り0件』。
+
+（試し二回目・枠 二百二十一：Claude Code 本体で実行）
