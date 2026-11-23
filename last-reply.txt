@@ -1,12 +1,13 @@
-刻: 2026-11-23 17:17:44
-件名: 枠 百八十八：棚 #15 に足す（棚のまま・起こさない）
+刻: 2026-11-23 17:26:59
+件名: 枠 百八十九：棚 #15・#8 を今回す（予備を使い切ってよい）
 
-Frame 188 is done as a shelf append only. I'm stopping new work here because weekly use has reached 95%.
+#15 の直しと #8 の測り台本は済み、雲の走り（約25分・17:55ごろ）を待っています。待ちは登録済みで、走りが終われば自動で起こされます。
 
-Shelf issue #15 (the one for quiet cards and the "延びています" alerts) now has two additions, and I read the body back to check:
-- **Same root cause:** the 16:27 "届いた先の食い違い：合図と受領" warning comes from the same mix-up. 16:22 was センコ writing `senko/shelf-in.md`. The delivery watcher took that change for a bell, although a shelf intake correctly doesn't wake me or create a receipt.
-- **Fix for the issue:** `compare-dest.js` should count only a change to `senko/bell.txt` as a bell. The quiet routes should be recorded in one place that the other watchers read. The finish condition now includes a fake-environment test that writing `shelf-in.md` alone raises no mismatch warning.
+済んだ所：
+- **#15（延び・食い違い）**：`watch-notify.ps1` に、控えを書いていない手番では「延びています」を出さない guard を足しました（構文検査は通過）。`compare-dest.js` は、合図を `senko/bell.txt` を変えた commit だけで数えるようにしました。実 API で確かめると、今の頭は bell.txt の commit と一致しました。
+- **#8（九種九牌を流す腕）**：測り台本 `yakuman-aite4.js` を作りました。国士の 9・10・11 種に、流す腕・押す腕・機械の普通打ちを並べます。手元の極小の試しでは、流す腕は 0 点で九種流しが 100%、同じ山の確かめも 3/3 で通りました。
+- 台本を push したところ雲の走り（45138610128）が自動で始まりました。
 
-Nothing was started. Weekly use is 95%, so under 作法47 二 I take no new work. If new frames arrive I'll shelve them under the estimate rule; the weekly figure resets at 20:00. The panel card for this frame went the quiet way (shelf-only). Nothing received is left.
+続き：走りが終わったら、表を札に載せて #8 と #15 を閉じます。週の枠は 100% まで進めてよいので、段ごとに台帳へ済んだ所を書いています。
 
-Open question cards: 0649, 0726, 0814, 0927.
+作り値で確かめられていないこと：`shelf-in.md` だけを書いても食い違いが出ない、という #15 の済みの条件です。path 絞りは GitHub の API の動作に頼っていて、手元では再現していません。延びの guard も実際の手番では試していません。この二点は札にも書きます。
