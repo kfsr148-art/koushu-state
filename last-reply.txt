@@ -1,13 +1,14 @@
-刻: 2026-11-23 10:14:17
-件名: 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）
+刻: 2026-11-23 10:17:49
+件名: 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1.5・Fable型は棚-今週のみ）の素振りで回し、起こすならどれかを札に出す
 
-Frame 165 is finished and its card is out. Panel v226 is published and the cloud check passed.
+Frame 166 is done and its card is out. The shelf's dispatcher runs as practice swings only, with your three answers applied:
 
-- **What shows:** under the "返事パネル" title while a job runs, a red bold "見込み —" (the estimate, blank until 3 similar jobs are on record) and a gray "今まで N%" (the weekly percentage spent since the job began). Nothing shows when there is no job, and no dollar amounts.
-- **Live on this machine:** the watcher already writes it into `state.json` for my current job (it started at 90% weekly).
-- **Not seen on a phone yet:** it's positioned under the title, so I don't expect any layout shift. Worth a look on your device.
-- **Stage 2 is running** in the cloud now (started 10:13, about 25 minutes) alongside the skip-rule results, which are already in. Two results stand out:
-  - **Machine's own play wins:** in the 3-triplet+2-pair frame, the normal machine player averaged 17,871 points. Every arm of mine scored lower: pushing 13,693, the threshold rule 13,848, the expected-value rule 13,617 and always skipping 10,301.
-  - **Skipping lifts the yakuman rate but loses points:** always skipping reaches 32.7% against 27.1% for the machine, but costs points and adds deal-ins.
+- **Window:** it only acts from 8 hours to 1 hour before the weekly reset.
+- **Estimate:** it uses the estimate ×1.5 against the room left after a 5% reserve.
+- **Fable items:** they only count if they carry the 棚-今週 label.
 
-When stage 2 finishes I'll read it and write the 157, 159 and 160 cards with the rewritten explanation. Weekly use is 90%.
+What I added is the announcement. When a practice swing settles on which issue it would wake, it announces it once per issue per day. It comments on the issue in `koushu-ops` and puts a line in the inbox, so the window writes a one-line card and does nothing else. I tested it with a fake environment: it announces once, doesn't repeat, and stays silent outside the window, when the five-hour allowance is at 85%, or when the usage data is stale. Waking an item for real is still not built.
+
+Today the window opens at 12:00, 8 hours before the 20:00 reset. If weekly use is still 90% then, only issue #4 (3% × 1.5 = 4.5%) fits in the remaining 5%, and that is what should appear in the card.
+
+Still running in the cloud: the second-stage measurement (`aite2`). It was started at 10:13 and should take about 25 minutes. Then I'll write the 157, 159 and 160 cards, including the rewritten kokushi and four-concealed-triplets explanation. Weekly use is 90%. Open question cards: 0649, 0726, 0814, and 0927 (answered, awaiting your decision on the 16:47 row).
