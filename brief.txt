@@ -1,5 +1,5 @@
 stat: 待機中
-head: まとめて写すヨシ！
+head: 待機中、、、。
 subj: 枠 二百二十一：雲の入口を作り直す（claude-code-action→Claude Code 本体）
 sNow:  (6/6)
 mikomi: 40分 開始 21:58 書いた 22:40 終わり 23:20
