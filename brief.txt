@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
-subj: 枠 百七十：棚へ（パネルにヨシの釦を作り押すとヨシが通る）
+stat: 待機中
+head: 札まとめ中、、、。
+subj: 枠 百七十一：百七十（棚 #10）に足す＝ヨシの釦の置き場所・出しっぱなし・青くN件・二件以上は最新へ
 sNow:  (1/1)
-mikomi: 5分 開始 11:27 書いた 11:28 終わり 11:33
+mikomi: 5分 開始 11:32 書いた 11:33 終わり 11:38
 omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の33枠の中央値・合図1件は数えない）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 35% sr 13:50 w 91%
 fable: 60% リセット 19:59（API 11:26）
 card: 11/23 11:30:13 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
-reply: 2026-11-23 11:28:36 枠 百七十：棚へ（パネルにヨシの釦を作り押すとヨシが通る）
-replyBody: Frame 170 is done and the card is out. I created `koushu-ops` issue #10 with the 棚 label. It is the panel "ヨシ" button: shown only while waiting for a ヨシ, pressing it sends the pending mark to a separa
+reply: 2026-11-23 11:33:56 枠 百七十一：百七十（棚 #10）に足す＝ヨシの釦の置き場所・出しっぱなし・青く…
+replyBody: Frame 171 is done and its card is out. I appended your three points to the body of shelf issue #10 (the panel ヨシ button) and checked by reading it back that they and the bridge-frame mark are in. It s
 wait: 1
