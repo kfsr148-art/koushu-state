@@ -1,5 +1,5 @@
 stat: 待機中
-head: まとめて写すヨシ！
+head: 待機中、、、。
 subj: 枠 二百三十九：koushu-state の order-in.yml に claude -p の前の npm ci を足す（広い許しは使わ…
 sNow:  (4/4)
 mikomi: 30分 開始 06:22 書いた 06:24 終わり 06:54
