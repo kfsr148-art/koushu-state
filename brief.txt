@@ -1,14 +1,14 @@
 stat: 作業中
-head: まとめて写すヨシ！
+head: 作業中、、、。
 subj: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
 sNow:  (3/3)
 mikomi: 30分 開始 09:38 書いた 09:52 終わり 10:22
 omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の29枠の中央値・合図1件は数えない）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
-uraEnd: 10:06 (下請け 0本（1本 1.7分＝直近24時間 60本の中央値）・雲 2本（流れごと：雲で回す 22.7分＝直近30日 2本の中央値、雲で回す 22.7分＝直近30日 2本の中央値）)
+uraEnd: 10:07 (下請け 0本（1本 1.7分＝直近24時間 60本の中央値）・雲 2本（流れごと：札と状態の配信 1.9分＝直近30日 2本の中央値、雲で回す 23.8分＝直近30日 2本の中央値）)
 rl: s 25% sr 13:50 w 90%
 fable: 60% リセット 20:00（API 09:54）
 card: 11/23 09:56:41 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
-ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 雲で回す 走行中（09:43〜）・雲で回す 走行中（09:26〜）・直近 09:51 札と状態の配信 成功、09:54 自動検査と配信 成功、09:49 自動検査と…
+ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 札と状態の配信 走行中（09:58〜）・雲で回す 走行中（09:43〜）・直近 09:51 札と状態の配信 成功、09:54 自動検査と配信 成功、09:49 自動…
 reply: 2026-11-23 09:53:49 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を…
-replyBody: Frames 161, 162 and 163 now have their cards, and I'm waiting only on the cloud. - **Panel v225 is live:** the cloud check passed and the published panel says 225. The body is at v1520, so the 2124 
+replyBody: Frames 161, 162 and 163 now have their cards, and I'm waiting only on the cloud. - **Panel v225 is live:** the cloud check passed and the published panel says 225. The body is at v1520, so the 212
 wait: 1
