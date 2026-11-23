@@ -36,6 +36,15 @@ jobs:
         run: |
           git -C handan config user.name "koushu-order-bot"
           git -C handan config user.email "koushu-order-bot@users.noreply.github.com"
+      - name: Node を入れる（枠 二百三十九・claude -p は npm ci を許されず断られるので、前の段で handan の道具を入れておく・claude には入れさせない）
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: handan/package-lock.json
+      - name: handan の道具を入れる（majiang-core・majiang-ai など・npm ci）
+        working-directory: handan
+        run: npm ci --no-audit --no-fund
       - name: 刻を決める
         id: t
         run: |
