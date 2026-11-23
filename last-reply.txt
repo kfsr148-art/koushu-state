@@ -1,23 +1,14 @@
-刻: 2026-11-23 09:44:36
+刻: 2026-11-23 09:47:49
 件名: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
 
-Frame 163 is done and the card is out. Frames 161 and 162 are in progress.
+Frames 161, 162 and 163 are built as far as the practice-swing stage. I'm waiting on the cloud before the cards.
 
-- **163 (shelf issues):** the three shelf issues are up in `koushu-ops` with the label 棚, estimates and type. Each says to close it if the work turns out to be done already. I checked they carry the label.
+- **163:** three shelf issues are up in `koushu-ops` (#4, #5, #6, estimates 3%, 15% and 8%).
+- **162:** panel v225 is pushed. The lower-row button is now "棚 N件・約M%", pressing it opens the shelf list, and the three most recent finished jobs now show under "くわしく". Locally the static panel check passes; the browser checks are in the cloud.
+- **161:** the dispatcher is built, but only as a practice swing.
+  - **What it does:** every 3 minutes it works out which shelf item it would wake and writes that to `~/.claude/shelf-run.json`. It writes nothing to issues or the inbox.
+  - **Its rules:** it only acts from 8 hours to 1 hour before the weekly reset (opens at 12:00 today). It uses the estimate ×1.5, keeps a 5% reserve and 80% as the five-hour ceiling, and skips Fable items unless they carry the 棚-今週 label.
+  - **Not built yet:** actually waking an item, and the per-run estimate log. I want your answer on three points first: the 8h-to-1h window with ×1.5, Fable items only with the 棚-今週 label, and a first week of practice swings only.
+- **Weekly use:** it stayed at 89% through these frames, even with the roughly 95,000-token Fable design.
 
-| Issue | What | Type | Estimate |
-|---|---|---|---|
-| #4 | put 七対子 and 混一色 shapes into the defend advice | usual (Sonnet) | about 3% of a week |
-| #5 | read all 56 advice voices through and polish them to the tone table | Fable | about 15% |
-| #6 | re-measure the referee weights without the seats | Fable design, measuring in the cloud | about 8% |
-
-  The estimates are rough guesses. They sum to 26%, which won't fit in the roughly 11% of the week left until the 20:00 reset (weekly use is 89% now). That is the dispatcher's job to sort out.
-- **162 (panel v225):** pushed; the cloud check on it is registered as a wait.
-  - **Shelf button:** the second button in the lower row is now "棚 N件・約M%". Pressing it opens a list of sleeping frames, each with its text and estimate. With the shelf empty it reads "棚 0件".
-  - **Recent jobs:** the last three finished jobs now show inside "くわしく". The old "直近に終わった仕事" button is gone.
-  - **Data and checks:** the shelf list is refreshed every 3 minutes by the shadow runner, from the open 棚 issues. Locally `panel-check.js --static` passes.
-- **161 (shelf dispatcher):** I started a Fable design for the part that decides when to wake shelf items and how to record usage per run. Note that waking a shelf item means telling the window to do it, not running it unattended.
-- **Weekly use:** it stayed at 89% while I did 162 and 163, so ordinary work costs little. I'll read it again after the Fable agent returns.
-- **Still waiting on the cloud:** the three measurement runs (stage 1 with the always-skip arm, stage 2, and the skip-rule comparison) and the v225 check.
-
-Open question cards: 0649, 0726, 0814, 0927.
+**Cloud runs:** two earlier measurement runs, the first-stage one with the always-skip arm and the second-stage one, were cancelled by later pushes. The skip-rule comparison (`aite3`) is running now. When it's done I'll start the second-stage run alone, because queued runs replace each other. Then I'll read the results and write the 157, 159 and 160 cards, the rewritten explanation text, and the 162 card.
