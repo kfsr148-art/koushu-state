@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 待ち
+head: 待機中、、、。
 subj: 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）
-sNow: 札を出す (3/4)
+sNow:  (4/4)
 mikomi: 60分 開始 09:59 書いた 10:00 終わり 11:00
-omoteEnd: 11:00 (今の仕事 残り1段（始まり 09:59・見込み 60分（10:00 に書いた））＋順番待ち 0件×12分（直近24時間の29枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: なし (今の仕事なし＋順番待ち 0件×12.8分（直近24時間の30枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 2分＝直近24時間 52本の中央値）・雲 0本)
 rl: s 26% sr 13:50 w 90%
 fable: 60% リセット 19:59（API 10:06）
 card: 11/23 09:56:41 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:12 札と状態の配信 成功、10:10 札と状態の配信 成功、10:06 札と状態の配信 成功
-reply: 2026-11-23 10:03:26 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約…
-replyBody: Frame 165 is built and pushed as panel v226. I'm waiting on its cloud check, so the card isn't out yet. - **What it shows:** under the "返事パネル" title, while a job is running, there are two lines. The f
+reply: 2026-11-23 10:14:17 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約…
+replyBody: Frame 165 is finished and its card is out. Panel v226 is published and the cloud check passed. - **What shows:** under the "返事パネル" title while a job runs, a red bold "見込み —" (the estimate, blank until
 wait: 0
