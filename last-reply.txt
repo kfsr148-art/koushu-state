@@ -1,14 +1,13 @@
-刻: 2026-11-23 09:47:49
-件名: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
+刻: 2026-11-23 09:49:22
+件名: 枠 百六十四：16:47の行（雲側ntfy三か所）は甲だが今はやらず棚へ・台帳の行を『棚へ移した』で閉じる・センコが課題を立てる道は橋の『影の課題』の枠
 
-Frames 161, 162 and 163 are built as far as the practice-swing stage. I'm waiting on the cloud before the cards.
+Frame 164 is done and posted to the bridge. I'm now waiting on the cloud again.
 
-- **163:** three shelf issues are up in `koushu-ops` (#4, #5, #6, estimates 3%, 15% and 8%).
-- **162:** panel v225 is pushed. The lower-row button is now "棚 N件・約M%", pressing it opens the shelf list, and the three most recent finished jobs now show under "くわしく". Locally the static panel check passes; the browser checks are in the cloud.
-- **161:** the dispatcher is built, but only as a practice swing.
-  - **What it does:** every 3 minutes it works out which shelf item it would wake and writes that to `~/.claude/shelf-run.json`. It writes nothing to issues or the inbox.
-  - **Its rules:** it only acts from 8 hours to 1 hour before the weekly reset (opens at 12:00 today). It uses the estimate ×1.5, keeps a 5% reserve and 80% as the five-hour ceiling, and skips Fable items unless they carry the 棚-今週 label.
-  - **Not built yet:** actually waking an item, and the per-run estimate log. I want your answer on three points first: the 8h-to-1h window with ×1.5, Fable items only with the 棚-今週 label, and a first week of practice swings only.
-- **Weekly use:** it stayed at 89% through these frames, even with the roughly 95,000-token Fable design.
+- **164 一:** the 16:47 ntfy fix goes to the shelf, as `koushu-ops` issue #7 (usual type, about 4%), not run now. The ledger row for 2026-11-22 16:47:42 is closed as 棚へ移した. I saved a backup of the ledger first. The panel waiting list no longer carries it, so its time estimate should stop stretching.
+- **164 二:** センコ posts shadow frames in the bridge, and I create the issue in `koushu-ops` when I read the bell. The issue body ends with the 橋枠 mark so it isn't created twice, and a frame headed 棚へ gets the 棚 label. I follow this from now on.
 
-**Cloud runs:** two earlier measurement runs, the first-stage one with the always-skip arm and the second-stage one, were cancelled by later pushes. The skip-rule comparison (`aite3`) is running now. When it's done I'll start the second-stage run alone, because queued runs replace each other. Then I'll read the results and write the 157, 159 and 160 cards, the rewritten explanation text, and the 162 card.
+**Still waiting on the cloud:**
+- **Measurement runs:** the skip-rule comparison is running, and the queued run behind it is for the panel v225 push. The second-stage run (`yakuman-aite2.js`) was cancelled earlier and needs a manual restart once the queue clears.
+- **Panel v225:** its cloud check isn't finished, and the published panel still says 224.
+
+When they finish I'll start the second-stage run alone, then read the results and write the 157, 159, 160 and 162 cards.
