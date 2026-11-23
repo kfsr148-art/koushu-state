@@ -4,11 +4,11 @@ subj: 枠 百七十五：鈴の間を空ける役を VAIO の見張りへ移す�
 sNow:  (1/1)
 mikomi: 30分 開始 11:47 書いた 11:50 終わり 12:20
 omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の34枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
-uraEnd: 11:55 (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 1本（流れごと：自動検査と配信 4.4分＝直近30日 2本の中央値）)
+uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 39% sr 13:50 w 91%
-fable: 60% リセット 19:59（API 11:48）
+fable: 60% リセット 19:59（API 12:00）
 card: 11/23 11:52:13 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
-ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 自動検査と配信 走行中（11:50〜）・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
+ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 11:53 自動検査と配信 成功、10:43 自動検査と配信 成功、10:36 札と状態の配信 成功
 reply: 2026-11-23 11:51:18 枠 百七十五：鈴の間を空ける役を VAIO の見張りへ移す（合図が続けて鳴っても…
 replyBody: Frame 175 is done and its card is out. The job of spacing out the bell now lives in the VAIO watcher's waker (`rewake.js`), so センコ can ring the bell as soon as they write a frame. - **How it works:** 
 wait: 0
