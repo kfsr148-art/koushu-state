@@ -1,13 +1,26 @@
-刻: 2026-11-23 22:16:51
+刻: 2026-11-23 22:22:56
 件名: 枠 二百二十：今の仕事を棚へ戻し、雲の入口（order-in.md→claude-code-action）を作る
 
-ログインのアドレスは次です（`claude setup-token` を VAIO で走らせて待たせています）。
+鍵（`CLAUDE_CODE_OAUTH_TOKEN`）は発行されましたが、secret への登録は、Claude Code の自動の許可判定に止められて、私は実行できていません。
 
-https://claude.ai/oauth/authorize?I7oRk8GsOtsJR5eujb5DiyqMshWzyXd0dDeaHbg_WH5s
+**状況：** さっきのコードを走り中の `claude setup-token` に入力し、Enter も送ったところ、「OAuth token（1年有効）」が出ました。鍵は VAIO の `~/.claude/local-run-st.log` の中にだけあります。私は中身を読んでいませんし、画面にも出していません。
 
-これをブラウザで開いてログインしてください。
+**止められた操作：** ログから鍵を取り出して `gh secret set` で koushu-state と koushu-handan に入れ、ログを消す、という操作です。鍵という資格情報を扱う操作として、自動の判定が止めました。
 
-- **画面にコードが出た場合：** 窓の側の走りには貼る口がありません。そのコードは私に貼らず、いったん教えてください。貼る手を別に作ります。
-- **ログインだけで終わった場合：** VAIO の走りが自分で受けて、鍵がログに出ます。鍵は私は読まず、本人の手で `gh secret set` に渡す形にします。
+**お願い（Code タブのプロンプトに、そのまま貼ってください）：**
 
-走りは 15 分で自分で止まります。
+```
+! for r in koushu-state koushu-handan; do grep -ao 'sk-ant-[A-Za-z0-9_-]*' ~/.claude/local-run-st.log | head -1 | tr -d '\r\n' | gh secret set CLAUDE_CODE_OAUTH_TOKEN -R kfsr148-art/$r; done
+```
+
+続けて、鍵の入ったログを消します。
+
+```
+! rm ~/.claude/local-run-st.log
+```
+
+どちらも鍵を画面に出しません。
+
+**登録できた後：** 私が試しの枠（`senko/order-in.md`）を一枚 koushu-state に push して、窓を通さず雲で走って札が一枚出るかを確かめます。ただし、`claude-code-action` がこの構成（`order-in.yml`）で動くかは、まだ一度も試していません。うまく動かない場合は、走りのログを読んで直します。
+
+なお、`claude.ai/settings/claude-code` からいつでもこの鍵は無効にできます。
