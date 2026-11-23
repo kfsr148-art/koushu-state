@@ -1,10 +1,13 @@
-刻: 2026-11-23 11:23:35
-件名: 枠 百六十九：棚へ（国士・四暗刻の七文を63行に一度で入れる・20:00の戻りの後だけ）
+刻: 2026-11-23 11:28:36
+件名: 枠 百七十：棚へ（パネルにヨシの釦を作り押すとヨシが通る）
 
-Frame 169 is done and its card is out. I created `koushu-ops` issue #9 with the 棚 label and a new 棚-戻りの後 label; the dispatcher practice swing now skips anything with that label. It covers the seven kokushi and four-concealed-triplets lines across 63 rows (seven personalities × eight dialects, plus the standard one), usual type, about 5%.
+Frame 170 is done and the card is out. I created `koushu-ops` issue #10 with the 棚 label. It is the panel "ヨシ" button: shown only while waiting for a ヨシ, pressing it sends the pending mark to a separate ntfy topic, and the watcher only passes it on when the mark matches. It is the usual type, about 4%.
 
-- **When it runs:** only after the 20:00 weekly reset. No standard-only version goes in first. The issue's first step is to check, before anything is written, whether a missing personality line is filled with the standard one, which is what would put 〜のだ into other personalities' speech.
-- **What it contains:** the seven lines from frame 168, with the 10-type line held back until issue #8's measurement is done. It is built together with the 2131 expansion, with the voices made in one go.
-- **Shelf:** now 6 items, about 38% of a week. Weekly use is still 90%, and nothing received is left.
+In the issue I wrote what to watch for when it runs:
+- **New outward channel:** there is a new ntfy topic to send to, and its name must not appear in the public panel or in `state.json`; only the phone remembers it.
+- **Testing:** use a fake sender for the checks.
+- **Watcher edit:** if it touches `inbox-watch.ps1`, take a backup, run a syntax check and restart the resident process.
 
-Open question cards: 0649, 0726, 0814, 0927, 1108 (answered in 169).
+The shelf now holds 7 items, about 42% of a week. Weekly use is still 90%. Nothing received is left.
+
+Open question cards: 0649, 0726, 0814, 0927.
