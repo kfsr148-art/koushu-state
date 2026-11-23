@@ -1,13 +1,13 @@
 stat: 待機中
-head: 札まとめ中、、、。
+head: まとめて写すヨシ！
 subj: 枠 百七十二・百七十三：百七十（棚 #10）に足す＝ヨシの釦の字の頭の絵文字（最終 👈 ヨシ待ち）
 sNow:  (1/1)
 mikomi: 5分 開始 11:36 書いた 11:37 終わり 11:42
 omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 36% sr 13:50 w 91%
-fable: 60% リセット 19:59（API 11:26）
-card: 11/23 11:36:12 ✅ 終わりました（返事不要） / 枠 百七十一：百七十（棚 #10）に足す＝ヨシの釦の置き場所・出しっぱなし・青くN件・二件以上は最新…
+fable: 60% リセット 19:59（API 11:38）
+card: 11/23 11:40:12 ✅ 終わりました（返事不要） / 枠 百七十二・百七十三：百七十（棚 #10）に足す＝ヨシの釦の字の頭の絵文字（最終 👈 ヨシ待ち）
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
 reply: 2026-11-23 11:37:43 枠 百七十二・百七十三：百七十（棚 #10）に足す＝ヨシの釦の字の頭の絵文字（最…
 replyBody: Frames 172 and 173 are done and their cards are out. I added the button's emoji decision to shelf issue #10 and read it back to check. The "ヨシ待ち" button text starts with 👈 (pointing left), also when 
