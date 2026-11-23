@@ -203,9 +203,9 @@
         "body":  "この間にまとまった知らせ 2本\r\n\r\n［✅ 終わりました（返事不要）］\r\n新しい置き場の段取りに足す：雲の書き込み・VAIO の押しの鍵・本人の手が要る物\r\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\r\n種類: 調べた\r\n完了: 一、雲の走りで札や state を書く所：無い。押し戻すのは job.yml（reports/ だけ）と voice-m4a.yml（reports/voice-m4a-out だけ）の二つで、どちらも本体のリポジトリへ。check.yml・state-deploy.yml は書き戻さない（check-pass の印を動かすだけ）。札・state・使用量を書くのは全部 VAIO の見張り。→新しい置き場用の deploy key 等は要らない。\r\n二、VAIO の押しの鍵：git は HTTPS＋資格情報の管理（credential.helper=manager）。gh の鍵は kfsr148-art の OAuth（範囲 repo＝その人の全リポジトリに書ける・置き場を選んだ鍵ではない）。資格情報の管理側の鍵も、ふつうはブラウザでの OAuth で全リポジトリに効く物だが、中身は見ていない（鍵を出力しないため）。置き場を作った後、最初の押しで書けるかを確かめる（書けなければ本人の手で認証をやり直す：下の三）。\r\n三、本人の手でしか作れない物：今のところ無い見込み。gh（範囲 repo）で、置き場の作成（gh repo create kfsr148-art/koushu-state --public）と Pages の有効化（gh api -X POST repos/kfsr148-art/koushu-state/pages・枝 main の直下）ができる。もし最初の押しが 403 になったら、本人の手で：VAIO で「git credential-manager github login」を打ち、ブラウザで kfsr148-art としてヨシを押す（範囲に repo が入る）。\r\n段取り①〜⑤は 00:12 の札のまま（触るファイル：git-push.ps1・inbox-watch.ps1・turn-push.ps1・notify-record.ps1・board-emit.ps1・watch-notify.ps1・pipe-check.ps1・shiyou-gendo.ps1・panel.html の道12本と版 v165）。\r\nファイル: 無し（見ただけ）\r\n\r\n［🔎 調べました］\r\n00:09 の時間切れ：やり直さず閉じた・手番が開いている間は Esc を打たない・札の食い違いの訳\r\n一、23:31 の枠（段ごとの所要・荷の内訳・外す案）は窓の返事（23:36）で済んでいるので、やり直さなかった。受信箱の戻しの行（00:09:38）は 00:12 に [x] 済み。台帳 orders-open.tsv の行（23:31:50）を「済：…時間切れの戻し（00:09）はやり直さず閉じた」に書き替えた（控え orders-open.tsv.bak-20261119）。\n二、時間切れの Esc を合図に合わせた（inbox-watch.ps1 の Check-FrameLimit・控え bak-20261119fl・構文OK・常駐 00:20:07 に起こし直し）：合図の鍵 busy.txt がある間は、時間切れで切らない（Esc を打たない・受信箱へ戻さない）。手番が開いている間（UserPromptSubmit のまま Stop・StopFailure が無い）は打たない。手番が閉じた後（Stop・StopFailure）は窓が手待ちで、切る物が無い。\n三、札の「命令0回・返り0回」と「命令は返り続けていました」の食い違いの訳：窓は 23:36 に返事を終えて手待ちだった（00:10 まで何もしていない）。ところが時間切れの見張りは、手番の終わり（Stop）ではなく自分の控え（work-started.txt の開始の刻）で「枠が走っている」と見ていたので、手待ちの窓を「開始から33分・上限20分を越えた」として切った（推し量りの誤り）。「命令 0回・返り 0回」は足跡の実数で正しい。「命令は返り続けていましたが」は、長すぎで切る時に足跡を見ずに出す決まった言い回しで、事実と合わない。二の直しで、この切り方そのものが起きなくなる。\r\nファイル: ~/.claude/inbox-watch.ps1（bak-20261119fl）・~/.claude/orders-open.tsv（bak-20261119）"
     },
     {
-        "time":  1795372064,
-        "at":  "2026-11-23 03:27:44",
-        "title":  "🪟 窓を起こす待ち手が居ません（窓は手待ち・受信箱の未処理 1件・雲待ち なし）",
+        "time":  1795439162,
+        "at":  "2026-11-23 22:06:01",
+        "title":  "🙋 claude setup-token のログインをお願いします",
         "parts":  1,
         "body":  "​",
         "eid":  ""
