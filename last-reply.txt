@@ -1,8 +1,14 @@
-刻: 2026-11-23 11:37:43
-件名: 枠 百七十二・百七十三：百七十（棚 #10）に足す＝ヨシの釦の字の頭の絵文字（最終 👈 ヨシ待ち）
+刻: 2026-11-23 11:44:22
+件名: 枠 百七十四：棚 #10 に足す＝指さすで押した部品の名を state.json に載せる
 
-Frames 172 and 173 are done and their cards are out. I added the button's emoji decision to shelf issue #10 and read it back to check.
+Frame 174 is done and its card is out. I added your 指さす request to shelf issue #10 and read it back; it stays on the shelf, nothing started.
 
-The "ヨシ待ち" button text starts with 👈 (pointing left), also when it turns blue. Frame 172's 👆 was cancelled by 173, so the final text is "👈 ヨシ待ち". I added to the finish condition that the public panel must show that text, and put both frame marks at the end of the issue body. The shelf still holds 7 items, about 42% of a week, and nothing has been started. Weekly use is 90%, and nothing received is left.
+When the 指さす (point) button is pressed, the part's name goes by the same route as the ヨシ button: phone, separate ntfy topic, watcher, `state.json`. `state.json` gets "指さした：〈part name〉〈time〉". The existing copy action stays. So センコ can read it when you just say "the place I just pointed at". I added to the finish condition that pressing it in the public panel puts the name and time into `state.json` within about a minute.
+
+I also noted two cautions for when it runs:
+- **Same protections as the ヨシ button:** the topic name stays out of the public panel and `state.json`, a double press counts once, and tests use a fake sender.
+- **Public file:** `state.json` goes into the public `koushu-state`, so part names must be only the plain heading names from the screen.
+
+The shelf holds 7 items, about 42% of a week. Weekly use is 90% and nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
