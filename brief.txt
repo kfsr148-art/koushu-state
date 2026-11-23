@@ -1,5 +1,5 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 待機中
+head: 札まとめ中、、、。
 subj: 枠 百五十九：週の枠が残りわずか（Fableを含む）。2131の書き広げは20:00の後・他は今進める・95%で止まる
 sNow:  (1/1)
 mikomi: 5分 開始 09:13 書いた 10:42 終わり 10:47
@@ -9,6 +9,6 @@ rl: s 28% sr 13:50 w 90%
 fable: 60% リセット 20:00（API 10:40）
 card: 11/23 10:40:12 🕒 延びています / 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1.5・Fable型は…
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 自動検査と配信 走行中（10:41〜）・直近 10:36 札と状態の配信 成功、10:34 雲で回す 成功、10:12 札と状態の配信 成功
-reply: 2026-11-23 10:17:49 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1…
-replyBody: Frame 166 is done and its card is out. The shelf's dispatcher runs as practice swings only, with your three answers applied: - **Window:** it only acts from 8 hours to 1 hour before the weekly reset. 
+reply: 2026-11-23 10:43:02 枠 百五十九：週の枠が残りわずか（Fableを含む）。2131の書き広げは20:…
+replyBody: Frames 157, 159 and 160 are finished, with cards on the panel and one combined card on the bridge. Nothing I've received is left. 2131 waits until after the 20:00 reset, as 159 said. **Stage 2 results
 wait: 0
