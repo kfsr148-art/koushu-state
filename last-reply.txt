@@ -1,13 +1,8 @@
-刻: 2026-11-23 11:33:56
-件名: 枠 百七十一：百七十（棚 #10）に足す＝ヨシの釦の置き場所・出しっぱなし・青くN件・二件以上は最新へ
+刻: 2026-11-23 11:37:43
+件名: 枠 百七十二・百七十三：百七十（棚 #10）に足す＝ヨシの釦の字の頭の絵文字（最終 👈 ヨシ待ち）
 
-Frame 171 is done and its card is out. I appended your three points to the body of shelf issue #10 (the panel ヨシ button) and checked by reading it back that they and the bridge-frame mark are in. It stays on the shelf and nothing has been started.
+Frames 172 and 173 are done and their cards are out. I added the button's emoji decision to shelf issue #10 and read it back to check.
 
-What the button does now, per your note:
-- **Position:** the second button in the top row, where "終わりました N件" is now. That button goes away, and when it runs I'll check that "くわしく" shows everything it showed, moving whatever it doesn't.
-- **Always visible:** it shows only the words "ヨシ待ち" normally. When a ヨシ is pending, it turns blue like "まとめて写す" and shows "N件", with no size change.
-- **Pressing:** with two or more pending, it sends ヨシ to the newest one, the same as a bare ヨシ. The count then drops by one, and the text goes "ヨシを送った" → "ヨシが通った" as before.
-
-The finish condition now also says these three must be visible in the public panel. The shelf holds 7 items, about 42% of a week. Weekly use is 90% and nothing received is left.
+The "ヨシ待ち" button text starts with 👈 (pointing left), also when it turns blue. Frame 172's 👆 was cancelled by 173, so the final text is "👈 ヨシ待ち". I added to the finish condition that the public panel must show that text, and put both frame marks at the end of the issue body. The shelf still holds 7 items, about 42% of a week, and nothing has been started. Weekly use is 90%, and nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
