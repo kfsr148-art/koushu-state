@@ -1,19 +1,16 @@
-刻: 2026-11-23 09:53:49
-件名: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
+刻: 2026-11-23 10:03:26
+件名: 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）
 
-Frames 161, 162 and 163 now have their cards, and I'm waiting only on the cloud.
+Frame 165 is built and pushed as panel v226. I'm waiting on its cloud check, so the card isn't out yet.
 
-- **Panel v225 is live:** the cloud check passed and the published panel says 225. The body is at v1520, so the 2124 choices are live too.
-- **Shelf:** four shelf issues are up in `koushu-ops` (#4 to #7), about 30% of a week in total. Right now only #4 would fit in the remaining 6% of the week.
-- **Open questions (印 y1123-0953):** the dispatcher stays at practice-swing stage and wakes nothing until you answer three things:
-  - Is the 8-hours-to-1-hour-before-reset window with a ×1.5 safety factor right?
-  - Should Fable-type items start only when I give them the 棚-今週 label?
-  - Should the first week be practice swings only?
+- **What it shows:** under the "返事パネル" title, while a job is running, there are two lines. The first is a red bold estimate, "見込み 約N%", or "見込み —" when there is no data yet. The second is a small gray "今まで M%", or "1%未満" when under one percent. Nothing shows when there is no job. No dollar amount.
+- **Where the numbers come from:**
+  - **Estimate:** it is the median weekly-percentage cost of finished jobs with a similar time estimate, and only appears once at least three such jobs have been recorded.
+  - **So far:** it is the weekly percentage now minus the weekly percentage when the job started.
+  - **History:** finished jobs are saved to `~/.claude/job-week-history.tsv`, which also starts the usage-learning that the shelf needs.
+- **Checked so far:** the calculation passes in my test cases, and `panel-check.js --static` passes locally. The watcher is already writing it to `state.json` for this job. It shows "見込み —" and "今まで 1%未満", with the start at 90% weekly.
+- **Still to check:** the cloud result and the published panel version (226). The box is positioned absolutely under the title, so it shouldn't move anything, but I haven't seen it on a phone.
 
-**Still running in the cloud:**
-- **Skip-rule comparison (`aite3`):** still running.
-- **Stage 2 (`aite2`):** it must be started by hand once the queue is empty. Queued runs replace each other, so I'm doing it alone.
+**Weekly use:** it is now 90%. At 95% I stop starting new work and write up where things stand.
 
-When `aite3` finishes I'll read the table and write the 157, 159 and 160 cards, including the rewritten kokushi and four-concealed-triplets explanation.
-
-Open question cards: 0649, 0726, 0814, 0953.
+**Still waiting from earlier:** the skip-rule comparison run is still going, and the second-stage run still needs to be started by hand once the queue clears. After that come the cards for 157, 159, 160 and 165.
