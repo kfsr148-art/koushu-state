@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
-subj: 枠 百六十九：棚へ（国士・四暗刻の七文を63行に一度で入れる・20:00の戻りの後だけ）
+stat: 待機中
+head: 札まとめ中、、、。
+subj: 枠 百七十：棚へ（パネルにヨシの釦を作り押すとヨシが通る）
 sNow:  (1/1)
-mikomi: 5分 開始 11:22 書いた 11:23 終わり 11:28
-omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の33枠の中央値・合図1件は数えない）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
+mikomi: 5分 開始 11:27 書いた 11:28 終わり 11:33
+omoteEnd: なし (今の仕事なし＋順番待ち 0件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 33% sr 13:50 w 90%
 fable: 60% リセット 19:59（API 11:26）
 card: 11/23 11:24:09 🙋 ヨシしてください / この間にまとまった知らせ 2本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
-reply: 2026-11-23 11:23:35 枠 百六十九：棚へ（国士・四暗刻の七文を63行に一度で入れる・20:00の戻りの…
-replyBody: Frame 169 is done and its card is out. I created `koushu-ops` issue #9 with the 棚 label and a new 棚-戻りの後 label; the dispatcher practice swing now skips anything with that label. It covers the seven ko
-wait: 1
+reply: 2026-11-23 11:28:36 枠 百七十：棚へ（パネルにヨシの釦を作り押すとヨシが通る）
+replyBody: Frame 170 is done and the card is out. I created `koushu-ops` issue #10 with the 棚 label. It is the panel "ヨシ" button: shown only while waiting for a ヨシ, pressing it sends the pending mark to a separa
+wait: 0
