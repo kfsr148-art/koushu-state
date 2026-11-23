@@ -1,5 +1,5 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 待機中
+head: 札まとめ中、、、。
 subj: 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
 sNow:  (1/1)
 mikomi: 5分 開始 10:59 書いた 10:59 終わり 11:04
@@ -9,6 +9,6 @@ rl: s 30% sr 13:50 w 90%
 fable: 60% リセット 20:00（API 10:52）
 card: 11/23 10:46:11 ✅ 終わりました（返事不要） / この間にまとまった知らせ 4本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
-reply: 2026-11-23 10:43:02 枠 百五十九：週の枠が残りわずか（Fableを含む）。2131の書き広げは20:…
-replyBody: Frames 157, 159 and 160 are finished, with cards on the panel and one combined card on the bridge. Nothing I've received is left. 2131 waits until after the 20:00 reset, as 159 said. **Stage 2 results
+reply: 2026-11-23 11:00:01 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
+replyBody: Frame 167 is done: the shelf has a new issue. I created #8 in `koushu-ops` with the 棚 label (usual type, measuring in the cloud, about 3%). It carries your text, its finish condition and the bridge-fr
 wait: 0
