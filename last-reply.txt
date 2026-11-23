@@ -1,14 +1,13 @@
-刻: 2026-11-23 11:44:22
-件名: 枠 百七十四：棚 #10 に足す＝指さすで押した部品の名を state.json に載せる
+刻: 2026-11-23 11:51:18
+件名: 枠 百七十五：鈴の間を空ける役を VAIO の見張りへ移す（合図が続けて鳴っても起こすのは一度・積んだ分をまとめて受領）
 
-Frame 174 is done and its card is out. I added your 指さす request to shelf issue #10 and read it back; it stays on the shelf, nothing started.
+Frame 175 is done and its card is out. The job of spacing out the bell now lives in the VAIO watcher's waker (`rewake.js`), so センコ can ring the bell as soon as they write a frame.
 
-When the 指さす (point) button is pressed, the part's name goes by the same route as the ヨシ button: phone, separate ntfy topic, watcher, `state.json`. `state.json` gets "指さした：〈part name〉〈time〉". The existing copy action stays. So センコ can read it when you just say "the place I just pointed at". I added to the finish condition that pressing it in the public panel puts the name and time into `state.json` within about a minute.
+- **How it works:** when the only new inbox lines are bridge bells, it won't wake the window if it woke it within the last 180 seconds. The bells aren't dropped. They stay in the inbox as unprocessed lines. Once the gap has passed it wakes the window once for all of them, and the window reads every new frame. If the window is busy it still waits, as before. Other wakes, such as a cloud run finishing or queue items, still happen immediately.
+- **Test:** I ran it against a fake setup with the gap shortened to 4 seconds. Bell A woke it, bell B right after was held with the log line "積んでおく", and then B and C went through together as one wake covering 2 bells. The test is `scratchpad/rewake-bell-test.js` and is pushed. I didn't test the real 180-second case or a real bell.
+- **When it takes effect:** the change applies from the next time a waker starts, which is the next time the window stops.
+- **Not changed:** the watcher's backup route (`inbox-watch.ps1` sending text when no waker is running) is untouched, so it works as before. If a voice call dropped the waker, the old behaviour applies until a waker is up again.
 
-I also noted two cautions for when it runs:
-- **Same protections as the ヨシ button:** the topic name stays out of the public panel and `state.json`, a double press counts once, and tests use a fake sender.
-- **Public file:** `state.json` goes into the public `koushu-state`, so part names must be only the plain heading names from the screen.
-
-The shelf holds 7 items, about 42% of a week. Weekly use is 90% and nothing received is left.
+Weekly use is 90%. Nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
