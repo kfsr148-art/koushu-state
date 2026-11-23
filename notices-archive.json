@@ -1,5 +1,11 @@
 [
     {
+        "title":  "☁️ 雲の走りが落ちた（y1120-1800）",
+        "time":  1795165872,
+        "message":  "件名: 順番待ちを様子を写すに・指さすの名（panel v197 の雲の検査待ち）\n結果: failure\n印: y1120-1800",
+        "eid":  ""
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795165217,
         "message":  "見込みの種類は走りの jobs から・関門が札を捨てる道を全部並べて揃える\n一：見込みと鳴らす敷居の種類を、雲の scope の答えで決める形にした。scope-pick.js が回の種類（honta/panel/report）を出し、check.yml の仕事の名に「check（種類:…）」「deploy（種類:…）」と載せ、見張りは待っている走りの jobs から読む（読めるまでは一番長い種類・読めた後に見込みを出し直す）。雲の走りで名が評価され、見張りが jobs から honta を読めたことを確かめた。／二：札を捨てる道を全部並べた（報告の表）。関門が止めた済んだ仕事の✅・😽（再起動の戻りなど）は捨てず控え（card-outbox・held）に置き、段の台帳が畳まれたら出す形に揃えた（2時間たてば注記つきで出す）。途中の札（⏳・🕒・🔗・同じ仕事の途中の終わりの札・「完了：着手」だけ）は今のまま載せない。\nファイル: .github/workflows/check.yml・scope-pick.js・scope-pick-test.js・kumo-wait.ps1・card-gate.js・ntfy-say.ps1・notify-record.ps1・watch-notify.ps1・reports/y1120-1725.md\n実測: 雲の検査（11fe2389・本体の回）成功 14分10秒。仕事の名は check（種類:honta）／deploy（種類:honta）で、kumo-kind-jobs.tsv に出所 jobs の行が入った。作り値 test-kind 10件・test-park 9件・test-fast 6件・test-cloud 4件・scope-pick 16件＋種類5件 すべて PASS。常駐は起こし直し済み。",
@@ -245,10 +251,5 @@
         "title":  "👀 見てください（返事不要）",
         "time":  1794942979,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声の詰め方の比べ（AAC・24kHzのまま）を雲で実行中\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 乙はやめ、24kHzのまま AAC（m4a）24k／32k／48k と Opus（参考）で今の声を作り直し、大きさと音の差を測る雲の台本（scratchpad/jobs/codec-compare.js）を押した（9a81cf73）。今の声（字数の違う6本）を ADPCM から復号して各形式へ。iPhone の Safari で聞き比べ・つなぎ（decodeAudioData で繋ぐ）を試せるページ reports/codec-test/index.html も同じ走りが書く。声づくりには進まない（本人が見てから）。\nファイル: scratchpad/jobs/codec-compare.js\n\n［👀 見てください（返事不要）］\n声の詰め方の比べ（AAC）の結果を知らせた\nreports/codec-test/result.md と cloud-codec-compare-20261117-190408.md を読んだ。合計 今357KB／aac24 98KB（0.27）／aac32 127KB（0.36）／aac48 188KB（0.53）／opus24 91KB。つなぎのずれは全部0。声は本人が聞いてから作る。\nファイル: reports/y1118-0420.md／report-latest.md／work-note.txt\n実測: 雲の走り 53秒・終了コード0\n実機: iPhone で reports/codec-test/index.html を開き、六本を今／aac24／aac32／aac48 で聞き比べ、許せる最小の段を言う\n未検収: 声の聞き比べ（人手待ち）"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794942510,
-        "message":  "写せます（1件）"
     }
 ]
