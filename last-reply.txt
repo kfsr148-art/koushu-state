@@ -1,22 +1,16 @@
-刻: 2026-11-23 08:15:39
-件名: 枠 百五十六：返事パネルの影の一行を三つ目の箱「影の仕事」に替える（表の仕事・裏方と同じ形・ゲージ・走っている間だけ・$なし）
+刻: 2026-11-23 09:16:55
+件名: 枠 百五十七：相手あり二段目とロン見送り腕（雲）・解説の書き直し・2127乙と鳴いた断么九の数え直し・2131の七人×方言・2124の選びを本体へ
 
-Frames 155 and 156 are both finished and reported, and all my cloud checks passed. Nothing is waiting except your answers.
+Frame 157 is partly done and now waiting on the cloud. These pieces are in:
 
-**Frame 155, second half**
-- **v1519:** `BASE_CURVE` now holds the new values from the 30,000-hand re-measure. The cloud check passed and the published `ver.txt` says 1519.
-- **Opponent-included measurement, first stage:** it ran in the cloud (1232 seconds, 4292 games, no failures), at about 286 games per frame per way, so the margin is ±3 to ±5 points.
-  - **Kokushi:** 10 types win 9.8–10.1% and 11 types win 26.8–28.3%. That matches or beats the solo-play figures (9.7% and 21.7%), because winning on opponents' discards offsets the interruptions.
-  - **Pushing costs points:** at 10 types, pushing straight through deals in 34.5% of games against 10.1% for the normal machine player, and averages 724 points against 2162. Folding on riichi deals in 23.0% and averages 1314. Win rates are about the same for all three.
-  - **Four concealed triplets:** with 3 triplets + 2 pairs the machine player wins 30.1% and my push 21.7% (difference −8.4 points ±5.3). About 60% of the push wins are cheap hands, because winning on a discard breaks the triplets. A version that refuses to win on discards isn't built.
-  - **Fold arm:** it never changes anything in these frames, because the hand never drops to two or more away from ready.
-  - **Baseline:** my "base" arm is the normal machine player given the same hand, not a seat that ignores the yakuman. That player chases kokushi and four concealed triplets on its own.
-- **Report:** `reports/y1123-0815-aite-result.md`, with both tables in the card.
+- **The 2124 choices are in the body (v1520, pushed).** The cloud check on it is still running.
+  - **Cut candidate:** when the hand is a defend hand of 13 tiles, the rabbit button, Madame's line and the cut mark now point at the same tile as the advice, the leftmost floating tile. The mark stays 13-tiles-only. Attack hands are unchanged.
+  - **Rabbit line:** the defend line is option ハ, and the line for a defend hand with no floating tile is option イ.
+  - **Quiz answer bracket:** it now adds 票で攻めに or 票で守りに when the referee vote changed the verdict.
+  - **Help text:** I applied the chosen options in the five places (ア C, イ A, ウ A, エ B, オ C). The 中ぶくれ definition now uses 字3. `advice-tone-core.js` carries the same definition, and `first-sense-base.json` has the one changed cut entry.
+- **Cloud runs are on their way.** One run covers the first stage again, now with the arm that refuses to win on a discard. The other covers the second stage (`yakuman-aite2.js`). I'll read both and add the numbers to the rewritten kokushi/four-concealed-triplets explanation.
+- **2127 (kuitan):** 乙 was chosen. I recounted naki tanyao on the 1,400-game record that has the meld column. This is a small sample: of 17 wins from hands with 0–1 yaochu tiles, 13 included 断么九 and 8 of those were wins with melds. For 2 tiles, 28 of 37 tanyao wins were open.
+- **Double-reading check:** no voice-plan text (`dial.txt`, `parts.txt`) has a kanji followed by its kana reading. The five 島人（シマンチュ）/海人（ウミンチュ）lines appear in parentheses only in the screen-text JSON; their voice plan already has the kana alone.
+- **2131 scope:** the advice voices are what need regenerating, since the "見立て行" lines are voiceless.
 
-**Frame 156:** the old one-line shadow display is now the third box, "影の仕事" (panel v224, cloud check passed, published). It shows only while a shadow run is going, with a gauge and no dollar amount. I checked it by briefly faking a running state; `state.json` carried the box and I restored the original afterwards.
-
-**Questions for you (印 y1123-0814):**
-- Should I add and run the second stage, plus the arm that refuses to win on discards for four concealed triplets?
-- Should I rewrite the kokushi and four-concealed-triplets explanation drafts (印 2154) with these opponent-included numbers?
-
-Open question cards: 2055, 2124, 2127, 2131, 2154, 0649, 0726, 0814.
+Still to do: the new voice and wording work for 2131 across the seven personalities and eight dialects, then the final card and the bridge card for 157.
