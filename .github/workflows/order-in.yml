@@ -1,0 +1,81 @@
+# 枠を雲で一件ずつ走らせて閉じる（2026-11-23・橋の枠 二百二十 二）。窓（Claude Code）を通さない入口。
+#   ＊センコ（チャット側）が senko/order-in.md に枠を書いて push すると、この workflow が走る。
+#   ＊claude-code-action（鍵 CLAUDE_CODE_OAUTH_TOKEN＝claude setup-token の鍵・サブスクの枠）が、その枠を koushu-handan（handan/ に取得）で実行し、
+#     札を senko/cards/<刻>.md に一枚書いて閉じる。札は main へ押し、配信（deploy.yml）を起こす。
+#   ＊今夜の範囲は入口だけ。パネルの出し方・決まりの写し・VAIO の見張りの片付け・分の数えは、この道が動いてから後で回す（枠 二百二十）。
+#   ＊鍵は公開の所へ書かない（gh secret）。この道では claude.ai の道具（橋）は使えない。
+name: 枠を雲で実行する
+on:
+  push:
+    branches: [main]
+    paths: ['senko/order-in.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+  id-token: write
+concurrency:
+  group: order-in
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: koushu-handan を取得する（読み書きしてよい作業の木・push はしない）
+        uses: actions/checkout@v4
+        with:
+          repository: kfsr148-art/koushu-handan
+          path: handan
+          fetch-depth: 50
+      - name: 刻を決める
+        id: t
+        run: |
+          echo "stamp=$(TZ=Asia/Tokyo date '+%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
+          echo "now=$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S')" >> "$GITHUB_OUTPUT"
+      - name: 枠を実行する（claude-code-action）
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            あなたは koushu-handan（麻雀の攻守判断のアプリ）の仕事を、窓を通さず雲で一件ずつ実行する係です。
+            一、./senko/order-in.md を読み、そこに書かれた枠（本人の決め）を実行してください。やる範囲は枠に書かれた物だけです（頼まれていない改善はしない）。
+            二、koushu-handan は ./handan/ に取得してあります。読むのも調べるのも書くのもここで行ってください。koushu-handan.html を変える枠は、./handan/.claude/skills/koushu-handan-dev/SKILL.md と ./handan/CLAUDE.md の作法に従ってください。ただし git push はしないでください（結果は札に書く）。
+            三、終わったら札を一枚、./senko/cards/${{ steps.t.outputs.stamp }}.md に書いてください。形は：一行目に題（『枠 〈名〉の結果』）、空行のあと、した事（二文以内）、触ったファイル、確かめた事、残り（無ければ『残り0件』）。できなかった事は『未了：理由』と書き、黙って落とさないでください。
+            四、秘密（鍵・トークン・ntfy の話題名）は札にもファイルにも書かないでください。
+          claude_args: |
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(git:*),Bash(node:*),Bash(ls:*),Bash(cat:*),Bash(mkdir:*),Bash(date:*)"
+            --max-turns 40
+      - name: 札が書けたかを確かめる
+        run: |
+          f="senko/cards/${{ steps.t.outputs.stamp }}.md"
+          if [ ! -s "$f" ]; then
+            mkdir -p senko/cards
+            printf '枠の結果：札が書かれなかった\n\n未了：claude-code-action が札を書かずに終わりました（走りを見てください）。\n' > "$f"
+          fi
+          echo "札: $f"; head -n 6 "$f"
+      - name: 札を押して配信を起こす
+        run: |
+          git config user.name "koushu-order-bot"
+          git config user.email "koushu-order-bot@users.noreply.github.com"
+          git add senko/cards
+          git commit -q -m "枠の札 ${{ steps.t.outputs.now }}（雲で実行）" || { echo "押す物が無い"; exit 0; }
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:main; then echo "押した"; break; fi
+            git pull -q --rebase origin main || true; sleep 4
+          done
+          gh workflow run deploy.yml --ref main -R "$GITHUB_REPOSITORY" || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ntfy で札を知らせる（話題が secret にある時だけ・題だけ）
+        if: always()
+        run: |
+          [ -n "$NTFY_TOPIC" ] || { echo "NTFY_TOPIC が無いので送らない"; exit 0; }
+          f="senko/cards/${{ steps.t.outputs.stamp }}.md"
+          title="$(head -n 1 "$f" 2>/dev/null || echo '枠の札')"
+          TB64=$(printf '☁️ %s' "$title" | base64 -w0)
+          printf '\xe2\x80\x8b' | curl -s --max-time 20 -H "Title: =?UTF-8?B?${TB64}?=" -H "Priority: 3" -H "Cache: no" --data-binary @- "https://ntfy.sh/${NTFY_TOPIC}" > /dev/null || true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
