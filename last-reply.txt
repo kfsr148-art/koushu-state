@@ -1,13 +1,15 @@
-刻: 2026-11-23 12:19:55
-件名: 枠 百七十七：棚の出し入れだけの札は『まとめて写す』に数えず押し通知も出さない
+刻: 2026-11-23 12:22:44
+件名: 枠 百七十八：橋の札の見出しの刻を手で書かない（台本 bridge-card.js が書く瞬間の時計で入れる）
 
-Frame 177 is done and its card is out. Shelf-only cards (put in the shelf or added to it, with no decision from you) no longer count toward "まとめて写す" and send no push notification. I haven't tried it with a real card yet, so it takes effect on the next shelf-only frame.
+Frame 178 is done and its card is out. The heading time on the bridge card for this frame was written by the new script, so it reads 12:22, the time it was made.
 
-- **How to use it:** I end such a frame with `card-out --kind 棚`. `watch-notify.ps1` then titles it "📚 棚の出し入れ（返事不要）", and `push-plan.ps1` treats that title as quiet. Quiet means no panel card and no push; a single line goes to `notice-quiet.tsv`, so the card text is kept there. The bridge card and report still carry it as usual.
-- **Count and ledger:** the "まとめて写す" count comes from the card list, so quiet cards don't add to it. The ledger row is closed by `card-out` itself, not by the card path. The shelf button's count and percentage still update from the shelf data every 3 minutes.
-- **Mixed cards:** anything with a ヨシ waiting or a question isn't marked as a shelf kind and works as before, with the question as a separate 🙋 card.
-- **Checks:** both PowerShell scripts parse cleanly, and the push plan returns quiet for the shelf title and push for the normal done card and the 🙋 card. I saved backups (`.bak-20261123`).
+- **The script:** `~/.claude/bridge-card.js <frame name> <body file> [--ask <mark>]` builds the heading (frame name, time, type) from the clock at the moment it runs. It prints the update payload as JSON, and I paste that into the document update unchanged. It also logs each use to `bridge-cards.log`.
+- **Rejecting hand-written times:** if the body already has a heading line or a hand-written frame time, the script stops with exit code 3. The same goes for a heading pasted into the body.
+- **Dollar signs:** it swaps any dollar sign in the body for a full-width one, since the bridge document rejects them as maths. That is why I could post cards that mention costs.
+- **Rule:** I added a line to 作法44 七 in `CLAUDE.md` (receipt times still come from the frame mark in the records, as before).
+- **Checks:** a normal body passes, and bodies with a heading or a hand-written time are rejected.
+- **Your finish condition:** that the next card's heading time doesn't clash with the receipt or state times can only be checked on later cards. From now on I post every bridge card this way.
 
-The 176 conversion check is still waiting on the cloud. Weekly use is 92%, with 95% as the stop line. Nothing received is left.
+Weekly use is 92%. Nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
