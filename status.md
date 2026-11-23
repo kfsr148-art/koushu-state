@@ -1,12 +1,12 @@
 # いまの様子
 
-**作業中** — 枠 二百二十九：雲の main の決まりと concurrency の group を直す
+**手待ち** — 枠 二百二十九：雲の main の決まりと concurrency の group を直す
 
-未処理 0 件 ／ 2026-11-24 00:48:15 書き出し（VAIOの時計）
+未処理 0 件 ／ 2026-11-24 00:52:31 書き出し（VAIOの時計）
 
 ＊この頁は知らせが出るたびに書き直されます。話題名は載せません。
 ＊押し送り（ntfy）へ出るのは本人の手が要る物だけです（ヨシ待ち・済んだ仕事の札・手が要る異常。決めは push-plan.ps1）。使用量の敷居など手が要らない物は、押し送らず札にもしません。
-押し送りは本日 1 件（上限20件）。
+押し送りは本日 2 件（上限20件）。
 
 ---
 
@@ -16,7 +16,8 @@
 
 ```
 枠 二百二十七
-枠 二百二十七：koushu-state の order-in.yml の concurrency に queue: max を一行足した（67c9887f・ほかは触らず）。読むだけの枠を間を空けず二枚書いた（97bfeede・add6a901）：一つ目が走る間に二つ目が pending で残り、消されず順に走って両方成功、札が二枚出た（senko/cards の 20261124-003755・003857）。queue が効いた。ついでに v1522 の配信（079683ad）も成功し、公開の ver.txt が 1522 になった。枠 二百二十八（棚 #4・#13・#15 を閉じた）も済み。未了：pack-site の --make-manifest が voice-advice-catalog.js を先に走らせる直し（作法の抜け止め）は未着手。
+
+完了: 枠 二百二十七：koushu-state の order-in.yml の concurrency に queue: max を一行足した（67c9887f・ほかは触らず）。読むだけの枠を間を空けず二枚書いた（97bfeede・add6a901）：一つ目が走る間に二つ目が pending で残り、消されず順に走って両方成功、札が二枚出た（senko/cards の 20261124-003755・003857）。queue が効いた。ついでに v1522 の配信（079683ad）も成功し、公開の ver.txt が 1522 になった。枠 二百二十八（棚 #4・#13・#15 を閉じた）も済み。未了：pack-site の --make-manifest が voice-advice-catalog.js を先に走らせる直し（作法の抜け止め）は未着手。
 ファイル: koushu-state: .github/workflows/order-in.yml
 実測: 走り 45207291921 success・45207307023 success・札二枚・公開 ver.txt 1522・079683ad の配信 success
 ```
