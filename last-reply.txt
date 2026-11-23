@@ -1,12 +1,17 @@
-刻: 2026-11-23 12:26:29
-件名: 棚の素振り：起こすならどれかを札に一行出す（仕事にしない）
+刻: 2026-11-23 12:33:19
+件名: 枠 百八十：koushu-state の main に senko/digest.md を一枚置き、札や状態が変わるたびに書き直す
 
-Frame 179 is done, plus the practice-swing note that arrived with it. The 177 quiet path is still unconfirmed.
+Frame 180 is built and its card is out. `senko/digest.md` is live on `koushu-state` main.
 
-- **179:** I created `koushu-ops` issue #11 with the 棚 label (usual type, about 2%). It puts the practice swing's last result on the shelf list when opened: "起こすなら #N", "今は入らん", or "動く時間の外", with the time it was checked. The shelf holds 8 items, about 44% of a week. Both cards for this frame went out the quiet way, and the bridge card heading was written by `bridge-card.js` (12:23).
-- **Quiet path:** I haven't seen the quiet record for the shelf-kind card appear in `notice-quiet.tsv` yet. The watcher was holding cards back for a cloud check and then yielding to heavy work, so I'll look again at the next stop.
-- **Practice swing:** the window opened at 12:00 and the first result reached me as an inbox line. It says that with the weekly figure at 92%, only #11 fits (2% × 1.5 against 3% left after the 5% reserve). Nothing is woken, since the dispatcher is still on practice swings. I put that in a one-line card, not a quiet one, because you wanted to see it.
+- **Where:** https://github.com/kfsr148-art/koushu-state/blob/main/senko/digest.md. The raw form is `raw.githubusercontent.com/kfsr148-art/koushu-state/main/senko/digest.md`.
+- **Contents:**
+  - **Top lines:** a one-line state (state, subject, estimate, session %, week %, Fable %), the time it was written, and the read stamp (the time センコ last marked the cards as read).
+  - **Cards:** below that, only the cards newer than the read stamp, newest first, capped at 60. Once the stamp moves forward, older cards drop out at the next rewrite.
+  - **Left alone:** the existing copies (`status.md`, `notices.json`, `brief.txt`) are untouched.
+- **How:** `~/.claude/digest-make.js` builds it, and `git-push.ps1` runs it whenever it pushes `state.json` or `notices.json` to `koushu-state`, then ships it in the same commit. I took a backup of the script and checked it parses cleanly. I restarted the resident watcher at 12:31:40, after the script was edited, so it loads the new push script.
+- **Live:** the first commit is from 12:31:48 (14 KB, 2 cards after the 12:24:00 stamp), and it has kept updating.
+- **Your finish condition:** that a card issued after the read stamp appears alone in the digest is how it's built to work, and I'll see it once the stamp moves, since I can't move it from here.
 
-Weekly use is 92%. Nothing received is left.
+Weekly use is still about 92%. Nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
