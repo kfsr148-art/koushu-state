@@ -1,16 +1,21 @@
-刻: 2026-11-23 09:16:55
+刻: 2026-11-23 09:28:29
 件名: 枠 百五十七：相手あり二段目とロン見送り腕（雲）・解説の書き直し・2127乙と鳴いた断么九の数え直し・2131の七人×方言・2124の選びを本体へ
 
-Frame 157 is partly done and now waiting on the cloud. These pieces are in:
+Frame 158 is finished and the card is out. Frame 157 is resumed and waiting on the cloud.
 
-- **The 2124 choices are in the body (v1520, pushed).** The cloud check on it is still running.
-  - **Cut candidate:** when the hand is a defend hand of 13 tiles, the rabbit button, Madame's line and the cut mark now point at the same tile as the advice, the leftmost floating tile. The mark stays 13-tiles-only. Attack hands are unchanged.
-  - **Rabbit line:** the defend line is option ハ, and the line for a defend hand with no floating tile is option イ.
-  - **Quiz answer bracket:** it now adds 票で攻めに or 票で守りに when the referee vote changed the verdict.
-  - **Help text:** I applied the chosen options in the five places (ア C, イ A, ウ A, エ B, オ C). The 中ぶくれ definition now uses 字3. `advice-tone-core.js` carries the same definition, and `first-sense-base.json` has the one changed cut entry.
-- **Cloud runs are on their way.** One run covers the first stage again, now with the arm that refuses to win on a discard. The other covers the second stage (`yakuman-aite2.js`). I'll read both and add the numbers to the rewritten kokushi/four-concealed-triplets explanation.
-- **2127 (kuitan):** 乙 was chosen. I recounted naki tanyao on the 1,400-game record that has the meld column. This is a small sample: of 17 wins from hands with 0–1 yaochu tiles, 13 included 断么九 and 8 of those were wins with melds. For 2 tiles, 28 of 37 tanyao wins were open.
-- **Double-reading check:** no voice-plan text (`dial.txt`, `parts.txt`) has a kanji followed by its kana reading. The five 島人（シマンチュ）/海人（ウミンチュ）lines appear in parentheses only in the screen-text JSON; their voice plan already has the kana alone.
-- **2131 scope:** the advice voices are what need regenerating, since the "見立て行" lines are voiceless.
+- **158 一 (shadow issue):** I created issue #3 in `koushu-ops` for the 11-22 16:47 ledger row. The first run timed out at 240 seconds, so I raised the runner's limit to 420 seconds, made failed issues move to `shadow-failed` instead of being retried every 3 minutes, and gave it a read-only snapshot of the ledger and scripts. The second run finished in 95 seconds and closed the issue. The three reasons that row never closes:
+  - **Hand-written status:** its status was written by hand as 決め待ち, so the automatic closing never touches it.
+  - **No `--from`:** the closing logic from frame 135 only fires when a later frame names the row with `--from`, and none has.
+  - **Time-out rule:** the automatic time-out always keeps rows containing 決め待ち.
+  The shadow did not close it. The fix is a decision for you: either start a frame that sends the Cloud-side ntfy sends through the push-plan, or drop it and mark the row done (not doing it).
+- **158 二 (センコ posting issues):** the Fable report says an "always allow" setting exists but is reported not to work in voice calls. It recommends センコ write an `影の課題` frame in the bridge document, which I turn into an issue when I read the bell. I haven't changed 作法44 for this.
+- **160 二:** done, via that same Fable report.
+- **160 一 (rule for when to skip a ron):** the Fable design is in `reports/y1123-0930-ron-skip-design.md`. It recommends comparing expected value: skip a ron only when the chance of still getting the four-triplets tsumo times 32000 exceeds the ron's points. I built `yakuman-aite3.js` with the fixed-threshold arm and the expected-value arm, on the 3-triplet+2-pair and 3-triplet+1-pair frames. It is pushed and queued in the cloud.
+- **Still waiting on the cloud:**
+  - **Stage 1:** the first-stage run with the always-skip arm added.
+  - **Stage 2:** the second-stage run.
+  - **aite3:** the new skip-rule comparison.
+  When they finish I'll read the tables and write the 157, 159 and 160 cards, including the rewritten explanation text and the split between what's done and what's postponed.
+- **159:** the 2131 expansion to seven personalities across the dialects is postponed until after 20:00, and I've kept what's already written. The weekly usage is near its limit. If it reaches 95% I'll stop new work and write up where things stand.
 
-Still to do: the new voice and wording work for 2131 across the seven personalities and eight dialects, then the final card and the bridge card for 157.
+Open question cards: 2154 (answered), 0649, 0726, 0814, 0927 (new).
