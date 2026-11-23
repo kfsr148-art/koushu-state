@@ -75,11 +75,12 @@ jobs:
           git config user.email "koushu-order-bot@users.noreply.github.com"
           f="senko/cards/${{ steps.t.outputs.stamp }}.md"
           cp "$f" /tmp/card.md
+          cp senko/order-in.md /tmp/order.md 2>/dev/null || true
           for i in 1 2 3 4 5; do
             git fetch -q origin main && git reset -q --hard origin/main
             mkdir -p senko/cards && cp /tmp/card.md "$f"
-            node tools/order-finish.js /tmp/run.jsonl "$f" --apply
-            git add senko/cards state.json notices.json
+            OF_ORDER=/tmp/order.md node tools/order-finish.js /tmp/run.jsonl "$f" --apply
+            git add senko/cards senko/cloud-history.tsv state.json notices.json
             git commit -q -m "枠の札 ${{ steps.t.outputs.now }}（雲で実行・走りの控えと rl を付けた）" || { echo "押す物が無い"; exit 0; }
             if git push -q origin HEAD:main; then echo "押した"; break; fi
             echo "押せなかった（$i 回目）→ 最新の main へ載せ直す"; sleep 4
