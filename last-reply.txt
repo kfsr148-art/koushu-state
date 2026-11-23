@@ -1,21 +1,23 @@
-刻: 2026-11-23 09:28:29
-件名: 枠 百五十七：相手あり二段目とロン見送り腕（雲）・解説の書き直し・2127乙と鳴いた断么九の数え直し・2131の七人×方言・2124の選びを本体へ
+刻: 2026-11-23 09:44:36
+件名: 枠 百六十三：棚へ三つ（守りの種・56人の助言の通し読み＋口調表・審判の重み）を koushu-ops に印『棚』の課題として立てる
 
-Frame 158 is finished and the card is out. Frame 157 is resumed and waiting on the cloud.
+Frame 163 is done and the card is out. Frames 161 and 162 are in progress.
 
-- **158 一 (shadow issue):** I created issue #3 in `koushu-ops` for the 11-22 16:47 ledger row. The first run timed out at 240 seconds, so I raised the runner's limit to 420 seconds, made failed issues move to `shadow-failed` instead of being retried every 3 minutes, and gave it a read-only snapshot of the ledger and scripts. The second run finished in 95 seconds and closed the issue. The three reasons that row never closes:
-  - **Hand-written status:** its status was written by hand as 決め待ち, so the automatic closing never touches it.
-  - **No `--from`:** the closing logic from frame 135 only fires when a later frame names the row with `--from`, and none has.
-  - **Time-out rule:** the automatic time-out always keeps rows containing 決め待ち.
-  The shadow did not close it. The fix is a decision for you: either start a frame that sends the Cloud-side ntfy sends through the push-plan, or drop it and mark the row done (not doing it).
-- **158 二 (センコ posting issues):** the Fable report says an "always allow" setting exists but is reported not to work in voice calls. It recommends センコ write an `影の課題` frame in the bridge document, which I turn into an issue when I read the bell. I haven't changed 作法44 for this.
-- **160 二:** done, via that same Fable report.
-- **160 一 (rule for when to skip a ron):** the Fable design is in `reports/y1123-0930-ron-skip-design.md`. It recommends comparing expected value: skip a ron only when the chance of still getting the four-triplets tsumo times 32000 exceeds the ron's points. I built `yakuman-aite3.js` with the fixed-threshold arm and the expected-value arm, on the 3-triplet+2-pair and 3-triplet+1-pair frames. It is pushed and queued in the cloud.
-- **Still waiting on the cloud:**
-  - **Stage 1:** the first-stage run with the always-skip arm added.
-  - **Stage 2:** the second-stage run.
-  - **aite3:** the new skip-rule comparison.
-  When they finish I'll read the tables and write the 157, 159 and 160 cards, including the rewritten explanation text and the split between what's done and what's postponed.
-- **159:** the 2131 expansion to seven personalities across the dialects is postponed until after 20:00, and I've kept what's already written. The weekly usage is near its limit. If it reaches 95% I'll stop new work and write up where things stand.
+- **163 (shelf issues):** the three shelf issues are up in `koushu-ops` with the label 棚, estimates and type. Each says to close it if the work turns out to be done already. I checked they carry the label.
 
-Open question cards: 2154 (answered), 0649, 0726, 0814, 0927 (new).
+| Issue | What | Type | Estimate |
+|---|---|---|---|
+| #4 | put 七対子 and 混一色 shapes into the defend advice | usual (Sonnet) | about 3% of a week |
+| #5 | read all 56 advice voices through and polish them to the tone table | Fable | about 15% |
+| #6 | re-measure the referee weights without the seats | Fable design, measuring in the cloud | about 8% |
+
+  The estimates are rough guesses. They sum to 26%, which won't fit in the roughly 11% of the week left until the 20:00 reset (weekly use is 89% now). That is the dispatcher's job to sort out.
+- **162 (panel v225):** pushed; the cloud check on it is registered as a wait.
+  - **Shelf button:** the second button in the lower row is now "棚 N件・約M%". Pressing it opens a list of sleeping frames, each with its text and estimate. With the shelf empty it reads "棚 0件".
+  - **Recent jobs:** the last three finished jobs now show inside "くわしく". The old "直近に終わった仕事" button is gone.
+  - **Data and checks:** the shelf list is refreshed every 3 minutes by the shadow runner, from the open 棚 issues. Locally `panel-check.js --static` passes.
+- **161 (shelf dispatcher):** I started a Fable design for the part that decides when to wake shelf items and how to record usage per run. Note that waking a shelf item means telling the window to do it, not running it unattended.
+- **Weekly use:** it stayed at 89% while I did 162 and 163, so ordinary work costs little. I'll read it again after the Fable agent returns.
+- **Still waiting on the cloud:** the three measurement runs (stage 1 with the always-skip arm, stage 2, and the skip-rule comparison) and the v225 check.
+
+Open question cards: 0649, 0726, 0814, 0927.
