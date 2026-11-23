@@ -1,14 +1,14 @@
-stat: 作業中
-head: 作業中、、、。
+stat: 待機中
+head: 札まとめ中、、、。
 subj: 枠 百六十八：印 y1123-1041 の答え（解説でなく助言の特殊な形に国士・四暗刻の文を入れる・56人は20:00の後2131と一緒）
 sNow:  (1/1)
 mikomi: 15分 開始 11:06 書いた 11:08 終わり 11:23
-omoteEnd: 11:19 (今の仕事なし＋順番待ち 1件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
+omoteEnd: 11:20 (今の仕事なし＋順番待ち 1件×12分（直近24時間の33枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
 uraEnd: なし (下請け 0本（1本 1.4分＝直近24時間 47本の中央値）・雲 0本)
 rl: s 31% sr 13:50 w 90%
 fable: 60% リセット 19:59（API 11:02）
 card: 11/23 11:02:18 ✅ 終わりました（返事不要） / 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 10:43 自動検査と配信 成功、10:36 札と状態の配信 成功、10:34 雲で回す 成功
-reply: 2026-11-23 11:00:01 枠 百六十七：棚へ（国士10種で九種九牌を流す腕を足して測る）
-replyBody: Frame 167 is done: the shelf has a new issue. I created #8 in `koushu-ops` with the 棚 label (usual type, measuring in the cloud, about 3%). It carries your text, its finish condition and the bridge-fr
+reply: 2026-11-23 11:08:38 枠 百六十八：印 y1123-1041 の答え（解説でなく助言の特殊な形に国士・…
+replyBody: Frame 168 is received and answered, with nothing added to the body yet. The card shows the seven draft lines in full and asks about wording. - **Where they go:** into the advice's special-hand forms, 
 wait: 1
