@@ -1,14 +1,22 @@
-刻: 2026-11-23 10:17:49
-件名: 枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1.5・Fable型は棚-今週のみ）の素振りで回し、起こすならどれかを札に出す
+刻: 2026-11-23 10:43:02
+件名: 枠 百五十九：週の枠が残りわずか（Fableを含む）。2131の書き広げは20:00の後・他は今進める・95%で止まる
 
-Frame 166 is done and its card is out. The shelf's dispatcher runs as practice swings only, with your three answers applied:
+Frames 157, 159 and 160 are finished, with cards on the panel and one combined card on the bridge. Nothing I've received is left. 2131 waits until after the 20:00 reset, as 159 said.
 
-- **Window:** it only acts from 8 hours to 1 hour before the weekly reset.
-- **Estimate:** it uses the estimate ×1.5 against the room left after a 5% reserve.
-- **Fable items:** they only count if they carry the 棚-今週 label.
+**Stage 2 results (opponents present, about 190 games per frame and arm):**
+- **Kokushi:** the shape that matters is how many different terminal/honor tile types you hold. At 9 types it wins about 2%, so it isn't worth chasing. At 10 types it wins about 10%, at 11 about 27% and at 12 about 75%. Pushing or folding doesn't change the win rate compared with the normal machine player; pushing only raises deal-ins (at 10 types: 34.5% pushing, 23.0% folding, 10.1% machine).
+- **Four concealed triplets:** the normal machine player is best. With 3 triplets + 2 pairs it averaged 17,871 points, against 13,693 for pushing. Shapes with 2 or fewer triplets win only a few percent and lose points when pushed.
+- **Skipping rons (frame 160, Fable's design):** the threshold and expected-value arms score about the same as pushing. Always skipping raises the yakuman rate to 32.7% but drops points to 10,301.
 
-What I added is the announcement. When a practice swing settles on which issue it would wake, it announces it once per issue per day. It comments on the issue in `koushu-ops` and puts a line in the inbox, so the window writes a one-line card and does nothing else. I tested it with a fake environment: it announces once, doesn't repeat, and stays silent outside the window, when the five-hour allowance is at 85%, or when the usage data is stale. Waking an item for real is still not built.
+The rewritten explanation drafts, with these numbers, are in the 157 card and `reports/y1123-1040-aite-final.md`. They are not in the body's help text yet.
 
-Today the window opens at 12:00, 8 hours before the 20:00 reset. If weekly use is still 90% then, only issue #4 (3% × 1.5 = 4.5%) fits in the remaining 5%, and that is what should appear in the card.
+**Other results:**
+- **2124:** the choices are already in the body and live (v1520).
+- **2127 (kuitan):** 乙 was chosen. For hands with 0–1 yaochu tiles, 8 of 17 wins were naki tanyao (47%).
+- **Voice double-reading:** none left; I checked all 23,677 voice-script texts.
+- **159:** the card lists what's postponed (the 2131 expansion, with its size estimate) and what's done. Weekly use is 90%, so the 95% stop hasn't triggered.
+- **160:** the card carries both Fable answers, including the recommended way for センコ to post issues.
 
-Still running in the cloud: the second-stage measurement (`aite2`). It was started at 10:13 and should take about 25 minutes. Then I'll write the 157, 159 and 160 cards, including the rewritten kokushi and four-concealed-triplets explanation. Weekly use is 90%. Open question cards: 0649, 0726, 0814, and 0927 (answered, awaiting your decision on the 16:47 row).
+New question (印 y1123-1041): may the kokushi/four-triplets explanation go into frame 101's help text, and is the wording right?
+
+Open question cards: 0649, 0726, 0814, 0927, 1041.
