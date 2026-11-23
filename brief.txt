@@ -3,12 +3,12 @@ head: 作業中、、、。
 subj: 枠 百八十四：棚 #10 に足す（ヨシの釦と橋の答えの二重を防ぐ）
 sNow:  (1/1)
 mikomi: 5分 開始 12:37 書いた 12:41 終わり 12:46
-omoteEnd: なし (今の仕事なし＋順番待ち 0件×9.3分（直近24時間の41枠の中央値・合図1件は数えない）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）)
-uraEnd: なし (下請け 0本（1本 2.1分＝直近24時間 37本の中央値）・雲 0本)
+omoteEnd: 12:45 (今の仕事なし＋順番待ち 1件×9.3分（直近24時間の41枠の中央値）・見込みと実測の比 1（直近24時間 0組・参考：今の仕事の終わりには掛けない）・見込みを過ぎて残っているので今から5分刻みで延ばした)
+uraEnd: なし (下請け 0本（1本 2.2分＝直近24時間 36本の中央値）・雲 0本)
 rl: s 57% sr 13:50 w 93%
 fable: 60% リセット 20:00（API 12:34）
-card: 11/23 12:34:32 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
+card: 11/23 12:42:16 ✅ 終わりました（返事不要） / この間にまとまった知らせ 2本
 ura: 下請け動作0／直近 09:45 Design the s… 終、09:23 Design ron-s… 終、09:21 Investigate … 終／雲 走り0・直近 12:24 自動検査と配信 成功、12:23 札と状態の配信 成功、12:21 札と状態の配信 取り消し
-reply: 2026-11-23 12:33:19 枠 百八十：koushu-state の main に senko/digest…
-replyBody: Frame 180 is built and its card is out. `senko/digest.md` is live on `koushu-state` main. - **Where:** https://github.com/kfsr148-art/koushu-state/blob/main/senko/digest.md. The raw form is `raw.githu
+reply: 2026-11-23 12:41:50 枠 百八十四：棚 #10 に足す（ヨシの釦と橋の答えの二重を防ぐ）
+replyBody: Frames 181 through 184 are done, each with its card. All four are working at the script level; the real センコ→shelf route (181) hasn't been used yet. Weekly use is 93%, with 95% as the stop line. Nothin
 wait: 1
