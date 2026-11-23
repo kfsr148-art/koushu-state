@@ -2,7 +2,24 @@
 
 状態：作業中｜件名：枠 百八十：koushu-state の main に senko/digest.md を一枚置き、札や状態が変わるたびに書き直す｜見込み：45分｜セッション 54%｜週 93%｜Fable 60%
 
-書いた刻：2026-11-23 12:34:19／読み印：2026-11-23 12:24:00／札 2件（読み印より後・新しい順）
+書いた刻：2026-11-23 12:34:34／読み印：2026-11-23 12:24:00／札 3件（読み印より後・新しい順）
+
+## ✅ 終わりました（返事不要）｜11-23 12:34
+
+この間にまとまった知らせ 2本
+
+［✅ 終わりました（返事不要）］
+枠 百八十：koushu-state の main に senko/digest.md を一枚置き、札や状態が変わるたびに書き直す
+枠 百八十：koushu-state の main に senko/digest.md を一枚置き、押しのたびに書き直す形にした。置き場：https://github.com/kfsr148-art/koushu-state/blob/main/senko/digest.md（raw は https://raw.githubusercontent.com/kfsr148-art/koushu-state/main/senko/digest.md）。中身：頭に状態の一行（状態｜件名｜見込み｜セッション%｜週%｜Fable%）・書いた刻と読み印・その下に、読み印（senko-read の read.txt＝~/.claude/senko-read-at.txt）より後の札の本文だけを新しい順（最大60件・一件6000字まで）。読み印が進めば、その刻までの古い札は次の書き直しで消える。作り：~/.claude/digest-make.js（state.json・notices.json・usage.json の限度・読み印から作る）／git-push.ps1（写し .bak-20261123）が state.json か notices.json を koushu-state へ押す時に digest-make を呼び、senko-digest.md を senko/digest.md として一緒に運ぶ（失敗しても押しは止めない）。常駐（inbox-watch.ps1）は 12:31:40 に起こし直した（git-push.ps1 の更新 12:29:04 より後）。今の写し（status.md・notices.json・brief.txt）はそのまま残す。実地：koushu-state main の senko/digest.md の最初の commit は 12:31:48（state.json の押しと一緒）・14KB・札2件（読み印 12:24:00 より後）。済みの条件『読み印の後に札を出すと digest.md にその札だけが載る』は、この札を出した後の digest で見える（読み印を進めると古い札は消える）
+ファイル: ~/.claude/digest-make.js・~/.claude/git-push.ps1・.gitignore（senko-digest.md）
+実測: koushu-state main に senko/digest.md ができた（12:31:48）・14KB／git-push.ps1 の構文検査 errors=0／常駐の起こし直し 12:31:40
+
+［✅ 終わりました（返事不要）］
+枠 百七十九：棚へ（棚の割り振り係の素振りの結果をパネルの棚に出す）
+
+完了: 枠 百七十九：棚へ入れた。koushu-ops に印『棚』の課題（題：棚の割り振り係の素振りの結果をパネルの棚に出す・型ふだん・見積もり約2%・済みの条件と橋枠の印つき）を立てた。棚の一覧の頭に『起こすなら #N（見積もり M%）』『今は入らん（残り A%・一番軽い #N は B%）』『動く時間の外（次は HH:MM から）』のどれかと見た刻を一行出す。材料は shelf-run.json。棚は今 8件・約44%
+ファイル: koushu-ops 棚の課題
+実測: gh issue create で確かめた
 
 ## ✅ 終わりました（返事不要）｜11-23 12:28
 
