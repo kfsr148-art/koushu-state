@@ -1,16 +1,13 @@
-刻: 2026-11-23 10:03:26
+刻: 2026-11-23 10:14:17
 件名: 枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）
 
-Frame 165 is built and pushed as panel v226. I'm waiting on its cloud check, so the card isn't out yet.
+Frame 165 is finished and its card is out. Panel v226 is published and the cloud check passed.
 
-- **What it shows:** under the "返事パネル" title, while a job is running, there are two lines. The first is a red bold estimate, "見込み 約N%", or "見込み —" when there is no data yet. The second is a small gray "今まで M%", or "1%未満" when under one percent. Nothing shows when there is no job. No dollar amount.
-- **Where the numbers come from:**
-  - **Estimate:** it is the median weekly-percentage cost of finished jobs with a similar time estimate, and only appears once at least three such jobs have been recorded.
-  - **So far:** it is the weekly percentage now minus the weekly percentage when the job started.
-  - **History:** finished jobs are saved to `~/.claude/job-week-history.tsv`, which also starts the usage-learning that the shelf needs.
-- **Checked so far:** the calculation passes in my test cases, and `panel-check.js --static` passes locally. The watcher is already writing it to `state.json` for this job. It shows "見込み —" and "今まで 1%未満", with the start at 90% weekly.
-- **Still to check:** the cloud result and the published panel version (226). The box is positioned absolutely under the title, so it shouldn't move anything, but I haven't seen it on a phone.
+- **What shows:** under the "返事パネル" title while a job runs, a red bold "見込み —" (the estimate, blank until 3 similar jobs are on record) and a gray "今まで N%" (the weekly percentage spent since the job began). Nothing shows when there is no job, and no dollar amounts.
+- **Live on this machine:** the watcher already writes it into `state.json` for my current job (it started at 90% weekly).
+- **Not seen on a phone yet:** it's positioned under the title, so I don't expect any layout shift. Worth a look on your device.
+- **Stage 2 is running** in the cloud now (started 10:13, about 25 minutes) alongside the skip-rule results, which are already in. Two results stand out:
+  - **Machine's own play wins:** in the 3-triplet+2-pair frame, the normal machine player averaged 17,871 points. Every arm of mine scored lower: pushing 13,693, the threshold rule 13,848, the expected-value rule 13,617 and always skipping 10,301.
+  - **Skipping lifts the yakuman rate but loses points:** always skipping reaches 32.7% against 27.1% for the machine, but costs points and adds deal-ins.
 
-**Weekly use:** it is now 90%. At 95% I stop starting new work and write up where things stand.
-
-**Still waiting from earlier:** the skip-rule comparison run is still going, and the second-stage run still needs to be started by hand once the queue clears. After that come the cards for 157, 159, 160 and 165.
+When stage 2 finishes I'll read it and write the 157, 159 and 160 cards with the rewritten explanation. Weekly use is 90%.
