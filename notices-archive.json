@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🪟 異常です：セッションの使用量が 95% を越えました",
+        "time":  1795236847,
+        "message":  "セッション 96%（敷居 95%）\n窓の切り替え 2026-11-21T07:20:00.033279+00:00",
+        "eid":  "e1795236843"
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795235770,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n枠 二十五〜二十八：口調表（人物の色・文の種類・訊き五つ・大物手の一言）\n型は Opus。枠 二十五・二十六：63行へ文の種類7種の字と人物の色／枠 二十七：訊き五つ（博多・宮崎・大阪・武士・一姫×沖縄）／枠 二十八：63行へ大物手の時の一言（線の案は甲・乙・丙の3つ・本人が選ぶ）。被り 101（文の種類ごとの42のうち36は本人の決めで替えない）。押し済み（2e37d640）。報告 reports/y1121-1310.md・y1121-1340.md。\nファイル: reports/kuchou-hyou.md・kuchou-*.md（7人）・kuchou-shurui.md・kuchou-oomono.md・kuchou-kaburi.md・scratchpad/kaburi.js\n実測: 12:51 から約42分\n\n［✅ 終わりました（返事不要）］\n写せます（2件）",
@@ -246,10 +252,5 @@
         "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
         "time":  1794944224,
         "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
-    },
-    {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1794942979,
-        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声の詰め方の比べ（AAC・24kHzのまま）を雲で実行中\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 乙はやめ、24kHzのまま AAC（m4a）24k／32k／48k と Opus（参考）で今の声を作り直し、大きさと音の差を測る雲の台本（scratchpad/jobs/codec-compare.js）を押した（9a81cf73）。今の声（字数の違う6本）を ADPCM から復号して各形式へ。iPhone の Safari で聞き比べ・つなぎ（decodeAudioData で繋ぐ）を試せるページ reports/codec-test/index.html も同じ走りが書く。声づくりには進まない（本人が見てから）。\nファイル: scratchpad/jobs/codec-compare.js\n\n［👀 見てください（返事不要）］\n声の詰め方の比べ（AAC）の結果を知らせた\nreports/codec-test/result.md と cloud-codec-compare-20261117-190408.md を読んだ。合計 今357KB／aac24 98KB（0.27）／aac32 127KB（0.36）／aac48 188KB（0.53）／opus24 91KB。つなぎのずれは全部0。声は本人が聞いてから作る。\nファイル: reports/y1118-0420.md／report-latest.md／work-note.txt\n実測: 雲の走り 53秒・終了コード0\n実機: iPhone で reports/codec-test/index.html を開き、六本を今／aac24／aac32／aac48 で聞き比べ、許せる最小の段を言う\n未検収: 声の聞き比べ（人手待ち）"
     }
 ]
