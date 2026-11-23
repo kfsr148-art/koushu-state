@@ -1,8 +1,12 @@
-刻: 2026-11-23 15:30:39
-件名: 枠 百八十七：棚 #13（橋の片付け）に本人の答えを書き足す（戻りの後に一度・その後は一日に一度）
+刻: 2026-11-23 17:17:44
+件名: 枠 百八十八：棚 #15 に足す（棚のまま・起こさない）
 
-The inbox is clear and nothing new has come in. The bridge document's latest entry is my own card for frame 187, so no new frames are waiting. The only inbox line was the 09:26 bell, which I handled hours ago and have now ticked off. The queue is empty, with no waits or open steps.
+Frame 188 is done as a shelf append only. I'm stopping new work here because weekly use has reached 95%.
 
-Weekly use is 94%, one point from the 95% stop line. The weekly reset is still 20:00. Nothing is running in the cloud.
+Shelf issue #15 (the one for quiet cards and the "延びています" alerts) now has two additions, and I read the body back to check:
+- **Same root cause:** the 16:27 "届いた先の食い違い：合図と受領" warning comes from the same mix-up. 16:22 was センコ writing `senko/shelf-in.md`. The delivery watcher took that change for a bell, although a shelf intake correctly doesn't wake me or create a receipt.
+- **Fix for the issue:** `compare-dest.js` should count only a change to `senko/bell.txt` as a bell. The quiet routes should be recorded in one place that the other watchers read. The finish condition now includes a fake-environment test that writing `shelf-in.md` alone raises no mismatch warning.
+
+Nothing was started. Weekly use is 95%, so under 作法47 二 I take no new work. If new frames arrive I'll shelve them under the estimate rule; the weekly figure resets at 20:00. The panel card for this frame went the quiet way (shelf-only). Nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
