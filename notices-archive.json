@@ -1,5 +1,11 @@
 [
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795167736,
+        "message":  "パネルを変えた回は押す前に手元で panel-check を通す\n手元で panel-check を全部（ブラウザ込み）回すと13〜16分で5分を超えるので回さない。代わりに、ブラウザを使わない部分だけを秒で回す手（node panel-check.js --static）を足した。回るのは構文・三つの作り値の台・現況の組み立て・順番待ちの一覧・指さすの名・statusText の単体・版の三箇所で、v192 が落ちた statusText の単体も入っている。CLAUDE.md に作法43を足した（panel を変えた回は押す前に --static を回して PASS を見てから commit・全部は手元で回さない）。\nファイル: panel-check.js・CLAUDE.md・reports/y1120-1820.md\n実測: 手元の全部＝13〜16分（回さない）。node panel-check.js --static 全て PASS・3.7秒。雲の検査（69d873f5・panel-check.js を組み替えた回）成功 7分10秒で、ブラウザ込みの panel-check・widget-check とも全てPASS（移しは壊れていない）。雲の panel-check の段は約3分16秒。",
+        "eid":  "e1795167734"
+    },
+    {
         "title":  "🔎 調べました",
         "time":  1795166772,
         "message":  "v197 の雲の検査落ちの調べと、落ちてから窓が起きるまでの next\n落ちた訳：v197（da80c118）の最初の試し（18:08:19）は、check の widget-check が公開側の cat-sleep-white.png の HTTP 503（一時・直後は200）で落ちた。panel の中身とは無関係で、panel-check は通っていた。落ちた段だけを再実行して成功（18:16）・公開は panel v197（18:18確認）。押しなおしは要らない。／next は送られていない。訳：next は「窓が手待ちで未処理があるのに待ち手が0本」の時だけ送る作りで、この回は待ち手が居て（pid 4636）、見張りの巡回が落ちを見た 18:11:08 のうちに待ち手が窓を起こした（落ちてから起きるまで2分50秒）。16:24 以降 next を送った行は無い。\nファイル: reports/y1120-1822.md\n実測: 落ち 18:08:19→見張りが failed と見た 18:11:08→窓が resumed 18:11:22。再実行の成功 18:17:31。公開 panel-ver.txt 197。",
@@ -248,10 +254,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959773,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声をAACで作る：今の声のAAC化（convert）の雲の走りを待っている（v1506）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 部品の声（y1118-0500）の走りは成功・974本が reports/voice-m4a-out に入った（34MB）。窓が塞がっていた訳＝私が長い手番の中で待っていた（268分起こせず）。再発防止：kumo-wait.ps1 に「15分起こせなければ Esc で一打止め＋受信箱へ入れ直し（5分おき・3回まで・3回目後に🪟）」を入れ構文OK・常駐を起こし直し。CLAUDE.md に作法38（長く待たない・立ち直り・不要確認は待たない・ヨシ条件内は止まらない）を追記。convert を起こして雲待ち登録。\nファイル: CLAUDE.md ~/.claude/kumo-wait.ps1 (bak-20261118m)\n\n［✅ 終わりました（返事不要）］\n37 から雲待ち y1118-0500（声をAACで作る・部品）が ready\n何をしたかの控えがありません（止まる側の書き忘れです）。"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794959649,
-        "message":  "声をAACで作る：部品の雲の走りを待っている（v1506・声の詰め方を変える）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: AAC 48kbps に決定（今の ADPCM の0.53倍・24kHzのまま・つなぎのずれ0）。道具（voice-m4a.yml・tools/voice-m4a.js・voice-plan）を push し、部品の声を雲で作成中。本体の写し w10 に m4a から読む再生を当て済み（構文 NG 0）。次：convert→dial→本体への取り込み（m4a の名簿・check・pack-site の直し）→Safari 確認（macOS の WebKit）→公開の荷の数え。\nファイル: .github/workflows/voice-m4a.yml tools/voice-m4a.js voice-plan/ pack-site.js scratchpad/w10"
     }
 ]
