@@ -1,13 +1,13 @@
-刻: 2026-11-23 12:16:18
-件名: 枠 百七十六：百六十五の見込み・今までを小数で出す（額→週%の換算）
+刻: 2026-11-23 12:19:55
+件名: 枠 百七十七：棚の出し入れだけの札は『まとめて写す』に数えず押し通知も出さない
 
-Frame 176 is built and its card is out, but the decimal display is not live yet. The conversion from dollars to weekly percent needs two recorded steps first, and the check on the push is still running.
+Frame 177 is done and its card is out. Shelf-only cards (put in the shelf or added to it, with no decision from you) no longer count toward "まとめて写す" and send no push notification. I haven't tried it with a real card yet, so it takes effect on the next shelf-only frame.
 
-- **Recording the steps:** the status-line writer now also stores the window's total cost (cost.total_cost_usd, a list-price estimate) and a session id in `usage.json`. Every time the weekly percentage goes up by one whole point, it saves that cost as a point in `cost-pct.json`. The points are dropped if the percentage falls at the weekly reset.
-- **The conversion:** `convK` in `panel-view.js` turns the first and last points into weekly percent per dollar. Once that exists, the panel shows decimals such as "今まで 0.3%" and "見込み 約0.2%". Finished jobs also record their dollar cost in `job-week-history.tsv`, and the estimate uses that. Until then the display stays in whole numbers as before.
-- **Checks:** a fake run confirmed the points are recorded as the percentage rises, the display turns into decimals once a conversion exists, and falls back to whole numbers without one. The static panel check passes. The cloud check on the push is still running.
-- **Conversion basis:** the window's total is $27.59, and weekly use went 89% → 92% between 09:39 and 12:15. The first point comes at the next step up (92 → 93%), and the second at the one after, so the decimals may only appear after the 20:00 reset. I'll put the conversion in the next card when it exists. The shelf estimates will use the same numbers.
+- **How to use it:** I end such a frame with `card-out --kind 棚`. `watch-notify.ps1` then titles it "📚 棚の出し入れ（返事不要）", and `push-plan.ps1` treats that title as quiet. Quiet means no panel card and no push; a single line goes to `notice-quiet.tsv`, so the card text is kept there. The bridge card and report still carry it as usual.
+- **Count and ledger:** the "まとめて写す" count comes from the card list, so quiet cards don't add to it. The ledger row is closed by `card-out` itself, not by the card path. The shelf button's count and percentage still update from the shelf data every 3 minutes.
+- **Mixed cards:** anything with a ヨシ waiting or a question isn't marked as a shelf kind and works as before, with the question as a separate 🙋 card.
+- **Checks:** both PowerShell scripts parse cleanly, and the push plan returns quiet for the shelf title and push for the normal done card and the 🙋 card. I saved backups (`.bak-20261123`).
 
-Weekly use is now 92%. At 95% I stop starting new work and write up where things stand.
+The 176 conversion check is still waiting on the cloud. Weekly use is 92%, with 95% as the stop line. Nothing received is left.
 
 Open question cards: 0649, 0726, 0814, 0927.
