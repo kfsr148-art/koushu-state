@@ -32,3 +32,12 @@
 
 【許しが断られた操作 3件】Bash：cd /home/runner/work/koushu-state/koushu-state; python3 -c " import json;d=json.load(open( ／ Bash：cd /home/runner/work/koushu-state/koushu-state; python3 - <<'EOF' p='tools/digest-cloud.js ／ Bash：cd /home/runner/work/koushu-state/koushu-state; cat > senko/cards/20261125-034742.md <<'EO
 （--allowedTools に足すかをヨシ待ちに出した：足すなら order-in.yml の許しに『Bash(npm ci)』のような狭い形で。広い許しは使わない）
+
+<!-- 雲の札 ここから（雲の走りが VAIO を通さず書く） -->
+## 雲の札（新しい5件・VAIO を通さずに載る）
+- 11-25 03:51　20261125-035005-ask　枠 二百八十五の結果
+- 11-25 03:50　20261125-035005　枠 二百八十五の結果
+- 11-25 03:48　20261125-034742-ask　枠 二百八十四の結果
+- 11-25 03:48　20261125-034742　枠 二百八十四の結果
+- 11-24 06:50　20261124-064047　枠 棚 #16 段3/3 対々の相手ありの測りと助言の文案 の結果
+<!-- 雲の札 ここまで -->
