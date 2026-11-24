@@ -75,7 +75,7 @@ jobs:
           f="senko/cards/${{ steps.t.outputs.stamp }}.md"
           if [ ! -s "$f" ]; then
             mkdir -p senko/cards
-            printf '枠の結果：札が書かれなかった\n\n未了：claude-code-action が札を書かずに終わりました（走りを見てください）。\n' > "$f"
+            node tools/card-rescue-cloud.js /tmp/run.jsonl "$f" > /dev/null || printf '枠の結果：札が書かれなかった\n\n未了：claude-code-action が札を書かずに終わりました（走りを見てください）。\n' > "$f"   # 枠 二百六十二：走りの記録から控えの札を起こす（起こせなければ昔の一文）
           fi
           echo "札: $f"; head -n 6 "$f"
       - name: 走りの控えを札に足し、rl と札の一覧を更新して押し、配信を起こす
