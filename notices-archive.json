@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🕒 延びています",
+        "time":  1795295325,
+        "message":  "枠 七十七の続き：段を毎回計算・公開の版を運ぶ（panel v212）を公開した\n終了予定04:32を過ぎています（経過101分）",
+        "eid":  "e1795295319"
+    },
+    {
         "title":  "🪟 異常です（控えの預けが落ちました）",
         "time":  1795293905,
         "message":  "控えの預け（ClaudeHomeBackup・05:00）が今日の分を押せていません。\n最後に押せた日：2026-11-20\n記録の末尾：\n2026-11-22 05:01:01\thome-backup\t拾いが落ちた（終了コード -1）。45秒置いて一度だけ打ち直す\n2026-11-22 05:02:08\thome-backup\t終了コード 128：warning: in the working copy of \u0027after-reboot.ps1\u0027, LF will be replaced by CRLF the next time Git touches it warning: in the working copy of \u0027busy.txt\u0027, LF will … 末尾：fatal: adding files failed （全文は git-push-full.log）\n2026-11-22 05:02:09\thome-backup\t拾いが落ちた（終了コード 128）。日付は刻まず、次の回に持ち越す\n全文は ~/.claude/git-push-full.log\n",
@@ -269,10 +275,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794967572,
         "message":  "「過去の札を消す」二枠は手を付けず止めた：確かめた結果（dial 2回目は雲待ち中）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 札は何も消さず、読むだけで三件を確かめた（11:00 時点の notices.json／notices-archive.json／yoshi-open.tsv）。\n実測: notices 36枚・archive 50枚・yoshi-open 未回答の v1506 系 3本（y1118-0230・0245・0400）。"
-    },
-    {
-        "title":  "🪟 止まっとるかも：dial 2回目（44215875427）の今の状態を見た（11:04：9/10 完了）・始まり 10:26・見込み 10:51・過ぎた 13分",
-        "time":  1794967464,
-        "message":  "止まっとるかも：dial 2回目（44215875427）の今の状態を見た（11:04：9/10 完了）・始まり 10:26・見込み 10:51・過ぎた 13分\n手を入れて直すまで消えません（パネルの赤い行に残ります）。"
     }
 ]
