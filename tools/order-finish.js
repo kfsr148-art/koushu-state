@@ -68,10 +68,12 @@ try {
   const ordTxt = (() => { try { return fs.readFileSync(process.env.OF_ORDER || 'senko/order-in.md', 'utf8'); } catch (e) { return ''; } })();
   const mm = ordTxt.match(/見込み[：:][ \u3000]*週[ \u3000]*([0-9]+(?:\.[0-9]+)?)[ \u3000]*%/);
   const dW = (typeof rl0.w === 'number' && w1 !== null) ? Math.round((w1 - rl0.w) * 10) / 10 : '';
+  const dS = (typeof rl0.s === 'number' && s1 !== null) ? Math.round((s1 - rl0.s) * 10) / 10 : '';   // 枠 二百四十八：セッション（5時間枠）の増え（整数の差・取れなければ空）
+  const sBefore = (typeof rl0.s === 'number') ? rl0.s : '', sAfter = (s1 !== null) ? s1 : '', wBefore = (typeof rl0.w === 'number') ? rl0.w : '', wAfter = (w1 !== null) ? w1 : '';
   const tokSum = ['input_tokens', 'output_tokens', 'cache_creation_input_tokens', 'cache_read_input_tokens'].reduce((t, k) => t + (Number(u[k]) || 0), 0);
   const stem = (cardFile.split('/').pop() || '').replace(/\.md$/, ''), TAB = String.fromCharCode(9);
-  const histF = 'senko/cloud-history.tsv'; let hist = ''; try { hist = fs.readFileSync(histF, 'utf8'); } catch (e) { hist = '# 刻 TAB 札の名 TAB 見込み週% TAB 増えた週% TAB 費用USD TAB トークン合計\n'; }
-  if (hist.indexOf(TAB + stem + TAB) < 0) { fs.writeFileSync(histF, hist + [NOW, stem, mm ? mm[1] : '', dW, cost !== undefined ? Number(cost).toFixed(4) : '', tokSum].join(TAB) + '\n'); console.log('cloud-history.tsv に一行足した（' + stem + '）'); }
+  const histF = 'senko/cloud-history.tsv'; let hist = ''; try { hist = fs.readFileSync(histF, 'utf8'); } catch (e) { hist = '# 刻 TAB 札の名 TAB 見込み週% TAB 増えた週% TAB 費用USD TAB トークン合計 TAB 前セッション% TAB 後セッション% TAB 増えたセッション% TAB 前週% TAB 後週%（枠 二百四十八で足した列・古い行は空）\n'; }
+  if (hist.indexOf(TAB + stem + TAB) < 0) { fs.writeFileSync(histF, hist + [NOW, stem, mm ? mm[1] : '', dW, cost !== undefined ? Number(cost).toFixed(4) : '', tokSum, sBefore, sAfter, dS, wBefore, wAfter].join(TAB) + '\n'); console.log('cloud-history.tsv に一行足した（' + stem + '）'); }
 } catch (e) { console.log('cloud-history.tsv は足せなかった'); }
 // ---- notices.json（パネルの札）へ ----
 const nt = rdj('notices.json');
