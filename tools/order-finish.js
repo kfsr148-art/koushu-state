@@ -34,6 +34,8 @@ const pct = w => { if (!w) { return null; } const u = Number(w.utilization); if 
 const epoch = w => { if (!w) { return null; } let r = w.resetsAt !== undefined ? w.resetsAt : w.resets_at; if (typeof r === 'string' && /[T-]/.test(r)) { const p = Date.parse(r); r = isFinite(p) ? p / 1000 : null; } r = Number(r); if (!isFinite(r) || r <= 0) { return null; } return Math.floor(r > 1e12 ? r / 1000 : r); };
 const s1 = pct(five), w1 = pct(seven), sr = epoch(five), wr = epoch(seven);
 const resEv = evs.filter(e => e && e.type === 'result').pop() || {};
+/* 枠 二百七十四：claude -p は許しを断られても success で終わり、断りは result の permission_denials に載るだけ。断られた操作を札に出し、ヨシ待ち（senko/yoshi-cloud.tsv・VAIO の yoshi-sweep.js が一覧へ取り込む）を立てる */
+const denials = (Array.isArray(resEv.permission_denials) ? resEv.permission_denials : []).map(d => { const inp = d && d.tool_input ? (d.tool_input.command || d.tool_input.file_path || JSON.stringify(d.tool_input)) : ''; return String((d && d.tool_name) || '?') + '：' + String(inp).replace(/\s+/g, ' ').slice(0, 90); });
 const u = resEv.usage || {};
 const cost = resEv.total_cost_usd !== undefined ? resEv.total_cost_usd : resEv.cost_usd;
 const hm = t => { const d = new Date(t * 1000 + 9 * 3600000); return (d.getUTCMonth() + 1) + '-' + d.getUTCDate() + ' ' + String(d.getUTCHours()).padStart(2, '0') + ':' + String(d.getUTCMinutes()).padStart(2, '0'); };
@@ -81,7 +83,14 @@ if (Array.isArray(nt)) {
   const text = card.replace(/^﻿/, '').trim(), first = text.split('\n')[0] || '枠の札';
   const eid = 'cloud-' + (cardFile.split('/').pop() || '').replace(/\.md$/, '');
   if (!nt.some(r => r && r.eid === eid)) {
-    nt.push({ title: '✅ 終わりました（返事不要）', time: NOW, message: first + '\n' + text.split('\n').slice(1).join('\n'), eid: eid, pushedAt: 0 });
+    const denMsg = denials.length ? ('\n\n【許しが断られた操作 ' + denials.length + '件】' + denials.slice(0, 5).join(' ／ ') + '\n（--allowedTools に足すかをヨシ待ちに出した：足すなら order-in.yml の許しに『Bash(npm ci)』のような狭い形で。広い許しは使わない）') : '';
+    nt.push({ title: '✅ 終わりました（返事不要）', time: NOW, message: first + '\n' + text.split('\n').slice(1).join('\n') + denMsg, eid: eid, pushedAt: 0 });
+    if (denials.length) {
+      const d0 = new Date((NOW + 9 * 3600) * 1000), p2 = n => String(n).padStart(2, '0'), mark = 'y' + p2(d0.getUTCMonth() + 1) + p2(d0.getUTCDate()) + '-' + p2(d0.getUTCHours()) + p2(d0.getUTCMinutes()) + '-c', TAB = String.fromCharCode(9);
+      const q = '雲の走り（' + eid.replace(/^cloud-/, '') + '）で許しが断られた操作がありました：' + denials.slice(0, 3).join(' ／ ') + '。--allowedTools に狭い形で足して同じ枠を回し直すか。足してよければ『ヨシ』（広い許しは使いません）。';
+      try { fs.appendFileSync('senko/yoshi-cloud.tsv', [mark, NOW, first.slice(0, 60), q].join(TAB) + '\n'); } catch (e) { }
+      nt.push({ title: '🙋 ヨシしてください', time: NOW + 1, message: first + '\n印: ' + mark + '\n問い: ' + q + '\n返し方：「' + mark + ' にヨシ」', eid: eid + '-ask', pushedAt: 0 });
+    }
     fs.writeFileSync('notices.json', JSON.stringify(nt));
     console.log('notices.json に札を一行足した（' + eid + '）');
   } else { console.log('notices.json に同じ札があるので足さない'); }
