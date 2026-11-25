@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🕒 延びています",
+        "time":  1795398012,
+        "message":  "枠 百六十六：棚の割り振り係を三つの決め（戻りの8時間前〜1時間前・見積もり×1.5・Fable型は棚-今週のみ）の素振りで回し、起こすならどれかを札に出す\n終了予定10:32を過ぎています（経過24分）",
+        "eid":  "e1795398009"
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795396937,
         "message":  "枠 百六十五：パネルの『返事パネル』の字の下に、今の仕事の週の使用量（見込み 約N%・今まで M%）を出す（panel v226）\n\n完了: 枠 百六十五：『返事パネル』の字の下の空きに、今走っている仕事一つの週の使用量を出す（panel v226・雲の検査 success・公開 panel-ver.txt 226）。見込み＝赤の太字『見込み 約N%』（似た見込み時間の終わった仕事3件以上の実測の中央値から・実測が無い間は『見込み —』）／今まで＝灰の小さい字『今まで M%』（仕事の始まりの週%との差・1%未満は『1%未満』）／仕事が無い時は出さない・金額は出さない。材料：見張りの呼び（panel-view.js）が ~/.claude/job-week.json に始まりの週%を控え、仕事が終わるたび job-week-history.tsv に（見込み分・増えた週%・経過分）を一行貯める（棚の見積もりの学びにも使う）。state.json 実地：今の仕事に『見込み —・今まで 1%未満』が載り、始まりの週は 90%。週%は整数なので粗い\nファイル: panel.html・panel-core.js・panel-view.js・panel-ver.txt・panel-check.js\n実測: 手元 panel-check --static 全PASS（週の使用量の作り値5通り）／雲 check.yml success／公開 panel-ver.txt 226／state.json の panelView.weekJob 実地\n実機: 公開のパネルで猫が走っている間、『返事パネル』の字のすぐ下に赤の太字の『見込み —』（実測が3件たまるまで）とその下に灰色の『今まで N%』が出る。仕事が無い時は出ない。版 panel v226",
@@ -247,10 +253,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959649,
         "message":  "声をAACで作る：部品の雲の走りを待っている（v1506・声の詰め方を変える）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: AAC 48kbps に決定（今の ADPCM の0.53倍・24kHzのまま・つなぎのずれ0）。道具（voice-m4a.yml・tools/voice-m4a.js・voice-plan）を push し、部品の声を雲で作成中。本体の写し w10 に m4a から読む再生を当て済み（構文 NG 0）。次：convert→dial→本体への取り込み（m4a の名簿・check・pack-site の直し）→Safari 確認（macOS の WebKit）→公開の荷の数え。\nファイル: .github/workflows/voice-m4a.yml tools/voice-m4a.js voice-plan/ pack-site.js scratchpad/w10"
-    },
-    {
-        "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
-        "time":  1794944224,
-        "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
     }
 ]
