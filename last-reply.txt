@@ -1,4 +1,4 @@
-刻: 2026-11-25 20:40:17
+刻: 2026-11-25 20:54:49
 件名: 橋の枠 三百十：棚 #29 ドラの相手あり測りと助言
 
-Still running (started 20:34, ~21 min total). The cloud wait is registered, so the watcher wakes me when it finishes; nothing else to do until then.
+雲の走りは 20:34 の開始から 20 分で、まだ回っています（約 21〜25 分かかる見込みです）。終わったら見張りが起こすので、結果が出るまで待ちます。
