@@ -1,15 +1,4 @@
-刻: 2026-11-25 12:06:45
+刻: 2026-11-25 12:06:59
 件名: 枠 二百九十六：公開の声 24,291 本を 24kbps にする
 
-枠 296 の声の作り直しは済んでいて、いまは `check.yml` の検査と配信の終わりを雲待ちにしています。
-
-- **作り直した本数：** 公開の声 24,291 本のうち 24,290 本を 24kbps にして、直下の m4a に上書きし、push しました。台帳の欠けは 0 本です。
-- **縮み方：** 分担ごとに 80MB 前後が 42MB 前後になりました。ほぼ半分です。
-- **1 本だけ残った声：** `advy-0b591c6c.m4a`（約 37KB）は、雲の ffprobe で測れず、元の 48kbps のまま残っています。合計への影響はほぼありません。原因は調べていません。
-- **声づくりの台本：** `tools/voice-m4a.js` の既定は、すでに 24k に替えてあります。
-
-検査と配信が通ったら、次の順で進めます。
-1. 公開の合計を実測する。
-2. 無作為の声が Safari で鳴るかと、残った 1 本の扱いを確かめる。
-3. `voice-sample.html` と試しの音を公開から外す。
-4. リポジトリの大きさを札に書く。
+That background output is just the earlier lookup finishing. The cloud wait on `check.yml` is still in place, so there's nothing to act on yet. I'll continue once the wait ends.
