@@ -1,4 +1,4 @@
-刻: 2026-11-25 12:06:59
+刻: 2026-11-25 12:07:14
 件名: 枠 二百九十六：公開の声 24,291 本を 24kbps にする
 
-That background output is just the earlier lookup finishing. The cloud wait on `check.yml` is still in place, so there's nothing to act on yet. I'll continue once the wait ends.
+`check.yml` はまだ配信中です。次の段「無作為の確かめと公開の合計」は、配信が通らないと確かめられません。雲待ち（y296b）は登録済みなので、終わったら起こされます。それまで私がやることはありません。
