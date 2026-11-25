@@ -1,4 +1,11 @@
-刻: 2026-11-25 22:49:07
-件名: 橋の枠 三百十五：全部終わった待ちの時は寝ている猫（zzz）と「休憩中、、、。」に替える（三百十四と一つに）
+刻: 2026-11-25 22:53:22
+件名: 橋の枠 三百十四：窓が待ちの時、頭の字を「休憩中、、、。」にそろえる
 
-Public is at 261 and the final delivery run for v262 is still going. I've marked both inbox rows processed (they were wake-ups for this same pending step). The cloud wait is registered, so the watcher wakes me when delivery finishes; then I'll confirm 262 and issue the cards for 枠 三百十四・三百十五.
+枠 三百十四と三百十五は、一つにまとめて仕上げました。公開の `panel-ver.txt` が 262 を返し、公開の `panel-core.js` と `panel.html` に今回の直しが入っているのを確かめました。
+
+- **直したこと:** 窓が全部終わって待つ時、返事パネルの頭は寝ている猫の絵（`cat-sleep-w.png`）と「休憩中、、、。」になります。今までは、立っている現場猫と「待機中、、、。」でした。記録が 5 分途切れて「確認中」と出る時も、窓が待ちなら「休憩中」です。
+- **brief.txt:** `head` も同じ関数で決まるので、「休憩中、、、。」になります。
+- **変えていない所:** 接続不良・作業中・ヨシ待ち・指差しなどほかの絵と字、`stat` の判定、棚 #34 には触っていません。
+- **実機:** 寝ている猫の絵に zzz が描かれているか、22:17 の画面と同じ待ちの時に出る見え方は、まだ見ていません。zzz の絵が別にあるなら、それに替えます。
+
+橋の文書への札（三百十四・三百十五）とパネルの札は出しました。受信箱の未処理は 0 件、雲待ちも畳みました。
