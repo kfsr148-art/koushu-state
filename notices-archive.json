@@ -1,5 +1,11 @@
 [
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795551256,
+        "message":  "橋の枠 二百八十八：底の八つの釦を決め打ちの高さに揃える\n\n完了: 底の八つの釦を決め打ちの高さに揃えた（枠 288・panel v257・公開 panel-ver.txt 257 を確かめた・check.yml 2ae1daaa2 全段 success）。一【元】八つの釦は min-height だけで高さを決めていたので、遠隔の字が三行になると上の段だけ伸びていた。二【直した所】四つ並びの八つ（.btn4row の中）を高さ 72px（幅359px以下は 88px）に決め打ちした（grid-auto-rows:1fr は一番高い段に揃うので使っていない）。遠隔の下の行（名前・pid）は 11px/14px から 9px/11px に詰め、三行に折り返しても釦に収まる（一度目の検査は、決め打ちだけだと遠隔の下の行が72pxに収まらず『釦の中で字が溢れる』で落ちたので、詰めて押し直し、二度目で通った）。三【実機の写し】遠隔の字が三行の時の実機の写しは、この手番では撮っていない（雲の検査の『八つの場所と大きさが同じ』は 390・375・320px の三幅で通っている）。未了：実機（iPhone）で遠隔の字が長い時に、上の段と下の段が同じ高さで揃うのを見る必要がある。\nファイル: panel.html・panel-check.js・panel-core.js・panel-ver.txt\n実測: 公開 panel-ver 257／check.yml 2ae1daaa2 全段success（八つの場所と大きさが同じ：390・375・320px）／panel-check --static 全PASS\n実機: 返事パネルの底の八つの釦が、遠隔の名が長くても同じ高さで揃う（上の段だけ背が伸びない）。版の字は panel v257",
+        "eid":  "e1795551252"
+    },
+    {
         "title":  "👀 見てください（返事不要）",
         "time":  1795551052,
         "message":  "橋の枠 二百八十九：ヨシの「やめる」が yoshi-stop を送って待ちを外す\nヨシの『やめる』が何も送らず閉じるだけだった作りを直した（枠 289・panel v257・公開 257 を確かめた）。一【パネル】やめる＝『yoshi-stop \u003c印\u003e』を送る（panel.html の ybPopOpen・v243〜v256 は閉じるだけだった）。釦の字は『やめるを送った』→ その印が一覧から落ちたら『やめた』を約2秒出して元の件数つきの字へ戻す（254 と同じ形・panel-check の『やめるは何も送らない』の検査も『やめる＝yoshi-stop を送る・後では何も送らない』に直した）。二【受け側】yoshi-btn-recv.js が『yoshi-stop \u003c印\u003e』を受け、その印を回し直さず（受信箱へ入れず）ヨシ待ちの一覧（yoshi-open.tsv）から外し、答え済み（yoshi-btn-answered.tsv）に足し、台帳 yoshi-stopped.tsv に『やめた（回し直さない）』と残す。作り値の確かめ：やめる→『やめた』・一覧から消える・台帳に残る・受信箱は増えない／同じ印の二度目→『捨てた：答え済み』／一覧に無い印→『捨てた：一覧に無い』。バックアップ yoshi-btn-recv.js.bak-20261125・構文0。三【実機】y1125-0350-c の『やめる』を押して消えるのを示す件は、その印の待ちが先に（03:58 の本人の指示で）koushu-state から閉じられたため、実機で押せる待ちが今は無い。次にヨシ待ちが立った時に『やめる』を押して消えるのを見る必要がある（受け側は作り値で通った）。公開：panel-ver.txt 257・check.yml 2ae1daaa2 全段 success。\nファイル: panel.html・panel-core.js・panel-ver.txt・panel-check.js／~/.claude/yoshi-btn-recv.js\n実測: 作り値 3通り ✓／公開 panel-ver 257／panel-check --static 全PASS・check.yml 全段success\n実機: ヨシ待ちの釦を押して出る四つの釦のうち『やめる』を押すと、釦の字が『やめた』を約2秒出して、その待ちが一覧から消える（件数が減る）",
@@ -292,11 +298,5 @@
         "time":  1795441816,
         "message":  "枠 二百二十一：雲の入口を作り直す（claude-code-action→Claude Code 本体）\n枠 二百二十・二百二十一：①零（今の仕事を棚へ）：v1522（対子の種・国士10種の助言・声206本）は枝 shelf-4-v1522 に保存、main は本体 v1520＋見張り台の国士の問いの直し（v1521）に戻した。課題 #4・#16・#15 に控えを書いた。②一（鍵）：claude setup-token の鍵を、本人のログインで発行し、koushu-state と koushu-handan の secret（CLAUDE_CODE_OAUTH_TOKEN）に入れた（鍵は公開に書いていない・ログは消した）。③二（雲の入口）：koushu-state の order-in.yml を、claude-code-action（push の合図を受け付けないので不可）から Claude Code 本体（claude -p）を直に走らせる形に作り替えた。④三（試しの枠）：order-in.md を push すると窓を通さず雲で走り（走り 45186471894・成功）、札が一枚 senko/cards/20261123-224224.md に出た。中身：本体の版 1521・パネルの版 234・CLAUDE.md の見出し 49（窓でも同じ値を確かめた）。残り：二百十九の三〜六（パネルの出し方・決まりの写し・VAIO の見張りの片付け・分の数え）は今夜はやらない約束。重ならない二つの job の同時走りは未試験。VAIO の見張り・鈴・rewake は並べて動いたまま。\nファイル: koushu-state: .github/workflows/order-in.yml・senko/order-in.md・senko/cards/*／koushu-handan: 枝 shelf-4-v1522・main 095579111\n実測: 雲の走り 45186471894 成功（全段 success）・札の中身を ver.txt・panel-ver.txt・CLAUDE.md で突き合わせ一致",
         "eid":  "e1795441812"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1795439414,
-        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n写せます（1件）\n\n［✅ 終わりました（返事不要）］\n枠 二百二十：今の仕事を棚へ戻し、雲の入口（order-in.md→claude-code-action）を作る\n何をしたかの控えがありません（止まる側の書き忘れです）。",
-        "eid":  "e1795439411"
     }
 ]
