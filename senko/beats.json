@@ -1,6 +1,6 @@
 {
 "advice-cron": {"label":"助言の見本の雲の決まった時刻の仕事","at":1795706015,"every":0,"grace":0},
 "advice-sample": {"label":"助言の見本を作った最後（版ごと）","at":1795706015,"every":0,"grace":0},
-"relay": {"at":1795731419,"bridge":45,"missing":1,"labels":["三百九十一"]},
+"relay": {"at":1795731840,"bridge":45,"missing":0,"labels":[]},
 "snap-ring": {"label":"VAIOの写しの撮りため","at":1795731769,"every":5,"grace":10}
 }
