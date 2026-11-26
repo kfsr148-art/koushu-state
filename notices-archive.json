@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795452375,
+        "message":  "この間にまとまった知らせ 2本\n\n［👀 見てください（返事不要）］\n枠 二百三十：パネルの棚の釦を計N件・使用予定M%にする\n枠 二百三十：パネルの棚の釦を「計N件・使用予定M%」にした（panel v235・commit 69860483a）。N＝雲（order-in.yml）に並んでまだ終わっていない枠の件数、M＝その枠の order-in.md 頭の「見込み：週 N%」の合計。元は ~/.claude/cloud-queue.js（新）が60秒に一度組む cloud-queue.json で、panel-view.js の shelfView が読み、無ければ従来の shelf.json へ落ちる。一覧の頭は「雲に並んでいる枠」、一枠ずつ「週 約N%」。見込みを書いていない枠は終わった雲の枠の実測の中央値（3件に満たない間は3%）で埋めて「見込み推定」の印を付ける。走り終えるたび order-finish.js が senko/cloud-history.tsv に（見込み週%・増えた週%・費用・トークン合計）を一行足す（次の見込みの直しの元・終わった枠は数から消える）。公開で見届けた：公開 panel-ver.txt 235・公開 state.json の panelView.shelf が n=3・pct=3（cloud=true）で、今雲に並ぶ棚 #5 段6〜8 の三件と合う。未了：待ちの数は VAIO の道（VAIO が gh で数えて state.json に書く）のまま——雲だけで出すには state.json と別の置き場が要り、VAIO の押しとぶつかるため（枠 四）／見込み書き「見込み：週 N%」は今並ぶ三件にだけあり、書かない枠は推定／見込みの学び（cloud-history の中央値で埋める）は実測が3件たまってから効く／パネルの実機の見え方（釦の字・一覧）は人の目で未確認。\nファイル: panel.html・panel-core.js・panel-ver.txt・panel-view.js・panel-check.js／~/.claude/cloud-queue.js（新）／koushu-state: tools/order-finish.js・.github/workflows/order-in.yml\n実測: panel-check --static 全PASS・公開 panel 235・公開 shelf n=3 pct=3・cloud-queue.js 3件\n実機: 返事パネルの棚の釦が「計3件・使用予定3%」（雲に待ち・走行中の枠が3つの間）。押すと「雲に並んでいる枠」の一覧に題と「週 約1%」が出る\n\n［✅ 終わりました（返事不要）］\n写せます（9件）",
+        "eid":  "e1795452370"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795449490,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n枠 二百二十九：雲の main の決まりと concurrency の group を直す\n枠 二百二十九：order-in.yml を二つ直した（20917ac2）。①main の決まり：prompt を『order-in.md の本文に「main 可」の語がある枠で、かつ検査（構文・serifu-extract・pack-site・check-all --fast）が全部通った時だけ main へ押してよい／語が無い枠は押さない／一つでも落ちたら押さず札に理由』に変えた。②concurrency の group：commit メッセージに「[読む]」とある枠は order-in-state・無い枠は order-in-handan（queue: max は残す）。試しの枠二枚（何も変えず判断だけ書かせた）：『main 可』ありの枠の札は『語がある・決まり上は検査が通れば押してよい枠（試しなので押さない）』、語無しの枠の札は『語が無いので押してはならない（押していない）』と判じた（①②とも見届けた）。③[読む]付き（de9998d6）15:48:14〜15:52:48 と [読む]無し（bebaa110）15:48:19〜15:49:36 が重なって同時に走った。棚 #18 は結果を書いて閉じた。直した後に書いた枠から効く（push 先の workflow は push した commit の版で走る）。未了：実際に main 可で検査まで通して押す走りは未試験（試しは押さない形）／センコの別の枠（棚 #5・#6）が旧 group に並んで走っている分は触っていない。\nファイル: koushu-state: .github/workflows/order-in.yml／koushu-ops #18（close）\n実測: 走り de9998d6 15:48:14〜15:52:48・bebaa110 15:48:19〜15:49:36（重なり）・札 20261124-004906・005225\n\n［✅ 終わりました（返事不要）］\n写せます（2件）",
         "eid":  "e1795449487"
@@ -285,10 +291,5 @@
         "title":  "🪟 時間切れ：固まり（最後の返り 14:19）（再挑戦 1/3）",
         "time":  1794979714,
         "message":  "最後に命令が返ったのは 14:19（9分前）で、8分たっても次が返らないので切りました（開始から 9分）。切った枠は受信箱へ戻しました（再挑戦 1/3）。\n同じ字の枠を切ったのは、48時間で 1 回目です。\n\n── 切れた枠（先頭200字）──\n\u003ctask-notification\u003e\n\u003ctask-id\u003eb5ocd3wj8\u003c/task-id\u003e\n\u003ctool-use-id\u003etoolu_015Jxo1BwwNjDWiuNDsiCFwf\u003c/tool-use-id\u003e\n\u003coutput-file\u003eC:\\Users\\user\\AppData\\Local\\Temp\\claude\\d058071998e0c200\\c6a25916-4bd7-4a63-be66…\n\n── どこまで進んだか ──\n台帳：未了 58件／この枠の行は「未了：受領」\n足跡：最後は 14:28:06 heartbeat／この枠に入ってから 命令 0回・返り 0回\n\n＊claude の子を 0本落として、Esc を一打送りました。\n＊記録は ~/.claude/inbox-watch.log。\n"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794979212,
-        "message":  "六件：yoshi-open 3本の原文・声の数の差・見張りの名前直し・郵便受け・検査の見込み・⑤の一覧（検査に不具合を見つけた）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 一、未回答3本の原文（yoshi-open.tsv.bak-20261118 の行そのまま・欄は「印｜立てた時刻｜題｜本文」）：\nファイル: ~/.claude/kumo-wait.ps1（bak-20261118y）、check.js、reports/old-voices-to-delete-y1118.txt\n実測: 荷 780MB・台帳 19,772＝18,627＋1,145。FAIL の走り 44240867311。"
     }
 ]
