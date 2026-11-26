@@ -44,6 +44,12 @@ jobs:
         if: steps.ver.outputs.need == 'yes'
         with:
           node-version: '20'
+      - name: 日本語の字体を入れる（絵の字が豆腐にならないように）
+        if: steps.ver.outputs.need == 'yes'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          fc-cache -f
       - name: 判定カードの絵（決まった30局・横向き844x390）と枠の検査
         if: steps.ver.outputs.need == 'yes'
         run: node handan/tools/advice-shots.js handan senko
