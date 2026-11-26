@@ -1,0 +1,61 @@
+# 助言の見本（2026-11-26・橋の枠 三百四十②・本人の決め）。
+#   ＊公開の版（koushu-handan の ver.txt）が上がるたび、雲で無作為の配牌100局×人格と方言をばらして、本体が実際に出す助言の文を作り、
+#     この repo の senko/advice-sample.md に版つきで書く（センコが先に読んで変な文を見つける）。VAIO では回さない。
+#   ＊起こし方：15分おきに ver.txt を見て、senko/advice-sample.md の「版：」と同じなら何もしない（早く終わる）。手で起こすなら force=true。
+#   ＊作る道具は koushu-handan の tools/advice-sample.js（本体は読むだけ・写しに probe を差し込んで headless Chrome で駆動）。
+#   ＊鍵 HANDAN_PUSH_TOKEN は koushu-handan を読むためだけに使う（公開の所へ書かない）。
+name: 助言の見本
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '版が同じでも作り直す（true）'
+        required: false
+        default: 'false'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: advice-sample
+  cancel-in-progress: false
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: koushu-handan を取得する（読むだけ）
+        uses: actions/checkout@v4
+        with:
+          repository: kfsr148-art/koushu-handan
+          path: handan
+          fetch-depth: 1
+          token: ${{ secrets.HANDAN_PUSH_TOKEN }}
+      - name: 版を比べる
+        id: ver
+        run: |
+          now=$(tr -dc '0-9' < handan/ver.txt)
+          have=$(sed -n 's/^版：//p' senko/advice-sample.md 2>/dev/null | head -1 | tr -dc '0-9')
+          echo "公開の版 ${now}／見本の版 ${have:-無し}"
+          if [ "$now" = "$have" ] && [ "${{ github.event.inputs.force }}" != "true" ]; then echo "need=no" >> "$GITHUB_OUTPUT"; else echo "need=yes" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@v4
+        if: steps.ver.outputs.need == 'yes'
+        with:
+          node-version: '20'
+      - name: 見本を作る（100局）
+        if: steps.ver.outputs.need == 'yes'
+        run: node handan/tools/advice-sample.js handan senko/advice-sample.md 100
+      - name: 押して配信を起こす
+        if: steps.ver.outputs.need == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "advice-sample-bot"
+          git config user.email "advice-sample-bot@users.noreply.github.com"
+          git add senko/advice-sample.md
+          git diff --cached --quiet && { echo "変わりなし"; exit 0; }
+          git commit -m "senko/advice-sample.md：助言の見本（版 $(tr -dc '0-9' < handan/ver.txt)・100局）"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
+          gh workflow run deploy.yml || true
