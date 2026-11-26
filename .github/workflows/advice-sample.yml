@@ -1,13 +1,13 @@
 # 助言の見本（2026-11-26・橋の枠 三百四十②・本人の決め）。
 #   ＊公開の版（koushu-handan の ver.txt）が上がるたび、雲で無作為の配牌100局×人格と方言をばらして、本体が実際に出す助言の文を作り、
 #     この repo の senko/advice-sample.md に版つきで書く（センコが先に読んで変な文を見つける）。VAIO では回さない。
-#   ＊起こし方：15分おきに ver.txt を見て、senko/advice-sample.md の「版：」と同じなら何もしない（早く終わる）。手で起こすなら force=true。
+#   ＊起こし方（枠 三百五十五で替えた）：主に VAIO の beats-check.js が、公開の版と見本の版の食い違いが2分続いたら直に起こす。控えとして 7・22・37・52 分に ver.txt を見て、senko/advice-sample.md の「版：」と同じなら何もしない（早く終わる）。手で起こすなら force=true。
 #   ＊作る道具は koushu-handan の tools/advice-sample.js（本体は読むだけ・写しに probe を差し込んで headless Chrome で駆動）。
 #   ＊鍵 HANDAN_PUSH_TOKEN は koushu-handan を読むためだけに使う（公開の所へ書かない）。
 name: 助言の見本
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'   # 枠 三百五十五：控え。00・15・30・45 は混むので分をずらした。主な起こし方は VAIO の beats-check.js が公開の版の食い違いで直に起こす
   workflow_dispatch:
     inputs:
       force:
@@ -90,7 +90,7 @@ jobs:
             try { b = JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) { }
             const now = Math.floor(Date.now() / 1000), prev = (b["advice-cron"] || {}).at || 0, made = process.env.NEED === "yes";
             if (!made && now - prev < 45 * 60) { process.exit(0); }
-            b["advice-cron"] = { label: "助言の見本の雲の決まった時刻の仕事", at: now, every: 60, grace: 30 };
+            b["advice-cron"] = { label: "助言の見本の雲の決まった時刻の仕事", at: now, every: 0, grace: 0 };   /* 枠 三百五十五：時刻でなく版の食い違い（advice-sync）で見るので、ここは見込みを持たない（パネルは赤くしない） */
             if (made) { b["advice-sample"] = { label: "助言の見本を作った最後（版ごと）", at: now, every: 0, grace: 0 }; }
             const keys = Object.keys(b).sort();
             fs.mkdirSync("senko", { recursive: true });
