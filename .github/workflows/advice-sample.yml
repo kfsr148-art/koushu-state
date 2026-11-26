@@ -23,7 +23,7 @@ concurrency:
 jobs:
   sample:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - name: koushu-handan を取得する（読むだけ）
@@ -44,6 +44,9 @@ jobs:
         if: steps.ver.outputs.need == 'yes'
         with:
           node-version: '20'
+      - name: 判定カードの絵（決まった30局・横向き844x390）と枠の検査
+        if: steps.ver.outputs.need == 'yes'
+        run: node handan/tools/advice-shots.js handan senko
       - name: 見本を作る（100局）
         if: steps.ver.outputs.need == 'yes'
         run: |
@@ -51,6 +54,8 @@ jobs:
           prev=$(ls senko/advice-sample/*-fixed.json 2>/dev/null | grep -v "/${now}-fixed" | sort -V | tail -1)
           echo "前の版の固定30局：${prev:-無し}"
           node handan/tools/advice-sample.js handan senko 100 ${prev:+--prev $prev}
+          # 絵は新しい5版まで
+          ls -d senko/advice-shots/*/ 2>/dev/null | sort -V | head -n -5 | xargs -r rm -rf
           # 版ごとの残しは新しい20版まで（古い物から消す）
           ls senko/advice-sample/*-fixed.json 2>/dev/null | sort -V | head -n -20 | while read f; do v=$(basename "$f" -fixed.json); rm -f "senko/advice-sample/$v.md" "senko/advice-sample/$v-fixed.json" "senko/advice-sample/$v-vaio-snap.md"; done
       - name: 押して配信を起こす
@@ -60,7 +65,7 @@ jobs:
         run: |
           git config user.name "advice-sample-bot"
           git config user.email "advice-sample-bot@users.noreply.github.com"
-          git add -A senko/advice-sample.md senko/advice-diff.md senko/advice-sample
+          git add -A senko/advice-sample.md senko/advice-diff.md senko/advice-sample senko/advice-shots
           git diff --cached --quiet && { echo "変わりなし"; exit 0; }
           git commit -m "senko/advice-sample.md：助言の見本（版 $(tr -dc '0-9' < handan/ver.txt)・100局）"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
