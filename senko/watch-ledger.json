@@ -7,7 +7,8 @@
    "fps": [
     "wake:51f952dd640a"
    ],
-   "result": "reserved"
+   "result": "nocause",
+   "why": "元を当てられなかった"
   }
  ],
  "causes": []
