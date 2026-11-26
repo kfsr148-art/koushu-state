@@ -1,0 +1,51 @@
+# 直しの溜まり場と一緒に変わる組（2026-11-26・橋の枠 三百四十五・本人の決め・数えて知らせるだけで何も直さない）。
+#   ＊koushu-handan の直しの記録（git の履歴）を全部取り、tools/hotspots.js で
+#       ①同じ部分（関数・節）が何度直されたかを数え senko/hotspots.md に多い順で並べる（30日のうちに三度目の直しが入った部分は印）
+#       ②いつも一緒に変わるファイルの組を senko/cochange.md に表にし、直近3日で片方だけ変わった直しを拾う
+#     印と片方だけの知らせは senko/hotspot-alerts.json に出し、VAIO（beats-check.js → hotspots-card.js）が札の頭に出す。
+#   ＊6時間おき（と手で起こす時）。VAIO では回さない（履歴が約 2GB で git が重い）。
+#   ＊鍵 HANDAN_PUSH_TOKEN は koushu-handan を読むためだけに使う（公開の所へ書かない）。
+name: 直しの溜まり場
+on:
+  schedule:
+    - cron: '20 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: hotspots
+  cancel-in-progress: false
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: koushu-handan を履歴ごと取得する（読むだけ）
+        uses: actions/checkout@v4
+        with:
+          repository: kfsr148-art/koushu-handan
+          path: handan
+          fetch-depth: 0
+          token: ${{ secrets.HANDAN_PUSH_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: 差分の見出しに関数・const の名が出るようにする
+        run: |
+          printf '%s\n' '*.html diff=kh' '*.js diff=kh' > handan/.git/info/attributes
+          git -C handan config diff.kh.xfuncname '^[ ]{0,4}(function[ ]+[A-Za-z0-9_$]+|const[ ]+[A-Za-z_$][A-Za-z0-9_$]*[ ]*=|window\.[A-Za-z0-9_$]+[ ]*=)'
+      - name: 数える
+        run: node handan/tools/hotspots.js handan senko
+      - name: 押して配信を起こす
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "hotspots-bot"
+          git config user.email "hotspots-bot@users.noreply.github.com"
+          git add senko/hotspots.md senko/cochange.md senko/hotspot-alerts.json
+          git diff --cached --quiet && { echo "変わりなし"; exit 0; }
+          git commit -m "senko/hotspots.md・cochange.md：直しの溜まり場と一緒に変わる組"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
+          gh workflow run deploy.yml || true
