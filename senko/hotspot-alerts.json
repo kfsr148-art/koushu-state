@@ -1,0 +1,494 @@
+{
+ "at": 1795669095,
+ "third": [
+  {
+   "key": "advice-tone-core.js｜const ADV_SHORT_SRC｜1795435800",
+   "file": "advice-tone-core.js",
+   "part": "const ADV_SHORT_SRC",
+   "n": 14,
+   "why": [
+    "v1514：守りの線（6巡目までに字牌と端と対子を7枚）を本体へ・乙の骨組み・retreat-line の守りの一行（枠 四十三・Opus。新しい声が揃うまで検査は落ちる）",
+    "v1520：2124 の選びを入れた（守りの切り候補を浮き牌に揃える・兎の守りの一行ハ／浮き牌なしイ・クイズ括弧に票で攻めに/守りに・説明欄5か所・中ぶくれの字3）枠 百五十七 六",
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const ADV_SHORT_SRC｜1795435800",
+   "file": "koushu-handan.html",
+   "part": "const ADV_SHORT_SRC",
+   "n": 14,
+   "why": [
+    "v1514：守りの線（6巡目までに字牌と端と対子を7枚）を本体へ・乙の骨組み・retreat-line の守りの一行（枠 四十三・Opus。新しい声が揃うまで検査は落ちる）",
+    "v1520：2124 の選びを入れた（守りの切り候補を浮き牌に揃える・兎の守りの一行ハ／浮き牌なしイ・クイズ括弧に票で攻めに/守りに・説明欄5か所・中ぶくれの字3）枠 百五十七 六",
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は"
+   ]
+  },
+  {
+   "key": "panel.html｜function paintYoshiBtn｜1795479073",
+   "file": "panel.html",
+   "part": "function paintYoshiBtn",
+   "n": 8,
+   "why": [
+    "panel v231：ヨシの釦の鍵を知らせの Click で渡す（入れ物をやめる）棚 #10・枠 二百八／CLAUDE.md 作法47 五：棚の実測の呼び方",
+    "棚 #16 測りの台本（shape-aite）・#4 最終案・残りヨシ待ちの説明・panel v233（案内の一行を消す）・CLAUDE.md 作法48（段に切って並べる）",
+    "panel v240：ヨシの釦、覚えが無い時は「知らせを一度押すと」の案内をやめ、その場で名前の入れ口を出す（枠 二百四十一）"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const DIALECT_WORDS｜1795452671",
+   "file": "koushu-handan.html",
+   "part": "const DIALECT_WORDS",
+   "n": 7,
+   "why": [
+    "v1471 席を丸ごと外す：攻守の線を子に揃え、場風・自風の役牌を外し、場×席の格子と二段式・席の一行と親子の台詞・虎の親補正を除く。判定後の二択を「配牌攻守判定」「読取」に差し替",
+    "v1524：マダム（french）の助言を磨く（堪えどきの一文に『退きます』を足す・役満の芽の嘲りの『のだ／方言の尾』混在を四方言で外す・棚 #5 段5/8）",
+    "v1526：先生（sensei）の役満の一言 ph[4] が ph[0] とほぼ同文だったのを書き分け（標準＋八方言・口調表に揃える・棚 #5 段8/8）"
+   ]
+  },
+  {
+   "key": "panel-core.js｜function headText｜1795524755",
+   "file": "panel-core.js",
+   "part": "function headText",
+   "n": 7,
+   "why": [
+    "panel v212：段を毎回計算（生の段 steps・stepsOf）・公開の版を pubVer で運ぶ・見込みの書き替えを直す（枠 七十七の続き・Opus）",
+    "panel v250：猫と字の順を ヨシ待ち＞作業中＞まとめて写す＞待機中＞接続不良 に（ヨシ待ちが一件でもあれば作業中でもヨシ待ち・作り値の検査を足した・枠 二百七十一）",
+    "panel v251：記録が3分途切れたら猫と字を接続不良へ（枠 二百七十二）・画面の写し取り一覧の釦を公開の大きさの釦に（枠 二百七十三・pack-site.js が site-"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜function advRow｜1795435800",
+   "file": "advice-tone-core.js",
+   "part": "function advRow",
+   "n": 6,
+   "why": [
+    "v1505 一九字牌の種類数で判断を分ける（9種＝九種九牌で流す・判定は守り／10種＝迷い所／11種以上＝国士を狙う）",
+    "v1506：判定の一言が助言の頭・結論は一度だけ・受け直し・緩急と間・麻雀の言葉98語・声はAAC(m4a 24kHz 48k)・30秒以内（公開の荷 780MB）",
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜function advRow｜1795435800",
+   "file": "koushu-handan.html",
+   "part": "function advRow",
+   "n": 6,
+   "why": [
+    "v1505 一九字牌の種類数で判断を分ける（9種＝九種九牌で流す・判定は守り／10種＝迷い所／11種以上＝国士を狙う）",
+    "v1506：判定の一言が助言の頭・結論は一度だけ・受け直し・緩急と間・麻雀の言葉98語・声はAAC(m4a 24kHz 48k)・30秒以内（公開の荷 780MB）",
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は"
+   ]
+  },
+  {
+   "key": "panel-core.js｜function etaRow｜1795546986",
+   "file": "panel-core.js",
+   "part": "function etaRow",
+   "n": 6,
+   "why": [
+    "panel v212：段を毎回計算（生の段 steps・stepsOf）・公開の版を pubVer で運ぶ・見込みの書き替えを直す（枠 七十七の続き・Opus）",
+    "panel v213：見込みは見込みを書いた刻から数える（mikomiAt・mikomiEnd 一つ）・流れごとの見込み（記録が無ければ見込み不明で赤にしない）（枠 八十三・八十四",
+    "panel v256：接続不良を二段に（5分で「確認中、、、。」・15分戻らない時だけ「接続不良、、、。」）（枠 二百八十七）"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const TONE_WORDS｜1795452671",
+   "file": "koushu-handan.html",
+   "part": "const TONE_WORDS",
+   "n": 5,
+   "why": [
+    "v1524：マダム（french）の助言を磨く（堪えどきの一文に『退きます』を足す・役満の芽の嘲りの『のだ／方言の尾』混在を四方言で外す・棚 #5 段5/8）",
+    "v1525：一姫（ichihime）の助言を磨く（標準の役満の一言 ph[4] が ph[0] とほぼ同文だったのを書き分け・棚 #5 段6/8）",
+    "v1526：先生（sensei）の役満の一言 ph[4] が ph[0] とほぼ同文だったのを書き分け（標準＋八方言・口調表に揃える・棚 #5 段8/8）"
+   ]
+  },
+  {
+   "key": "panel.html｜function paintShelf｜1795453832",
+   "file": "panel.html",
+   "part": "function paintShelf",
+   "n": 5,
+   "why": [
+    "panel v227：棚の一覧の頭に素振りの最後の結果の一行（棚 #11・枠 百九十三）",
+    "panel v235：棚の釦を「計N件・使用予定M%」に（雲に並んで札が出ていない枠の件数と週の見込み%の合計・元は cloud-queue.json）（枠 二百三十）",
+    "panel v236：棚は今まで通り見せ、雲の件数と使用予定%は釦の横と別の欄に足すだけ（枠 二百三十一）"
+   ]
+  },
+  {
+   "key": "panel.html｜function recentLabel｜1795435037",
+   "file": "panel.html",
+   "part": "function recentLabel",
+   "n": 5,
+   "why": [
+    "panel v225：直近に終わった仕事の釦を『棚 N件・約M%』に替え、三件は『くわしく』へ（枠 百六十二）",
+    "panel v230：棚の釦に『1セッション≒棚 N%』（棚の実測 shelf-measure・枠 二百六・二百七）",
+    "panel v234：1セッション≒棚 N% を返事パネルの今までの行の下へ（仮なし・釦は元の字）／まとめて写すの字の縦位置を揃える（枠 二百十五・二百十六）"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const b｜1795485335",
+   "file": "koushu-handan.html",
+   "part": "const b",
+   "n": 4,
+   "why": [
+    "v1471 席を丸ごと外す：攻守の線を子に揃え、場風・自風の役牌を外し、場×席の格子と二段式・席の一行と親子の台詞・虎の親補正を除く。判定後の二択を「配牌攻守判定」「読取」に差し替",
+    "v1511：口調表を本体へ・段2 軍師・ずんだ・お嬢様（枠 三十三・Opus。声が揃うまで押さない）",
+    "v1527：棚 #5 の札の直し案を入れた（adva-weak・軍師の方言2〜5と「ぞよ」・ずんだ a-n-0・お嬢様 advw12行・先生 dr[4]）。声は雲で作り直す（旧い声"
+   ]
+  },
+  {
+   "key": "panel.html｜function paintDoneBox｜1795430185",
+   "file": "panel.html",
+   "part": "function paintDoneBox",
+   "n": 4,
+   "why": [
+    "panel v165：状態と札を小さい置き場 koushu-state から読む",
+    "panel v228：ヨシの釦（棚 #10 段②・枠 百九十七）",
+    "panel v228：ヨシの釦の持ち物の宣言を使う関数より前へ（起動の途中の塗りで undefined を読まない）"
+   ]
+  },
+  {
+   "key": "panel.html｜function paintUsage｜1795500024",
+   "file": "panel.html",
+   "part": "function paintUsage",
+   "n": 4,
+   "why": [
+    "panel v163：使用状況を大きく（棒・リセット時刻・取得時刻）・過去の札を表示しない・終わりましたは30件まで（見張り側の直しと一組）",
+    "panel v165：状態と札を小さい置き場 koushu-state から読む",
+    "panel v245：使用量の数を 0.1% まで出す（上のセッション・週・赤枠の予定・セッション・1セッション≒棚・枠 二百四十七）"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜const ADV_OMO｜1795504454",
+   "file": "advice-tone-core.js",
+   "part": "const ADV_OMO",
+   "n": 3,
+   "why": [
+    "v1503 面白みの一言を56人へ（六場面×五通り・ずれ/あだ名/格言/ぼやき・重なり避け）",
+    "v1508 執事×九つの方言（標準の丁寧語4・沖縄語の全文・幼児の読みと面白み30本）を本体へ",
+    "v1530：棚 #5 の残り（青森・沖縄の語尾を口調表へ・武士の一人称・お嬢様／マダム／先生の dr の近い重複）・声の洗い出しの切れ端を消して回し直す（枠 二百五十三）"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const ADV_OMO｜1795504454",
+   "file": "koushu-handan.html",
+   "part": "const ADV_OMO",
+   "n": 3,
+   "why": [
+    "v1503 面白みの一言を56人へ（六場面×五通り・ずれ/あだ名/格言/ぼやき・重なり避け）",
+    "v1508 執事×九つの方言（標準の丁寧語4・沖縄語の全文・幼児の読みと面白み30本）を本体へ",
+    "v1530：棚 #5 の残り（青森・沖縄の語尾を口調表へ・武士の一人称・お嬢様／マダム／先生の dr の近い重複）・声の洗い出しの切れ端を消して回し直す（枠 二百五十三）"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜const b｜1795504454",
+   "file": "advice-tone-core.js",
+   "part": "const b",
+   "n": 3,
+   "why": [
+    "v1511：口調表を本体へ・段2 軍師・ずんだ・お嬢様（枠 三十三・Opus。声が揃うまで押さない）",
+    "v1527：棚 #5 の札の直し案を入れた（adva-weak・軍師の方言2〜5と「ぞよ」・ずんだ a-n-0・お嬢様 advw12行・先生 dr[4]）。声は雲で作り直す（旧い声",
+    "v1530：棚 #5 の残り（青森・沖縄の語尾を口調表へ・武士の一人称・お嬢様／マダム／先生の dr の近い重複）・声の洗い出しの切れ端を消して回し直す（枠 二百五十三）"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜const body｜1795650211",
+   "file": "advice-tone-core.js",
+   "part": "const body",
+   "n": 3,
+   "why": [
+    "advscan: 助言の通し読みの数え上げ（枝・本流に入れない）",
+    "本体と助言の核を v1536 に戻す（雲の数え上げの枝の押し戻しで作りかけが main に入ったため・検査 ADV_TEXT の食い違いで配信が止まっていた）",
+    "v1537：助言の組み立てを通し読みで直した（受け直しはつなぎ言葉で・中身のない一文と口癖の切れ端を出さない・語尾の二重（武士・大阪）・同じ語尾の連続をつなぐ／体言止め／問いかけで"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const body｜1795650211",
+   "file": "koushu-handan.html",
+   "part": "const body",
+   "n": 3,
+   "why": [
+    "advscan: 助言の通し読みの数え上げ（枝・本流に入れない）",
+    "本体と助言の核を v1536 に戻す（雲の数え上げの枝の押し戻しで作りかけが main に入ったため・検査 ADV_TEXT の食い違いで配信が止まっていた）",
+    "v1537：助言の組み立てを通し読みで直した（受け直しはつなぎ言葉で・中身のない一文と口癖の切れ端を出さない・語尾の二重（武士・大阪）・同じ語尾の連続をつなぐ／体言止め／問いかけで"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜const e｜1795447069",
+   "file": "advice-tone-core.js",
+   "part": "const e",
+   "n": 3,
+   "why": [
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は",
+    "v1522（守りの対子の種・国士10種の助言・声206本）を棚へ戻した：枝 shelf-4-v1522 に保存・main は v1520 の本体に戻し、見張り台の国士の問いの直しだ",
+    "Revert \"v1522（守りの対子の種・国士10種の助言・声206本）を棚へ戻した：枝 shelf-4-v1522 に保存・main は v1520 の本体に戻し、見張り台の国"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const e｜1795447069",
+   "file": "koushu-handan.html",
+   "part": "const e",
+   "n": 3,
+   "why": [
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は",
+    "v1522（守りの対子の種・国士10種の助言・声206本）を棚へ戻した：枝 shelf-4-v1522 に保存・main は v1520 の本体に戻し、見張り台の国士の問いの直しだ",
+    "Revert \"v1522（守りの対子の種・国士10種の助言・声206本）を棚へ戻した：枝 shelf-4-v1522 に保存・main は v1520 の本体に戻し、見張り台の国"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const nx｜1795435800",
+   "file": "koushu-handan.html",
+   "part": "const nx",
+   "n": 3,
+   "why": [
+    "v1515：見張り台に国士の見立ての問い（枠 百十八・Opus）",
+    "v1517：見張り台の国士の問いの釦を「流せない（8種以下）／流す（9〜10種）／国士を狙う（11種以上）」に（枠 百三十七）",
+    "v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士10種の助言『ただし、リーチが来たら降りる』・声の名簿28本と方言の洗い出し台本（棚 #4・枠 二百十）。声は"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const tl｜1795510886",
+   "file": "koushu-handan.html",
+   "part": "const tl",
+   "n": 3,
+   "why": [
+    "v1497：方言を選んだ助言を、人格×方言の56人の人物が自分の言葉だけで通して話す（人物表・全文に人物の語尾・呼びかけと口癖・二人の語尾を混ぜない）。声は未作成（字が先）",
+    "v1506：判定の一言が助言の頭・結論は一度だけ・受け直し・緩急と間・麻雀の言葉98語・声はAAC(m4a 24kHz 48k)・30秒以内（公開の荷 780MB）",
+    "v1531：棚 #21 七対子・対々・染めの測った数の一文を助言につないだ（adva-ch-1〜4・tt-1〜2・fl-1〜2・7人格・方言の声666本の台本・部品56本）（枠 二"
+   ]
+  },
+  {
+   "key": "advice-tone-core.js｜function advSenba｜1795486144",
+   "file": "advice-tone-core.js",
+   "part": "function advSenba",
+   "n": 3,
+   "why": [
+    "v1508 執事×九つの方言（標準の丁寧語4・沖縄語の全文・幼児の読みと面白み30本）を本体へ",
+    "v1527：棚 #5 の札の直し案を入れた（adva-weak・軍師の方言2〜5と「ぞよ」・ずんだ a-n-0・お嬢様 advw12行・先生 dr[4]）。声は雲で作り直す（旧い声",
+    "v1528：棚 #9 の七文（adva-yk-1〜7・7人格×7文）を部品として入れた（助言への出る条件は未定のため未接続）・声の台本に #5 の方言306本と #9 の部品49本"
+   ]
+  },
+  {
+   "key": "panel.html｜function copyBundle｜1795656411",
+   "file": "panel.html",
+   "part": "function copyBundle",
+   "n": 3,
+   "why": [
+    "panel v156：返事パネルの「ヨシした数（ヨシ済み確認）」の欄を外す",
+    "panel v165：状態と札を小さい置き場 koushu-state から読む",
+    "panel v266：まとめて写すを押した時も ntfy で VAIO の写しを新しくする（枠 三百三十七）／.gitignore に senko-vaio-snap.md"
+   ]
+  },
+  {
+   "key": "panel.html｜function copyUrl｜1795655936",
+   "file": "panel.html",
+   "part": "function copyUrl",
+   "n": 3,
+   "why": [
+    "panel v178：「URLを写す」を「様子を写す」へ（番地でなく、パネルが持つ様子を同期で字にして写す）・panel-check に足した",
+    "panel v191：「指さす」の釦（透明な幕・部品の名とid・様子を写すと同じ字を一度に写す）・panel-check ⑤の十一",
+    "panel v265：「様子を写す」に VAIO の状態の写し（vaio-snap.md）の番地を一行足し、同時に ntfy で VAIO へ合図（「指さす」はそのまま・VAIOを"
+   ]
+  },
+  {
+   "key": "panel.html｜function isCopied｜1795546986",
+   "file": "panel.html",
+   "part": "function isCopied",
+   "n": 3,
+   "why": [
+    "panel v251：記録が3分途切れたら猫と字を接続不良へ（枠 二百七十二）・画面の写し取り一覧の釦を公開の大きさの釦に（枠 二百七十三・pack-site.js が site-",
+    "panel v252：接続不良の線を3分から5分へ（LOST_SEC=300・枠 二百七十五）",
+    "panel v256：接続不良を二段に（5分で「確認中、、、。」・15分戻らない時だけ「接続不良、、、。」）（枠 二百八十七）"
+   ]
+  },
+  {
+   "key": "panel.html｜function ybLabel｜1795548058",
+   "file": "panel.html",
+   "part": "function ybLabel",
+   "n": 3,
+   "why": [
+    "panel v244：「直して」も字が二段（直しを送った→直しが通った）・受け側は直しの印も一覧から落とす（枠 二百四十六）",
+    "panel v254：ヨシの釦の「通った」は約2秒・「送れなかった」は約4秒で元の字へ戻る（件数つき・件数が変わっても戻る・枠 二百七十八）",
+    "panel v257：ヨシの「やめる」は yoshi-stop を送る（枠 二百八十九）・底の八つの釦は決め打ちの高さ（枠 二百八十八）"
+   ]
+  },
+  {
+   "key": "panel.html｜function ybPopOpen｜1795597977",
+   "file": "panel.html",
+   "part": "function ybPopOpen",
+   "n": 3,
+   "why": [
+    "panel v244：「直して」も字が二段（直しを送った→直しが通った）・受け側は直しの印も一覧から落とす（枠 二百四十六）",
+    "panel v257：ヨシの「やめる」は yoshi-stop を送る（枠 二百八十九）・底の八つの釦は決め打ちの高さ（枠 二百八十八）",
+    "panel v260：ヨシ待ちの札の推しの釦を太枠・直しなら言葉を入れ欄へ（枠 三百六）"
+   ]
+  }
+ ],
+ "oneSided": [
+  {
+   "key": "4d999f6ad｜panel-check.js",
+   "sha": "4d999f6ad",
+   "s": "v1538・panel v269：拾われなかったエラー（error・unhandledrejection・読み込み失敗）を版・画面の名・文と場所だけ、センコ用の別の話題へ send",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "59fe6690a｜panel-check.js",
+   "sha": "59fe6690a",
+   "s": "panel v268：脈（senko/beats.json）が遅れた仕組みを赤い一行で出す・月一の知らせの試しの『鳴った！（試し）』釦（押すと beat-ack を ntfy へ）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "a06717772｜ver.txt",
+   "sha": "a06717772",
+   "s": "本体と助言の核を v1536 に戻す（雲の数え上げの枝の押し戻しで作りかけが main に入ったため・検査 ADV_TEXT の食い違いで配信が止まっていた）",
+   "changed": "koushu-handan.html",
+   "missing": "ver.txt",
+   "conf": 96
+  },
+  {
+   "key": "272e25586｜ver.txt",
+   "sha": "272e25586",
+   "s": "advscan: 通し読みの数え上げ 2回目（前の切れ端を除く・枝）",
+   "changed": "koushu-handan.html",
+   "missing": "ver.txt",
+   "conf": 96
+  },
+  {
+   "key": "15650e053｜ver.txt",
+   "sha": "15650e053",
+   "s": "advscan: 助言の通し読みの数え上げ（枝・本流に入れない）",
+   "changed": "koushu-handan.html",
+   "missing": "ver.txt",
+   "conf": 96
+  },
+  {
+   "key": "ec9c2c983｜panel-check.js",
+   "sha": "ec9c2c983",
+   "s": "panel v262：全部終わった待ちの猫は立っている現場猫でなく寝ている猫（cat-sleep）に替える・字は休憩中（枠 三百十五）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "c8bdf7789｜panel-check.js",
+   "sha": "c8bdf7789",
+   "s": "panel v260：ヨシ待ちの札の推しの釦を太枠・直しなら言葉を入れ欄へ（枠 三百六）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "06d6302a2｜panel-check.js",
+   "sha": "06d6302a2",
+   "s": "panel v258：まとめて写すの数は state.json の panelView.left だけを出す（枠 二百九十八）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "2ae1daaa2｜panel-ver.txt",
+   "sha": "2ae1daaa2",
+   "s": "panel v257：遠隔の下の行を詰めて決め打ちの高さに収める（検査の直し・枠 二百八十八）",
+   "changed": "panel.html",
+   "missing": "panel-ver.txt",
+   "conf": 96
+  },
+  {
+   "key": "944d0d07f｜panel.html",
+   "sha": "944d0d07f",
+   "s": "panel-check：題の字を消した後の測り直し（猫で見る）・⑯の二の記録を新しく（公開が止まっていた分・枠 二百八十二）",
+   "changed": "panel-check.js",
+   "missing": "panel.html",
+   "conf": 86
+  },
+  {
+   "key": "944d0d07f｜panel-ver.txt",
+   "sha": "944d0d07f",
+   "s": "panel-check：題の字を消した後の測り直し（猫で見る）・⑯の二の記録を新しく（公開が止まっていた分・枠 二百八十二）",
+   "changed": "panel-check.js",
+   "missing": "panel-ver.txt",
+   "conf": 85
+  },
+  {
+   "key": "2cee0d681｜panel.html",
+   "sha": "2cee0d681",
+   "s": "panel-check：時刻（Date.now）から作る「あと N分」「見込みを過ぎた N分」の窓を広げて、時刻のずれで落ちないようにする（枠 二百六十三）",
+   "changed": "panel-check.js",
+   "missing": "panel.html",
+   "conf": 86
+  },
+  {
+   "key": "2cee0d681｜panel-ver.txt",
+   "sha": "2cee0d681",
+   "s": "panel-check：時刻（Date.now）から作る「あと N分」「見込みを過ぎた N分」の窓を広げて、時刻のずれで落ちないようにする（枠 二百六十三）",
+   "changed": "panel-check.js",
+   "missing": "panel-ver.txt",
+   "conf": 85
+  },
+  {
+   "key": "1b51d0631｜panel-check.js",
+   "sha": "1b51d0631",
+   "s": "panel v249：赤い行の予定を小数一桁で出す（3 → 3.0・足し算は丸めずに足して出す時に一度だけ丸める・枠 二百六十五）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "eaf400b58｜panel-check.js",
+   "sha": "eaf400b58",
+   "s": "panel v247：Fable の使用量も 0.1% まで出す（Fable の型で走った分の点から端数・枠 二百五十）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "58e45565f｜panel-check.js",
+   "sha": "58e45565f",
+   "s": "panel v246：棚の各件を似た仕事の実測で（0.1%・手書きには印）・1セッション≒棚は窓・雲・棚の実測の組から（枠 二百四十八・二百四十九）",
+   "changed": "panel-view.js",
+   "missing": "panel-check.js",
+   "conf": 94
+  },
+  {
+   "key": "58e45565f｜panel-check.js",
+   "sha": "58e45565f",
+   "s": "panel v246：棚の各件を似た仕事の実測で（0.1%・手書きには印）・1セッション≒棚は窓・雲・棚の実測の組から（枠 二百四十八・二百四十九）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "5ec2c9ea4｜panel-check.js",
+   "sha": "5ec2c9ea4",
+   "s": "panel v244：「直して」も字が二段（直しを送った→直しが通った）・受け側は直しの印も一覧から落とす（枠 二百四十六）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "c7d53a8eb｜panel-check.js",
+   "sha": "c7d53a8eb",
+   "s": "panel v242：ヨシの名前の入れ口に「名前は知らせで届いた物」と一言（枠 二百四十四）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "079683ad8｜voice-advice-dial.json",
+   "sha": "079683ad8",
+   "s": "v1522：本体を棚から戻した（枠 二百二十四）・voice-advice.txt を台帳から作り直し voice-used.txt と共に更新（版は 1522 のまま）",
+   "changed": "voice-used.txt",
+   "missing": "voice-advice-dial.json",
+   "conf": 80
+  },
+  {
+   "key": "0132453ec｜panel-ver.txt",
+   "sha": "0132453ec",
+   "s": "panel v228：ヨシの釦の持ち物の宣言を使う関数より前へ（起動の途中の塗りで undefined を読まない）",
+   "changed": "panel.html",
+   "missing": "panel-ver.txt",
+   "conf": 96
+  }
+ ]
+}
