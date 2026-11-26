@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795445775,
+        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n枠 二百二十三：雲の札と使用量をパネルに載せる\n枠 二百二十三：雲の札と使用量をパネルに載せた。①koushu-state の order-in.yml：claude -p を --output-format stream-json --verbose で走らせ、走りの後始末（tools/order-finish.js）が、最後の rate_limit_event から5時間枠・週の割合とリセットの刻を取って state.json の rl へ（VAIO の書き込みより新しい時だけ・ほかの欄は触らない・取れなかった時は札にそう書く）、札の末尾に『走りの控え』（前後の5時間枠・週・トークン・費用・手数・所要）を足し、札を notices.json（パネルの札の一覧）へ窓の札と同じ形で一行足す。②試しの枠（走り 45197573790・成功）：実際の rate_limit_event が取れて、5時間枠 54→55%・週 6→6%・トークン input 10／output 608／cache 5519＋95728・費用 $0.0377・5手・9秒が札に載り、state.json の rl が s=55 に更新された。③札が公開の notices.json とセンコ用のまとめ（senko/digest.md・札 1件）に載った。④途中で見つけて直した不具合二つ：（一）VAIO は koushu-state へ state.json・notices.json を自分の写しで丸ごと上書きするので、雲が足した札が次の押しで消える→adopt-cloud.js を新しく作り、git-push.ps1 が押す前に雲の札（eid が cloud-）を VAIO の notices.json へ取り込む形にした。（二）雲の state.json の commit と VAIO の古い写しの commit がぶつかって rebase が毎回落ち、23:49〜23:51 の間 VAIO の state 押し（パネルの様子）が止まって6件積んだ→積んだ6件（VAIO が毎分書き直す物だけ）を捨てて origin/main へ合わせ、git-push.ps1 の失敗の枝に『koushu-state は載せ直せなければ古い写しを捨てて origin/main に合わせる』を足した（23:51:43 から state の押しは復旧）。写しは git-push.ps1.bak-20261123c・d、常駐を二度起こし直した。残り：窓で回した時との比べは、窓の記録が無い間は未（この走りの値を元にする）／雲の札のまとめ（digest）への反映は VAIO の押しを経由する（VAIO が止まると反映されない）／重ならない二つの job の同時走りは未試験／VAIO の見張り・鈴・rewake の片付けは未着手。\nファイル: koushu-state: .github/workflows/order-in.yml・tools/order-finish.js・senko/cards/20261123-234550.md／VAIO: ~/.claude/adopt-cloud.js（新）・git-push.ps1（取り込みの呼び出しと失敗時の整え）\n実測: 雲の走り 45197573790 成功・rl s=55 に更新（origin の state.json で確認）・公開の notices.json に cloud-20261123-234550・senko/digest.md に札1件・VAIO の state 押し 23:51:43 から復旧\n\n［✅ 終わりました（返事不要）］\n写せます（1件）",
+        "eid":  "e1795445773"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795444457,
         "message":  "枠 二百二十二：雲の走りから koushu-handan へ押せるようにする\n枠 二百二十二：雲の走りから koushu-handan へ押せるようにした。①koushu-state の order-in.yml：handan の checkout に鍵 HANDAN_PUSH_TOKEN（本人が作った fine-grained・koushu-handan だけ・secret）を渡し、commit の名前を koushu-order-bot にし、prompt の『git push はしない』を外して『押す時は handan の CLAUDE.md・SKILL.md の作法に従い、枠が押す先を指定したらその枝だけ・main には触らない・押した sha を札に』に替えた（commit f43d1236）。②試しの枠：使い捨ての枝 cloud-push-test-20261123-233053 を一本押して消すだけの仕事を雲に流した（走り 45194856273・全段成功・札 senko/cards/20261123-233053.md）。③窓でも確かめた：押した commit 067115aa（作者 koushu-order-bot・reports/cloud-push-test.txt だけ）は実在し、枝は消えて残っておらず、main の先頭は別の（その試しと無関係な）commit のまま。鍵は札にもログにも出ていない。残り：重ならない二つの job の同時走りは未試験／雲から koushu-handan.html を変えて押す本番の枠（検査と版の三箇所を作法どおりに）は未試験／VAIO の見張り・鈴・rewake の片付けは未着手。\nファイル: koushu-state: .github/workflows/order-in.yml・senko/order-in.md・senko/cards/20261123-233053.md\n実測: 雲の走り 45194856273 成功・押した commit 067115aa の実在を GitHub の API で確認・同名の枝が無いこと・main が動いていないこと",
         "eid":  "e1795444454"
@@ -281,10 +287,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794978139,
         "message":  "v1506 本体取り込み（commit 0bf2f46c の push 待ち）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: push の様子を見た：裏の push はまだ走行中（/tmp/push.log に終了の印 PUSHDONE が無い）。commit 0bf2f46c は手元に在る。荷 780MB・声の欠け0は確認済み。次は push が終わり次第、検査の登録→結果を読む→iPhone Safari 再生の自動確認→古い声の除去（⑤）。\n実測: 14:00 時点 push 未完。"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794977789,
-        "message":  "v1506 本体取り込み（荷の大きさ 780MB で 1GB 以下・commit やり直し中）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 公開の荷の測定が済んだ：21,858 本・780MB（上限 1,024MB）。台帳の声 19,772 本は全部が荷に入り、直下に無い物 0 本＝声の欠け0・1GB 以下の条件は守られた。commit の一回目は見張りの自動 push と git の錠がぶつかり add が失敗（commit は出来ていない・何も壊れていない）。錠が無い事を確かめ、二回目を裏で起こした。次は push のあと、クラウド側のチェックの結果を読み、iPhone Safari 再生の自動確認、古い声の除去（⑤）の順。\n実測: 荷 780MB／21,858 本。声の欠け 0。commit 一回目は失敗（錠）。"
     }
 ]
