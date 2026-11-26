@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795449490,
+        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n枠 二百二十九：雲の main の決まりと concurrency の group を直す\n枠 二百二十九：order-in.yml を二つ直した（20917ac2）。①main の決まり：prompt を『order-in.md の本文に「main 可」の語がある枠で、かつ検査（構文・serifu-extract・pack-site・check-all --fast）が全部通った時だけ main へ押してよい／語が無い枠は押さない／一つでも落ちたら押さず札に理由』に変えた。②concurrency の group：commit メッセージに「[読む]」とある枠は order-in-state・無い枠は order-in-handan（queue: max は残す）。試しの枠二枚（何も変えず判断だけ書かせた）：『main 可』ありの枠の札は『語がある・決まり上は検査が通れば押してよい枠（試しなので押さない）』、語無しの枠の札は『語が無いので押してはならない（押していない）』と判じた（①②とも見届けた）。③[読む]付き（de9998d6）15:48:14〜15:52:48 と [読む]無し（bebaa110）15:48:19〜15:49:36 が重なって同時に走った。棚 #18 は結果を書いて閉じた。直した後に書いた枠から効く（push 先の workflow は push した commit の版で走る）。未了：実際に main 可で検査まで通して押す走りは未試験（試しは押さない形）／センコの別の枠（棚 #5・#6）が旧 group に並んで走っている分は触っていない。\nファイル: koushu-state: .github/workflows/order-in.yml／koushu-ops #18（close）\n実測: 走り de9998d6 15:48:14〜15:52:48・bebaa110 15:48:19〜15:49:36（重なり）・札 20261124-004906・005225\n\n［✅ 終わりました（返事不要）］\n写せます（2件）",
+        "eid":  "e1795449487"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795449151,
         "message":  "枠 二百二十七\n\n完了: 枠 二百二十七：koushu-state の order-in.yml の concurrency に queue: max を一行足した（67c9887f・ほかは触らず）。読むだけの枠を間を空けず二枚書いた（97bfeede・add6a901）：一つ目が走る間に二つ目が pending で残り、消されず順に走って両方成功、札が二枚出た（senko/cards の 20261124-003755・003857）。queue が効いた。ついでに v1522 の配信（079683ad）も成功し、公開の ver.txt が 1522 になった。枠 二百二十八（棚 #4・#13・#15 を閉じた）も済み。未了：pack-site の --make-manifest が voice-advice-catalog.js を先に走らせる直し（作法の抜け止め）は未着手。\nファイル: koushu-state: .github/workflows/order-in.yml\n実測: 走り 45207291921 success・45207307023 success・札二枚・公開 ver.txt 1522・079683ad の配信 success",
         "eid":  "e1795449148"
@@ -284,10 +290,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794979212,
         "message":  "六件：yoshi-open 3本の原文・声の数の差・見張りの名前直し・郵便受け・検査の見込み・⑤の一覧（検査に不具合を見つけた）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 一、未回答3本の原文（yoshi-open.tsv.bak-20261118 の行そのまま・欄は「印｜立てた時刻｜題｜本文」）：\nファイル: ~/.claude/kumo-wait.ps1（bak-20261118y）、check.js、reports/old-voices-to-delete-y1118.txt\n実測: 荷 780MB・台帳 19,772＝18,627＋1,145。FAIL の走り 44240867311。"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794979090,
-        "message":  "v1506 を公開へ押した・自動検査と配信の結果待ち\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: v1506 の push が通った（origin/main に 0bf2f46c が入っている・先頭は 304fe22e・ver.txt=1506）。一回目は main の先行で弾かれ、二回目で通った。次は検査の結果を読み、PASS なら iPhone Safari 再生の自動確認→古い声の除去（⑤）→v1507。stable は動かしていない。\n実測: origin/main に 0bf2f46c あり。荷 780MB・声の欠け0。"
     }
 ]
