@@ -4,7 +4,38 @@
 受領：最後に受け取った枠 枠 三百五十八（11-26 15:03:18）／まだ受け取っていない枠：枠 三百五十九（鈴 15:05:14）
 VAIOの写し：書いた刻 2026-11-26 15:06:37／番地 senko/vaio-snap.md／窓 run:2026-11-26 15:03:27／今の段 —／落ちた走り あり／空きメモリ 3987MB
 
-書いた刻：2026-11-26 15:23:33／読み印：2026-11-26 14:59:32／札 3件（パネルの『まとめて写す』の残りと同じ数・読み印より後・新しい順）
+書いた刻：2026-11-26 15:24:16／読み印：2026-11-26 14:59:32／札 4件（パネルの『まとめて写す』の残りと同じ数・読み印より後・新しい順）
+
+## ✅ 終わりました（返事不要）｜11-26 15:24
+
+この間にまとまった知らせ 3本
+
+［✅ 終わりました（返事不要）］
+枠 三百五十七：雲待ちは自分が押した commit の sha で待つ（bot の commit は飛ばす）
+（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）
+完了: 枠 三百五十五・三百五十七の結果（番号ごと）。
+三百五十五：見本は公開の版と見本の版の食い違いを VAIO が2分で見て直に起こす（schedule は7・22・37・52分の控え）／脈は版の食い違いが30分続いた時だけ／VAIO の写しに koushu-state の走りを足した／v1539 の見本ができた（比べは前の版 1537 と 0／30）。
+三百五十七：雲待ちが bot の commit の sha を渡された時は、手前の自分の押しに替えて待つ（kumo-set.ps1）。v272 は公開されていた（panel-ver 272）。
+未確認：次の版で VAIO が直に起こす見え方／bot の sha を替える所の本物の雲待ち。三百五十六（panel v273）は配信中で、札は公開の後。
+ファイル: ~/.claude/beats-check.js・vaio-look.js・kumo-set.ps1・koushu-state の advice-sample.yml
+実測: 公開 senko/advice-sample.md 版1539・advice-diff 0/30・公開 panel-ver 272
+
+［✅ 終わりました（返事不要）］
+枠 三百五十八：雲が別の枝の直しを main へ運ぶ穴を塞ぐ（元の突き止めと見張り）
+枠 三百五十八の結果。①押した仕事と元：11-25 の 15650e053（advscan 一回目）と 272e25586（二回目）は、どちらも私（kfsr148-art）が枝 advscan へ押した commit で、main へ運んだのは github-actions[bot] の「雲で回した結果を reports/ へ」の commit（job.yml の押し戻しの段）。元は、その段が「git pull --rebase origin main && git push HEAD:main」で、枝 advscan から job.yml を起こした走りの HEAD（枝の commit の上に結果を載せた物）をそのまま main へ押したので、枝の commit ごと main へ入ったこと（main の履歴：15650e053 → bot 45f0a951a（18:27Z）、272e25586 → bot 463f66cf4（19:18Z））。作りかけの本体・核が main に入って配信が止まり、v1536 へ戻した（a06717772）。job.yml は 20:16Z（ebc80c911・枠 三百二十七）から結果を main に書かず専用の枝 cloud-out へ置く形に替えてあり、その穴は既に塞がっている。②同じ形の穴が残っていた voice-m4a.yml・voice-24k.yml（「git push origin HEAD:main」）を塞いだ：取り出し（checkout）は ref: main を名指しにして、枝から起こしても枝の commit を運ばない／押す前に、足す物が直下の *.m4a だけかを見張り、ほかの物が混じっていれば押さず、ntfy で知らせて止まる（終了 1）。post-publish.yml は元から main を名指しで、reports/post-publish/ だけを押す（戻す時だけ本体と ver.txt を、決めた手順で）。試し：使い捨ての git で、*.m4a だけなら見張りは何も拾わず・本体や reports/ が混じれば拾う事を確かめた。advscan の中身と公開の版は変えていない。
+未確認：この二つの workflow の YAML を本物の走りで通していない（手元に YAML の検査器が無く、gh workflow view で読めることだけ確かめた）／次に声を作る走りで、見張りが m4a だけの押しを止めないこと。
+ファイル: .github/workflows/voice-m4a.yml・voice-24k.yml
+実測: 使い捨ての git で見張りの条件（m4a だけ→0件・混じる→拾う）
+
+［✅ 終わりました（返事不要）］
+枠 三百五十七：雲待ちは自分が押した commit の sha で待つ（bot の commit は飛ばす）
+
+完了: 枠 三百五十五・三百五十七の結果（番号ごと）。
+三百五十五：見本は公開の版と見本の版の食い違いを VAIO が2分で見て直に起こす（schedule は7・22・37・52分の控え）／脈は版の食い違いが30分続いた時だけ／VAIO の写しに koushu-state の走りを足した／v1539 の見本ができた（比べは前の版 1537 と 0／30）。
+三百五十七：雲待ちが bot の commit の sha を渡された時は、手前の自分の押しに替えて待つ（kumo-set.ps1）。v272 は公開されていた（panel-ver 272）。
+未確認：次の版で VAIO が直に起こす見え方／bot の sha を替える所の本物の雲待ち。三百五十六（panel v273）は配信中で、札は公開の後。
+ファイル: ~/.claude/beats-check.js・vaio-look.js・kumo-set.ps1・koushu-state の advice-sample.yml
+実測: 公開 senko/advice-sample.md 版1539・advice-diff 0/30・公開 panel-ver 272
 
 ## ✅ 終わりました（返事不要）｜11-26 15:15
 
