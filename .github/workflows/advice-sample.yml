@@ -46,7 +46,13 @@ jobs:
           node-version: '20'
       - name: 見本を作る（100局）
         if: steps.ver.outputs.need == 'yes'
-        run: node handan/tools/advice-sample.js handan senko/advice-sample.md 100
+        run: |
+          now=$(tr -dc '0-9' < handan/ver.txt)
+          prev=$(ls senko/advice-sample/*-fixed.json 2>/dev/null | grep -v "/${now}-fixed" | sort -V | tail -1)
+          echo "前の版の固定30局：${prev:-無し}"
+          node handan/tools/advice-sample.js handan senko 100 ${prev:+--prev $prev}
+          # 版ごとの残しは新しい20版まで（古い物から消す）
+          ls senko/advice-sample/*-fixed.json 2>/dev/null | sort -V | head -n -20 | while read f; do v=$(basename "$f" -fixed.json); rm -f "senko/advice-sample/$v.md" "senko/advice-sample/$v-fixed.json" "senko/advice-sample/$v-vaio-snap.md"; done
       - name: 押して配信を起こす
         if: steps.ver.outputs.need == 'yes'
         env:
@@ -54,7 +60,7 @@ jobs:
         run: |
           git config user.name "advice-sample-bot"
           git config user.email "advice-sample-bot@users.noreply.github.com"
-          git add senko/advice-sample.md
+          git add -A senko/advice-sample.md senko/advice-diff.md senko/advice-sample
           git diff --cached --quiet && { echo "変わりなし"; exit 0; }
           git commit -m "senko/advice-sample.md：助言の見本（版 $(tr -dc '0-9' < handan/ver.txt)・100局）"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
