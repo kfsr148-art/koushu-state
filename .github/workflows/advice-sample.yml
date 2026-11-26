@@ -70,3 +70,28 @@ jobs:
           git commit -m "senko/advice-sample.md：助言の見本（版 $(tr -dc '0-9' < handan/ver.txt)・100局）"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
           gh workflow run deploy.yml || true
+      - name: 脈を書く（最後に動いた刻・見本を作った時か前から45分たっていれば）
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEED: ${{ steps.ver.outputs.need }}
+        run: |
+          git config user.name "advice-sample-bot"
+          git config user.email "advice-sample-bot@users.noreply.github.com"
+          git pull --rebase -q origin main || true
+          node -e '
+            const fs = require("fs"); const f = "senko/beats.json"; let b = {};
+            try { b = JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) { }
+            const now = Math.floor(Date.now() / 1000), prev = (b["advice-cron"] || {}).at || 0, made = process.env.NEED === "yes";
+            if (!made && now - prev < 45 * 60) { process.exit(0); }
+            b["advice-cron"] = { label: "助言の見本の雲の決まった時刻の仕事", at: now, every: 60, grace: 30 };
+            if (made) { b["advice-sample"] = { label: "助言の見本を作った最後（版ごと）", at: now, every: 0, grace: 0 }; }
+            const keys = Object.keys(b).sort();
+            fs.mkdirSync("senko", { recursive: true });
+            fs.writeFileSync(f, "{\n" + keys.map(k => JSON.stringify(k) + ": " + JSON.stringify(b[k])).join(",\n") + "\n}\n");
+          '
+          git add senko/beats.json
+          git diff --cached --quiet && { echo "脈は変わりなし"; exit 0; }
+          git commit -m "senko/beats.json：助言の見本の脈"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
+          gh workflow run deploy.yml || true
