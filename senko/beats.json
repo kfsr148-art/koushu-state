@@ -3,5 +3,5 @@
 "advice-sample": {"label":"助言の見本を作った最後（版ごと）","at":1795665997,"every":0,"grace":0},
 "advice-sync": {"label":"助言の見本が公開の版に追いついていない（公開 v1539・見本 v1537）","at":1795672178,"every":30,"grace":0},
 "relay": {"at":1795671608,"bridge":17,"missing":0,"labels":[]},
-"snap-ring": {"label":"VAIOの写しの撮りため","at":1795672319,"every":5,"grace":10}
+"snap-ring": {"label":"VAIOの写しの撮りため","at":1795672650,"every":5,"grace":10}
 }
