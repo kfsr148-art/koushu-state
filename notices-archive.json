@@ -1,5 +1,11 @@
 [
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795574533,
+        "message":  "【雲の検査が前5回の中央値の2倍（6分）を過ぎたので、結果を待たずに出す】\n\nこの間にまとまった知らせ 2本\n\n［🙋 ヨシしてください］\n枠 二百九十四：控えの預け（ClaudeHomeBackup）が今日の分を押せていない\n印: y1125-1123\n問い: frames-in.jsonl にあった GitHub の鍵は、窓の会話の記録（transcript）にも残っています。その鍵が今も使えるなら取り替えますか。（取り替えは本人の手です。使っていない鍵なら不要）\n返し方：「y1125-1123 にヨシ」と送れば、その問いへのヨシとして通る（別の指示で答えてもよい）\n\n［✅ 終わりました（返事不要）］\n枠 二百九十四：控えの預け（ClaudeHomeBackup）が今日の分を押せていない\n\n完了: 枠 294：①引っかかったのは frames-in.jsonl の 2218 行（11-24 10:21 の枠）にあった GitHub の鍵の実体（ghp_ 型・40字）。偽の当たりではなく本物で、押さない判断は正しかった。②その行は 11-24 05:00 の預けより後に入ったので、前の日までに押された形跡は無い（最後の押しは 11-24 の 183件で、その中の frames-in.jsonl に鍵は無い）。鍵の取り替えが要るかは本人に訊く（下の問い）。③預けの台本 home-backup.ps1 に、拾う前に frames-in.jsonl・orders-full.jsonl・inbox.txt の鍵の字面だけを [REDACTED-KEY] に伏せる一段を足した（検査そのものは弱めていない）。④預けを一度回し直し、11-25 の分（204件）が commit・push まで済んだのを git の記録と home-backup-last.txt で確かめた（ローカルと origin は同じ）。　問いは 印 y1125-1123 へ（🙋ヨシしてください）\nファイル: ~/.claude/home-backup.ps1（写し .bak-20261125）・frames-in.jsonl（鍵の字面を伏せた）\n実測: 回し直し 1回・結果 push 済み（eaa2c4a）",
+        "eid":  "e1795574527"
+    },
+    {
         "title":  "🪟 異常です（控えの預けが落ちました）",
         "time":  1795553106,
         "message":  "控えの預け（ClaudeHomeBackup・05:00）が今日の分を押せていません。\n最後に押せた日：2026-11-24\n記録の末尾：\n2026-11-25 05:04:40\thome-backup\t拾いが落ちた（終了コード -1）。45秒置いて一度だけ打ち直す\n2026-11-25 05:05:34\thome-backup\t打ち直しで拾えた\n2026-11-25 05:06:57\thome-backup\t押さない：鍵か話題名が混じっている → frames-in.jsonl（鍵らしい字面）\n全文は ~/.claude/git-push-full.log\n",
@@ -292,11 +298,5 @@
         "time":  1795445775,
         "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n枠 二百二十三：雲の札と使用量をパネルに載せる\n枠 二百二十三：雲の札と使用量をパネルに載せた。①koushu-state の order-in.yml：claude -p を --output-format stream-json --verbose で走らせ、走りの後始末（tools/order-finish.js）が、最後の rate_limit_event から5時間枠・週の割合とリセットの刻を取って state.json の rl へ（VAIO の書き込みより新しい時だけ・ほかの欄は触らない・取れなかった時は札にそう書く）、札の末尾に『走りの控え』（前後の5時間枠・週・トークン・費用・手数・所要）を足し、札を notices.json（パネルの札の一覧）へ窓の札と同じ形で一行足す。②試しの枠（走り 45197573790・成功）：実際の rate_limit_event が取れて、5時間枠 54→55%・週 6→6%・トークン input 10／output 608／cache 5519＋95728・費用 $0.0377・5手・9秒が札に載り、state.json の rl が s=55 に更新された。③札が公開の notices.json とセンコ用のまとめ（senko/digest.md・札 1件）に載った。④途中で見つけて直した不具合二つ：（一）VAIO は koushu-state へ state.json・notices.json を自分の写しで丸ごと上書きするので、雲が足した札が次の押しで消える→adopt-cloud.js を新しく作り、git-push.ps1 が押す前に雲の札（eid が cloud-）を VAIO の notices.json へ取り込む形にした。（二）雲の state.json の commit と VAIO の古い写しの commit がぶつかって rebase が毎回落ち、23:49〜23:51 の間 VAIO の state 押し（パネルの様子）が止まって6件積んだ→積んだ6件（VAIO が毎分書き直す物だけ）を捨てて origin/main へ合わせ、git-push.ps1 の失敗の枝に『koushu-state は載せ直せなければ古い写しを捨てて origin/main に合わせる』を足した（23:51:43 から state の押しは復旧）。写しは git-push.ps1.bak-20261123c・d、常駐を二度起こし直した。残り：窓で回した時との比べは、窓の記録が無い間は未（この走りの値を元にする）／雲の札のまとめ（digest）への反映は VAIO の押しを経由する（VAIO が止まると反映されない）／重ならない二つの job の同時走りは未試験／VAIO の見張り・鈴・rewake の片付けは未着手。\nファイル: koushu-state: .github/workflows/order-in.yml・tools/order-finish.js・senko/cards/20261123-234550.md／VAIO: ~/.claude/adopt-cloud.js（新）・git-push.ps1（取り込みの呼び出しと失敗時の整え）\n実測: 雲の走り 45197573790 成功・rl s=55 に更新（origin の state.json で確認）・公開の notices.json に cloud-20261123-234550・senko/digest.md に札1件・VAIO の state 押し 23:51:43 から復旧\n\n［✅ 終わりました（返事不要）］\n写せます（1件）",
         "eid":  "e1795445773"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1795444457,
-        "message":  "枠 二百二十二：雲の走りから koushu-handan へ押せるようにする\n枠 二百二十二：雲の走りから koushu-handan へ押せるようにした。①koushu-state の order-in.yml：handan の checkout に鍵 HANDAN_PUSH_TOKEN（本人が作った fine-grained・koushu-handan だけ・secret）を渡し、commit の名前を koushu-order-bot にし、prompt の『git push はしない』を外して『押す時は handan の CLAUDE.md・SKILL.md の作法に従い、枠が押す先を指定したらその枝だけ・main には触らない・押した sha を札に』に替えた（commit f43d1236）。②試しの枠：使い捨ての枝 cloud-push-test-20261123-233053 を一本押して消すだけの仕事を雲に流した（走り 45194856273・全段成功・札 senko/cards/20261123-233053.md）。③窓でも確かめた：押した commit 067115aa（作者 koushu-order-bot・reports/cloud-push-test.txt だけ）は実在し、枝は消えて残っておらず、main の先頭は別の（その試しと無関係な）commit のまま。鍵は札にもログにも出ていない。残り：重ならない二つの job の同時走りは未試験／雲から koushu-handan.html を変えて押す本番の枠（検査と版の三箇所を作法どおりに）は未試験／VAIO の見張り・鈴・rewake の片付けは未着手。\nファイル: koushu-state: .github/workflows/order-in.yml・senko/order-in.md・senko/cards/20261123-233053.md\n実測: 雲の走り 45194856273 成功・押した commit 067115aa の実在を GitHub の API で確認・同名の枝が無いこと・main が動いていないこと",
-        "eid":  "e1795444454"
     }
 ]
