@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795471216,
+        "message":  "枠 二百三十九：koushu-state の order-in.yml に claude -p の前の npm ci を足す（広い許しは使わない・棚 #16 段2・3 を並べ直す）\n枠 239：koushu-state の order-in.yml に claude -p の前の段を足した（setup-node@v4・node 24・cache npm・handan で npm ci --no-audit --no-fund・広い許しは使わず --allowedTools は既存の Bash(node:*) のまま・workflow の commit sha e828d30f）。雲の走りの記録で npm ci の段が成功。棚 #16 段2（染め）を並べ直して走り成功：札 20261124-062615.md に表と文案三つ（main の sha 6acf5e34・reports/y1124-flush-aite-result.md）。段3（対々）も走り成功：札 20261124-064047.md に表と文案五つ（main の sha 175b2dd5）。#16 は段1〜3 の表と文案がそろった。並べた段：なし／順に回した段：yaml の直し→段2→段3（段3 は npm ci の成功を見てから）。未了：段2 の標本が小さい（純9〜11枚の「同じか高い」の確かめに既定1230秒で1〜2回）。#16 は本人の選びの前なので閉じていない\nファイル: koushu-state: .github/workflows/order-in.yml・senko/order-in.md／koushu-handan の reports/ は雲が追加\n実測: npm ci 段=成功・段2 走り 817秒・段3 走り 575秒・落ちた局 0",
+        "eid":  "e1795471213"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795461168,
         "message":  "枠 二百三十七：返事パネルの遠隔の欄を、解除中も消さず出す（最後の線と刻）\n\n完了: 枠 237：panel v238 を公開（検査 成功・panel-ver 238・commit 6029815d4）。遠隔が解除されても欄は消えず『🔗 遠隔 解除中』と下の行に『最後 HH:MM・名』が出る（刻はその端末が最後に繋がりを見た刻・localStorage に控える）。繋がれば元の線に戻る。並べた段：なし／順に回した段：同じ panel.html に触るため。\nファイル: panel.html・panel-core.js・panel-ver.txt・panel-check.js\n実測: panel-check --static 全PASS・雲の検査 成功・公開 panel 238\n実機: 実機：遠隔を解除した時、返事パネルの上の段に薄く点線の『🔗 遠隔 解除中』が残り、下に『最後 HH:MM・名』が出る。繋ぎ直すと通常の『🔗 遠隔』に戻る",
         "eid":  "e1795461164"
@@ -290,10 +296,5 @@
         "title":  "✅ 再起動の後の点検（返事不要）",
         "time":  1794982218,
         "message":  "再起動の10分後の通し点検（11-18 15:10）\n① 予定表 Claude* … 15件（無効 ClaudeSweepChecks）・最終結果は全て良い\n② 見張りの生存 … 0分前\n③ ntfy.sh の応答 … HTTP 200\n④ 公開側 … notices.json のいちばん新しい札 11-18 15:02:49／panel-ver.txt 161\n四つとも○。戻っている。\n"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794981769,
-        "message":  "⑤はまだヨシしない：先に iPhone Safari の m4a 再生確認と、stable v1505 が古い声を読むかの確認\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: ヨシ待ち\n完了: 着手：二（stable の読む声の突き合わせ・手元で数えるだけ）→一（Safari 再生の自動確認）の順。"
     }
 ]
