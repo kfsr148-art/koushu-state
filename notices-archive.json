@@ -1,5 +1,11 @@
 [
     {
+        "title":  "📷 VAIOの写し",
+        "time":  1795663405,
+        "message":  "書いた刻：2026-11-26 12:23:16\n引き金：試し（枠 三百三十九の確かめ・窓の画面は除く）\n番地：https://kfsr148-art.github.io/koushu-state/vaio-snap.md（センコ用は senko/vaio-snap.md）\n",
+        "eid":  ""
+    },
+    {
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795658532,
         "message":  "枠 三百三十八\n枠 三百三十二〜三百三十八の結果（まとめて仕上げ・panel v267・公開 panel-ver.txt 267 を見届けた）。\n三百三十二：「VAIOを見る」釦を一度作った（v264）が、三百三十三・三百三十四で取り下げ。VAIO の写し作り（vaio-look.js）・受け口・koushu-state への押しはここで作った。\n三百三十三：写しは札にせず公開の番地 vaio-snap.md（押した瞬間に写し、写しの出来上がりを待たない）。\n三百三十四：「指さす」は残し、「様子を写す」の最後に番地を一行・同時に ntfy で合図→VAIO が ①パネルの様子 ②VAIOの中 を書いて公開（v265）。\n三百三十五：③落ちた走りの最後の40行（無ければ「落ちた走り無し」）④空きメモリと claude・node・Edge のメモリを足した。\n三百三十六：センコが senko/snap-ask.txt を書けば窓を起こさず写しを作り senko/vaio-snap.md にも書く（作り値で確認・VAIO側約10秒）。\n三百三十七：digest の頭に「VAIOの写し」の一行（公開で確認）・まとめて写すを押した時も合図（v266）。\n三百三十八：頭の字（猫の横）を「本人が今する事」に（緑・黄・赤・数はパネルにある物だけ・v267）。\n未確認：実機で押した時の見え方（様子を写す／まとめて写す／頭の字）と、センコの snap-ask から写しが入るまでの秒。\nファイル: panel.html・panel-core.js・panel-check.js・~/.claude/vaio-look.js・yoshi-btn-recv.js・senko-peek.js・digest-make.js・git-push.ps1\n実測: 公開 panel-ver.txt 267・公開 vaio-snap.md 200・panel-check --static 194件PASS",
@@ -269,10 +275,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794967572,
         "message":  "「過去の札を消す」二枠は手を付けず止めた：確かめた結果（dial 2回目は雲待ち中）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 札は何も消さず、読むだけで三件を確かめた（11:00 時点の notices.json／notices-archive.json／yoshi-open.tsv）。\n実測: notices 36枚・archive 50枚・yoshi-open 未回答の v1506 系 3本（y1118-0230・0245・0400）。"
-    },
-    {
-        "title":  "🪟 止まっとるかも：dial 2回目（44215875427）の今の状態を見た（11:04：9/10 完了）・始まり 10:26・見込み 10:51・過ぎた 13分",
-        "time":  1794967464,
-        "message":  "止まっとるかも：dial 2回目（44215875427）の今の状態を見た（11:04：9/10 完了）・始まり 10:26・見込み 10:51・過ぎた 13分\n手を入れて直すまで消えません（パネルの赤い行に残ります）。"
     }
 ]
