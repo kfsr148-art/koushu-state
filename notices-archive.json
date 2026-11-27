@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795672097,
+        "message":  "写せます（8件）",
+        "eid":  "e1795672094"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795671876,
         "message":  "この間にまとまった知らせ 5本\n\n［✅ 終わりました（返事不要）］\n枠 三百四十五：直しの溜まり場・一緒に変わる組（札）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n完了: 枠 三百四十五の結果。①直しの溜まり場：tools/hotspots.js を作り、koushu-state の雲の走り hotspots.yml（6時間おき・履歴を全部取った koushu-handan の写しの上で回す）が、本体・パネル・口調表（koushu-handan.html・panel.html・panel-core.js・advice-tone-core.js）の直近30日の直しを、同じ部分（差分の見出しに出る関数・const の名）ごとに数えて senko/hotspots.md に多い順で並べる。30日のうちに同じ部分の三度目の直しが直近3日に入った物は、その部分と三度の直しの訳（commit の題）を印にして senko/hotspot-alerts.json に出し、VAIO の hotspots-card.js（beats-check が2分おきに起こし・実際に読むのは1時間に一度）が札にする。②一緒に変わる組：直近90日の commit から、A を直した commit の何割で B も直されたかを表にして senko/cochange.md に出し（5回以上直された A で7割以上の組）、8割以上の組で直近3日に A だけ変わった直しがあれば hotspot-alerts.json に出して同じ札で知らせる。札は一回の掃除で一通だけ（新しい物の数と先頭の数件）。実測（最初の雲の走り）：commit 219 件・部分の表・「いつも一緒に変わる組」には panel-ver.txt→panel.html 100%（202／202）・serifu.txt↔serifu-adv.txt 100%・ver.txt→koushu-handan.html 98% などが並び、三度目の印 29 件・片方だけ 21 件が出た（初回は一通にまとめて札にする）。\n未確認：差分の見出しが取れない所は「（見出し無し）」にまとまるので、panel.html・koushu-handan.html の「見出し無し」が上に来ている（細かい関数ごとの数は、見出しの取れる所だけ）／三度目の印は直近の大きな直しに引かれて多めに出る／札の見え方（初回は次の時間の掃除で出る）。\nファイル: tools/hotspots.js・koushu-state の hotspots.yml・~/.claude/hotspots-card.js\n実測: 雲の最初の走り success・commit 219件・三度目 29・片方だけ 21\n\n［✅ 終わりました（返事不要）］\n札\n枠 三百四十八・三百五十二・三百五十の結果（番号ごと）。\n三百四十八：本体 v1539・パネル v271 に、拾われなかったエラーを版・画面名・文と場所だけセンコ用の別の話題へ送る仕掛け（https の公開ページだけ・同じ物は1時間に1通・見た目は変えない）／VAIO の client-errors.js が senko/client-errors.md に版ごとの数を出す。公開は配信中（公開 ver.txt 1538 → 1539 待ち）。\n三百五十二：予定%を台帳の見込みの残り＋待ちの枠×直近24時間の実測の中央値から出す（待ち5件 5.0% → 2.0%・横に元の字）。panel v272・公開は配信中（panel-ver.txt 270 → 272 待ち）。weekJob は別の数え方のまま。\n三百五十：並びの11枠は全部済み（並びのとおりの順にはならなかったと札に書いた）。\n未確認：公開の 1539・panel 272 の確認（配信後に追記）／実機のエラーの数・予定%の元の字。\nファイル: 本体 v1539・panel v271・v272・client-errors.js\n実測: panel-check --static 195項目通過・作り値\n\n［✅ 終わりました（返事不要）］\n写せます（15件）\n\n［✅ 終わりました（返事不要）］\n枠 三百五十四\n\n完了: 枠 三百五十三（急ぎ）・三百五十四の結果（番号ごと）。\n三百五十三：橋の札を notices へ写す道（card-relay.js・bridge-card.js・beats-check の2分おきの掃除）を入れ、今日の足りなかった札 四十一・四十二・四十三・四十七 の4通を足した（その他の枠の札は既に在った）。差は今0。パネル v270 は、差がある時に赤い一言を出す。\n三百五十四：センコの頼み（snap-ask）の写しは「📷 VAIOの写し」の札を出さず、本人が様子を写す・まとめて写すを押した時だけ札を一通出す（vaio-look.js）。\n未確認：実機の赤い一言・次の snap-ask で数が増えないこと。panel-check --static は手元で時間切れ（133項目まで全て通り・最後まで回らず）、雲の検査に任せた。\nファイル: ~/.claude/card-relay.js・bridge-card.js・beats-check.js・vaio-look.js・panel v270\n実測: 足した4・既に在る4・差0／作り値で札の出し分け\n\n［✅ 終わりました（返事不要）］\n枠 三百四十五：直しの溜まり場・一緒に変わる組（札）\n\n完了: 枠 三百四十五の結果。①直しの溜まり場：tools/hotspots.js を作り、koushu-state の雲の走り hotspots.yml（6時間おき・履歴を全部取った koushu-handan の写しの上で回す）が、本体・パネル・口調表（koushu-handan.html・panel.html・panel-core.js・advice-tone-core.js）の直近30日の直しを、同じ部分（差分の見出しに出る関数・const の名）ごとに数えて senko/hotspots.md に多い順で並べる。30日のうちに同じ部分の三度目の直しが直近3日に入った物は、その部分と三度の直しの訳（commit の題）を印にして senko/hotspot-alerts.json に出し、VAIO の hotspots-card.js（beats-check が2分おきに起こし・実際に読むのは1時間に一度）が札にする。②一緒に変わる組：直近90日の commit から、A を直した commit の何割で B も直されたかを表にして senko/cochange.md に出し（5回以上直された A で7割以上の組）、8割以上の組で直近3日に A だけ変わった直しがあれば hotspot-alerts.json に出して同じ札で知らせる。札は一回の掃除で一通だけ（新しい物の数と先頭の数件）。実測（最初の雲の走り）：commit 219 件・部分の表・「いつも一緒に変わる組」には panel-ver.txt→panel.html 100%（202／202）・serifu.txt↔serifu-adv.txt 100%・ver.txt→koushu-handan.html 98% などが並び、三度目の印 29 件・片方だけ 21 件が出た（初回は一通にまとめて札にする）。\n未確認：差分の見出しが取れない所は「（見出し無し）」にまとまるので、panel.html・koushu-handan.html の「見出し無し」が上に来ている（細かい関数ごとの数は、見出しの取れる所だけ）／三度目の印は直近の大きな直しに引かれて多めに出る／札の見え方（初回は次の時間の掃除で出る）。\nファイル: tools/hotspots.js・koushu-state の hotspots.yml・~/.claude/hotspots-card.js\n実測: 雲の最初の走り success・commit 219件・三度目 29・片方だけ 21",
         "eid":  "e1795671873"
@@ -249,10 +255,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959901,
         "message":  "写せます（4件）"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794959773,
-        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声をAACで作る：今の声のAAC化（convert）の雲の走りを待っている（v1506）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 部品の声（y1118-0500）の走りは成功・974本が reports/voice-m4a-out に入った（34MB）。窓が塞がっていた訳＝私が長い手番の中で待っていた（268分起こせず）。再発防止：kumo-wait.ps1 に「15分起こせなければ Esc で一打止め＋受信箱へ入れ直し（5分おき・3回まで・3回目後に🪟）」を入れ構文OK・常駐を起こし直し。CLAUDE.md に作法38（長く待たない・立ち直り・不要確認は待たない・ヨシ条件内は止まらない）を追記。convert を起こして雲待ち登録。\nファイル: CLAUDE.md ~/.claude/kumo-wait.ps1 (bak-20261118m)\n\n［✅ 終わりました（返事不要）］\n37 から雲待ち y1118-0500（声をAACで作る・部品）が ready\n何をしたかの控えがありません（止まる側の書き忘れです）。"
     }
 ]
