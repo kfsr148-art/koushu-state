@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795673743,
+        "message":  "枠 三百五十八の結果。①押した仕事と元：11-25 の 15650e053（advscan 一回目）と 272e25586（二回目）は、どちらも私（kfsr148-art）が枝 advscan へ押した commit で、main へ運んだのは github-actions[bot] の「雲で回した結果を reports/ へ」の commit（job.yml の押し戻しの段）。元は、その段が「git pull --rebase origin main \u0026\u0026 git push HEAD:main」で、枝 advscan から job.yml を起こした走りの HEAD（枝の commit の上に結果を載せた物）をそのまま main へ押したので、枝の commit ごと main へ入ったこと（main の履歴：15650e053 → bot 45f0a951a（18:27Z）、272e25586 → bot 463f66cf4（19:18Z））。作りかけの本体・核が main に入って配信が止まり、v1536 へ戻した（a06717772）。job.yml は 20:16Z（ebc80c911・枠 三百二十七）から結果を main に書かず専用の枝 cloud-out へ置く形に替えてあり、その穴は既に塞がっている。②同じ形の穴が残っていた voice-m4a.yml・voice-24k.yml（「git push origin HEAD:main」）を塞いだ：取り出し（checkout）は ref: main を名指しにして、枝から起こしても枝の commit を運ばない／押す前に、足す物が直下の *.m4a だけかを見張り、ほかの物が混じっていれば押さず、ntfy で知らせて止まる（終了 1）。post-publish.yml は元から main を名指しで、reports/post-publish/ だけを押す（戻す時だけ本体と ver.txt を、決めた手順で）。試し：使い捨ての git で、*.m4a だけなら見張りは何も拾わず・本体や reports/ が混じれば拾う事を確かめた。advscan の中身と公開の版は変えていない。\n未確認：この二つの workflow の YAML を本物の走りで通していない（手元に YAML の検査器が無く、gh workflow view で読めることだけ確かめた）／次に声を作る走りで、見張りが m4a だけの押しを止めないこと。\n",
+        "eid":  ""
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795673458,
         "message":  "下見：できる（壁：台帳の未了が 16 行ある（前の枠の済み具合））\n枠 三百五十五の結果。①見本の起こし方：VAIO の beats-check.js（2分おき）が公開の版（koushu-handan の ver.txt）と見本の版（senko/advice-sample.md の「版：」）を比べ、食い違いが2分続いたら koushu-state の advice-sample.yml を直に起こす（版ごとに一度だけ）。②GitHub の schedule は控えとして残し、分を 00・15・30・45 からずらして 7・22・37・52 にした。③脈の見方：時刻（最後に動いた刻）でなく、公開の版と見本の版が違うまま30分続いた時だけ脈（beats.json の advice-sync・見込み30分）として赤と ntfy を一度出す。版が同じなら出さない（advice-cron は見込みを持たない形に替えた）。④VAIO の写しの「雲の走りの様子」に koushu-state の走り（直近5本）も足した（次に写しを作る時から載る）。⑤v1539 の見本：手で起こして作った（公開 senko/advice-sample.md の版：1539）。比べ（senko/advice-diff.md）は前の版 1537 と 0／30（1538・1539 はエラーを送る仕掛けだけで、助言の文は変わっていないので正しい）。\n直し方の読み替え：センコの案①は post-publish.yml から直に起こすものだったが、koushu-handan の走りには koushu-state の走りを起こせる鍵が無く（鍵を足すのは広い許しになる）、VAIO（gh の権限がある）から起こす形にした。VAIO が止まっていれば schedule の控えが動く。\n未確認：次の版が上がった時に、VAIO が2分＋掃除の間で直に起こす見え方（今回は手で起こした一本と VAIO が起こした一本が重なり、後の一本は同じ版を作り直しただけ）／schedule の遅れ・落ちを避けられたか。\n",
         "eid":  ""
@@ -254,10 +260,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794961691,
         "message":  "声をAACで作る：dial 1回目の雲の走りを待っている（v1506の見込み時刻つき）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: convert（44202862262）は成功・実測17分（5,515本）。parts は成功・実測6分（974本）。reports/voice-m4a-out は計6,489本（advy 4,826・advx 1,145・他）。dial 1回目を起こして登録（見込み終了 09:41）。\n実測: 道具の限界＝1分割あたり最大23分。parts は1分割あたり約97本を約4分（約2.5秒/本）。\nファイル: reports/voice-m4a-out（pull 済み・commit は取り込み時にまとめる）"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794961092,
-        "message":  "声をAACで作る（雲の走り待ち）\n（札が立たないまま次の仕事へ移っていた分）\n完了: pull 済み・走り中のため dial は起こさず雲待ちへ再登録"
     }
 ]
