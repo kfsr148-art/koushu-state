@@ -1,6 +1,18 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795674674,
+        "message":  "下見：できる（壁：台帳の未了が 16 行ある（前の枠の済み具合））\n枠 三百五十六の結果。panel v273：赤い行の「枠 N件・予定 X%」から、後ろのカッコ（予定%の元の短い字）を消した。数の出し方・頭の字・猫・他の行・本体は変えていない（sent.src の値は残してあり、字には出さない）。panel-check --static は195項目すべて通った（三百五十二で足した検査を「元の字を赤い行に出さない」に書き直した）。公開で見届けました：公開 panel-ver.txt が 273・公開 panel.html に v273（前の検査は公開側の猫の画像が一時的に 503 を返して落ち、次の検査に載って通った）。\n未確認：実機の幅で、赤い行が「枠 N件・予定 X%」だけになり、頭の字（猫の横）と重ならないこと。\n",
+        "eid":  ""
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795674254,
+        "message":  "この間にまとまった知らせ 3本\n\n［✅ 終わりました（返事不要）］\n枠 三百五十七：雲待ちは自分が押した commit の sha で待つ（bot の commit は飛ばす）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n完了: 枠 三百五十五・三百五十七の結果（番号ごと）。\n三百五十五：見本は公開の版と見本の版の食い違いを VAIO が2分で見て直に起こす（schedule は7・22・37・52分の控え）／脈は版の食い違いが30分続いた時だけ／VAIO の写しに koushu-state の走りを足した／v1539 の見本ができた（比べは前の版 1537 と 0／30）。\n三百五十七：雲待ちが bot の commit の sha を渡された時は、手前の自分の押しに替えて待つ（kumo-set.ps1）。v272 は公開されていた（panel-ver 272）。\n未確認：次の版で VAIO が直に起こす見え方／bot の sha を替える所の本物の雲待ち。三百五十六（panel v273）は配信中で、札は公開の後。\nファイル: ~/.claude/beats-check.js・vaio-look.js・kumo-set.ps1・koushu-state の advice-sample.yml\n実測: 公開 senko/advice-sample.md 版1539・advice-diff 0/30・公開 panel-ver 272\n\n［✅ 終わりました（返事不要）］\n枠 三百五十八：雲が別の枝の直しを main へ運ぶ穴を塞ぐ（元の突き止めと見張り）\n枠 三百五十八の結果。①押した仕事と元：11-25 の 15650e053（advscan 一回目）と 272e25586（二回目）は、どちらも私（kfsr148-art）が枝 advscan へ押した commit で、main へ運んだのは github-actions[bot] の「雲で回した結果を reports/ へ」の commit（job.yml の押し戻しの段）。元は、その段が「git pull --rebase origin main \u0026\u0026 git push HEAD:main」で、枝 advscan から job.yml を起こした走りの HEAD（枝の commit の上に結果を載せた物）をそのまま main へ押したので、枝の commit ごと main へ入ったこと（main の履歴：15650e053 → bot 45f0a951a（18:27Z）、272e25586 → bot 463f66cf4（19:18Z））。作りかけの本体・核が main に入って配信が止まり、v1536 へ戻した（a06717772）。job.yml は 20:16Z（ebc80c911・枠 三百二十七）から結果を main に書かず専用の枝 cloud-out へ置く形に替えてあり、その穴は既に塞がっている。②同じ形の穴が残っていた voice-m4a.yml・voice-24k.yml（「git push origin HEAD:main」）を塞いだ：取り出し（checkout）は ref: main を名指しにして、枝から起こしても枝の commit を運ばない／押す前に、足す物が直下の *.m4a だけかを見張り、ほかの物が混じっていれば押さず、ntfy で知らせて止まる（終了 1）。post-publish.yml は元から main を名指しで、reports/post-publish/ だけを押す（戻す時だけ本体と ver.txt を、決めた手順で）。試し：使い捨ての git で、*.m4a だけなら見張りは何も拾わず・本体や reports/ が混じれば拾う事を確かめた。advscan の中身と公開の版は変えていない。\n未確認：この二つの workflow の YAML を本物の走りで通していない（手元に YAML の検査器が無く、gh workflow view で読めることだけ確かめた）／次に声を作る走りで、見張りが m4a だけの押しを止めないこと。\nファイル: .github/workflows/voice-m4a.yml・voice-24k.yml\n実測: 使い捨ての git で見張りの条件（m4a だけ→0件・混じる→拾う）\n\n［✅ 終わりました（返事不要）］\n枠 三百五十七：雲待ちは自分が押した commit の sha で待つ（bot の commit は飛ばす）\n\n完了: 枠 三百五十五・三百五十七の結果（番号ごと）。\n三百五十五：見本は公開の版と見本の版の食い違いを VAIO が2分で見て直に起こす（schedule は7・22・37・52分の控え）／脈は版の食い違いが30分続いた時だけ／VAIO の写しに koushu-state の走りを足した／v1539 の見本ができた（比べは前の版 1537 と 0／30）。\n三百五十七：雲待ちが bot の commit の sha を渡された時は、手前の自分の押しに替えて待つ（kumo-set.ps1）。v272 は公開されていた（panel-ver 272）。\n未確認：次の版で VAIO が直に起こす見え方／bot の sha を替える所の本物の雲待ち。三百五十六（panel v273）は配信中で、札は公開の後。\nファイル: ~/.claude/beats-check.js・vaio-look.js・kumo-set.ps1・koushu-state の advice-sample.yml\n実測: 公開 senko/advice-sample.md 版1539・advice-diff 0/30・公開 panel-ver 272",
+        "eid":  "e1795674250"
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795673743,
         "message":  "枠 三百五十八の結果。①押した仕事と元：11-25 の 15650e053（advscan 一回目）と 272e25586（二回目）は、どちらも私（kfsr148-art）が枝 advscan へ押した commit で、main へ運んだのは github-actions[bot] の「雲で回した結果を reports/ へ」の commit（job.yml の押し戻しの段）。元は、その段が「git pull --rebase origin main \u0026\u0026 git push HEAD:main」で、枝 advscan から job.yml を起こした走りの HEAD（枝の commit の上に結果を載せた物）をそのまま main へ押したので、枝の commit ごと main へ入ったこと（main の履歴：15650e053 → bot 45f0a951a（18:27Z）、272e25586 → bot 463f66cf4（19:18Z））。作りかけの本体・核が main に入って配信が止まり、v1536 へ戻した（a06717772）。job.yml は 20:16Z（ebc80c911・枠 三百二十七）から結果を main に書かず専用の枝 cloud-out へ置く形に替えてあり、その穴は既に塞がっている。②同じ形の穴が残っていた voice-m4a.yml・voice-24k.yml（「git push origin HEAD:main」）を塞いだ：取り出し（checkout）は ref: main を名指しにして、枝から起こしても枝の commit を運ばない／押す前に、足す物が直下の *.m4a だけかを見張り、ほかの物が混じっていれば押さず、ntfy で知らせて止まる（終了 1）。post-publish.yml は元から main を名指しで、reports/post-publish/ だけを押す（戻す時だけ本体と ver.txt を、決めた手順で）。試し：使い捨ての git で、*.m4a だけなら見張りは何も拾わず・本体や reports/ が混じれば拾う事を確かめた。advscan の中身と公開の版は変えていない。\n未確認：この二つの workflow の YAML を本物の走りで通していない（手元に YAML の検査器が無く、gh workflow view で読めることだけ確かめた）／次に声を作る走りで、見張りが m4a だけの押しを止めないこと。\n",
         "eid":  ""
@@ -250,15 +262,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794962530,
         "message":  "dial 1回目（44206399474）の雲の走りを待っている（見張りの仕組みと食い違い三件を直した）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 食い違い三件を直した。\n実測: dial 1回目 起動 09:16（00:16Z）。道具の上限23分＋まとめ数分 → 見込みの終わり 09:42。1回の本数は終了後に数える。\nファイル: ~/.claude/kumo-wait.ps1（bak-20261118n）CLAUDE.md（作法38・39）reports/y1118-0916.md"
-    },
-    {
-        "title":  "🪟 時間切れ：固まり（最後の返り 09:27）（再挑戦 1/3）",
-        "time":  1794962215,
-        "message":  "最後に命令が返ったのは 09:27（9分前）で、8分たっても次が返らないので切りました（開始から 10分）。**受信箱へは戻していません。**\n同じ字の枠を切ったのは、48時間で 1 回目です。\n\n── 切れた枠（先頭200字）──\n【Codeタブへ】\nパネルと札の食い違いを三つ確かめて札で返す。\n一、09:18 の札「dial は起こさず雲待ちへ再登録」と、パネルの「dial 1回目（44206399474）の走り待ち y1118-0916」が食い違う。gh run view で 44202862262 と 44206399474 の今の状態を見て、どちらが本当かを書く。\n二、作法38を入れた後も「札が立たないまま次の仕事へ…\n\n── どこまで進んだか ──\n台帳：未了 43件／この枠の行は「未了：受領」\n足跡：最後は 09:28:05 heartbeat／この枠に入ってから 命令 3回・返り 3回\n\n＊claude の子を 0本落として、Esc を一打送りました。\n＊記録は ~/.claude/inbox-watch.log。\n"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794961691,
-        "message":  "声をAACで作る：dial 1回目の雲の走りを待っている（v1506の見込み時刻つき）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: convert（44202862262）は成功・実測17分（5,515本）。parts は成功・実測6分（974本）。reports/voice-m4a-out は計6,489本（advy 4,826・advx 1,145・他）。dial 1回目を起こして登録（見込み終了 09:41）。\n実測: 道具の限界＝1分割あたり最大23分。parts は1分割あたり約97本を約4分（約2.5秒/本）。\nファイル: reports/voice-m4a-out（pull 済み・commit は取り込み時にまとめる）"
     }
 ]
