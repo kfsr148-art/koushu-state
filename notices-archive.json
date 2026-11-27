@@ -1,5 +1,17 @@
 [
     {
+        "title":  "✅ 終わりました（控えから起こした札）",
+        "time":  1795581398,
+        "message":  "この間にまとまった知らせ 3本\n\n［✅ 終わりました（控えから起こした札）］\n（この札は、札を書かずに終わった仕事から、走りの記録を元に自動で起こした物です）\n\n仕事：枠 二百九十七：枠 296 の最後の段が進まなかった訳と check.yml／公開の走りの状況\n触ったファイル（52）：C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/ext.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e237.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e238.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e239.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/ex2.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e241b.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e242.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/send244.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e244.js・C:/Users/user/.claude/yoshi-btn-recv.js・panel-check.js・voice-advice-persona.js ほか40件\n押した sha：2aec53732・ff8d4b5cb・9cc3547b7\n操作の数：167\n最後の言葉：橋の文書には枠 298 があるのに、`bridge-pick.js` が空を返しています。取りこぼしの原因を調べています。\n\n［✅ 終わりました（返事不要）］\n枠 二百九十九：window-unstick の誤報（受信箱の一番古い行で測る作りを、受領と合図の進みで測る形へ）\n枠 299：13:07 の「🪟 窓が止まっています」は見間違い（誤報）でした。窓は 13:02:44 に枠 298 を受け取って作業中でした。一、12:21:00 の行は枠ではなく、見張りが窓を起こした行（「未着手の段：無作為の確かめと公開の合計…見張りの起こし」）です。窓が雲待ち中に答えただけで [x] にしなかったので、受信箱の一番古い [ ] として居座り、window-unstick.js が 13:03:57 に打ち、13:07:50 に「進まない」と判じました（同じ行を『進んだか』の物差しにしていたため）。二、直し（~/.claude/window-unstick.js・写し .bak-20261125）：①数えるのは枠・鈴の行だけ（見張りの起こし／未着手の段／窓が止まっています／待ちが終わりました の行は数えない）②進みは受領（frames-in.jsonl の行数）と受信箱の [x] の数で測り、打った後にどちらかが増えれば止まりの印を畳む③雲待ち中（kumo-wait.txt が waiting／ready）は打たない④知らせは窓が手番の最中でない時だけ。三、作り値（偽の送り手）で六通り PASS：起こしの行だけ古い→打たない・知らせない／雲待ち中→打たない／本当の鈴が5分受け取られない→打つ／打った後に受領が増えた→知らせない／打っても進まない→知らせる／手番の最中→知らせない。本物の ntfy・本物の打ち込みは呼んでいません。予定表の台本なので再起動は要りません（次の2分おきから効く）。13:07 の押し通知そのものは消せないので、この札で見間違いと閉じます。未了：本物の止まりでの実地は未確認。今日の古い起こしの行は [x] にしました。並べた段：なし（同じ台本）。\nファイル: ~/.claude/window-unstick.js（写し .bak-20261125）\n実測: 作り値 6 通り PASS\n\n［✅ 終わりました（控えから起こした札）］\n（この札は、札を書かずに終わった仕事から、走りの記録を元に自動で起こした物です）\n\n仕事：枠 二百九十八：まとめて写すの 1 が消えない（digest とパネルの数の元を一つに）\n触ったファイル（52）：C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/ext.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e237.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e238.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e239.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/ex2.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e241b.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e242.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/send244.js・C:/Users/user/AppData/Local/Temp/claude/d058071998e0c200/1ca80154-8ded-4088-a11d-fd2d05e48630/scratchpad/e244.js・C:/Users/user/.claude/yoshi-btn-recv.js・panel-check.js・voice-advice-persona.js ほか40件\n押した sha：2aec53732・ff8d4b5cb・9cc3547b7\n操作の数：179\n最後の言葉：声の 24kbps 化は公開まで通りました。ただし枠 296・297・298 の札は、まだ出していません。panel v258 の公開確認（`panel-ver.txt` が 258 になること）と、試しページが 404 になる確認が済んでからにします。雲待ち（y298b）は登録済みです。 **枠 296（声の 24kbps 化）** - 公開の荷は 879MB から 493MB になりました（−386MB）。内訳は方言の声が 396.8MB、人格の声が 21.8MB です。上限の目安は 1024MB です。 - 公開の声 24,291 本は、台帳と全部一致しています（直下に無いのは 0 本）。 - 公開から 4 本を取って実測しました。方言の声 1 本、人格の声 2 本、1 本だけ作り直せなかった `advy-0b591c6c` です。3 本は 24kbps の大きさ（19,083／17",
+        "eid":  "e1795581395"
+    },
+    {
+        "title":  "🪟 窓が止まっています（打ち込んでも進まない・受信箱の一番古い行 11-25 12:21）。Codeタブに一言打ってください",
+        "time":  1795579676,
+        "message":  "🪟 窓が止まっています（打ち込んでも進まない・受信箱の一番古い行 11-25 12:21）。Codeタブに一言打ってください\n",
+        "eid":  ""
+    },
+    {
         "title":  "🪟 起こしても進まない：無作為の確かめと公開の合計",
         "time":  1795578099,
         "message":  "段の台帳の未着手の段「無作為の確かめと公開の合計」で、窓を 3 回起こしましたが進みませんでした。\n起こした刻：2026-11-25 12:21:00・2026-11-25 12:27:04・2026-11-25 12:40:31\n台帳（~/.claude/job-steps.txt）と窓を見て、続けるか決めてください。",
@@ -241,15 +253,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794959649,
         "message":  "声をAACで作る：部品の雲の走りを待っている（v1506・声の詰め方を変える）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: AAC 48kbps に決定（今の ADPCM の0.53倍・24kHzのまま・つなぎのずれ0）。道具（voice-m4a.yml・tools/voice-m4a.js・voice-plan）を push し、部品の声を雲で作成中。本体の写し w10 に m4a から読む再生を当て済み（構文 NG 0）。次：convert→dial→本体への取り込み（m4a の名簿・check・pack-site の直し）→Safari 確認（macOS の WebKit）→公開の荷の数え。\nファイル: .github/workflows/voice-m4a.yml tools/voice-m4a.js voice-plan/ pack-site.js scratchpad/w10"
-    },
-    {
-        "title":  "🪟 雲待ちが起こせない（y1118-0500・15分）",
-        "time":  1794944224,
-        "message":  "件名: 声をAACで作る（部品）\n状態: ready\n窓が仕事の最中で続きを始められていません。窓の仕事が終わり次第、続きに進みます。"
-    },
-    {
-        "title":  "👀 見てください（返事不要）",
-        "time":  1794942979,
-        "message":  "この間にまとまった知らせ 2本\n\n［✅ 終わりました（返事不要）］\n声の詰め方の比べ（AAC・24kHzのまま）を雲で実行中\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 乙はやめ、24kHzのまま AAC（m4a）24k／32k／48k と Opus（参考）で今の声を作り直し、大きさと音の差を測る雲の台本（scratchpad/jobs/codec-compare.js）を押した（9a81cf73）。今の声（字数の違う6本）を ADPCM から復号して各形式へ。iPhone の Safari で聞き比べ・つなぎ（decodeAudioData で繋ぐ）を試せるページ reports/codec-test/index.html も同じ走りが書く。声づくりには進まない（本人が見てから）。\nファイル: scratchpad/jobs/codec-compare.js\n\n［👀 見てください（返事不要）］\n声の詰め方の比べ（AAC）の結果を知らせた\nreports/codec-test/result.md と cloud-codec-compare-20261117-190408.md を読んだ。合計 今357KB／aac24 98KB（0.27）／aac32 127KB（0.36）／aac48 188KB（0.53）／opus24 91KB。つなぎのずれは全部0。声は本人が聞いてから作る。\nファイル: reports/y1118-0420.md／report-latest.md／work-note.txt\n実測: 雲の走り 53秒・終了コード0\n実機: iPhone で reports/codec-test/index.html を開き、六本を今／aac24／aac32／aac48 で聞き比べ、許せる最小の段を言う\n未検収: 声の聞き比べ（人手待ち）"
     }
 ]
