@@ -14,6 +14,14 @@ on:
         description: '版が同じでも作り直す（true）'
         required: false
         default: 'false'
+      compare_ref:
+        description: '同じ局で比べる前の版の commit（40桁）。入れると比べだけを回す（見本は作らない）'
+        required: false
+        default: ''
+      now_ref:
+        description: '比べる今の版の commit（40桁）。空なら koushu-handan の main の本体'
+        required: false
+        default: ''
 permissions:
   contents: write
   actions: write
@@ -35,15 +43,46 @@ jobs:
           token: ${{ secrets.HANDAN_PUSH_TOKEN }}
       - name: 版を比べる
         id: ver
+        env:
+          COMPARE_REF: ${{ github.event.inputs.compare_ref }}
         run: |
+          if [ -n "$COMPARE_REF" ]; then echo "need=no" >> "$GITHUB_OUTPUT"; echo "cmp=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
           now=$(tr -dc '0-9' < handan/ver.txt)
           have=$(sed -n 's/^版：//p' senko/advice-sample.md 2>/dev/null | head -1 | tr -dc '0-9')
           echo "公開の版 ${now}／見本の版 ${have:-無し}"
           if [ "$now" = "$have" ] && [ "${{ github.event.inputs.force }}" != "true" ]; then echo "need=no" >> "$GITHUB_OUTPUT"; else echo "need=yes" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-node@v4
-        if: steps.ver.outputs.need == 'yes'
+        if: steps.ver.outputs.need == 'yes' || steps.ver.outputs.cmp == 'yes'
         with:
           node-version: '20'
+      - name: 同じ局で二つの版を比べて押す（枠 三百九十二）
+        if: steps.ver.outputs.cmp == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMPARE_REF: ${{ github.event.inputs.compare_ref }}
+          NOW_REF: ${{ github.event.inputs.now_ref }}
+        run: |
+          take() {   # $1=commit（40桁） $2=出し先
+            echo "$1" | grep -Eq '^[0-9a-f]{40}$' || { echo "commit は40桁で入れる"; exit 1; }
+            git -C handan fetch -q --depth 1 origin "$1"
+            git -C handan show "$1:koushu-handan.html" > "$2"
+          }
+          take "$COMPARE_REF" "$RUNNER_TEMP/prev.html"
+          now=""
+          if [ -n "$NOW_REF" ]; then take "$NOW_REF" "$RUNNER_TEMP/now.html"; now="--now $RUNNER_TEMP/now.html"; fi
+          rc=0
+          node handan/tools/advice-sample.js handan senko 100 --compare "$RUNNER_TEMP/prev.html" $now || rc=$?
+          git config user.name "advice-sample-bot"
+          git config user.email "advice-sample-bot@users.noreply.github.com"
+          if [ -d senko/advice-compare ]; then
+            git add -A senko/advice-compare
+            if ! git diff --cached --quiet; then
+              git commit -m "senko/advice-compare：同じ局の比べ"
+              for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; done
+              gh workflow run deploy.yml || true
+            fi
+          fi
+          exit $rc   # 5＝同じ版を二度回して一致しなかった
       - name: 日本語の字体を入れる（絵の字が豆腐にならないように）
         if: steps.ver.outputs.need == 'yes'
         run: |
@@ -63,7 +102,7 @@ jobs:
           # 絵は新しい5版まで
           ls -d senko/advice-shots/*/ 2>/dev/null | sort -V | head -n -5 | xargs -r rm -rf
           # 版ごとの残しは新しい20版まで（古い物から消す）
-          ls senko/advice-sample/*-fixed.json 2>/dev/null | sort -V | head -n -20 | while read f; do v=$(basename "$f" -fixed.json); rm -f "senko/advice-sample/$v.md" "senko/advice-sample/$v-fixed.json" "senko/advice-sample/$v-vaio-snap.md"; done
+          ls senko/advice-sample/*-fixed.json 2>/dev/null | sort -V | head -n -20 | while read f; do v=$(basename "$f" -fixed.json); rm -f "senko/advice-sample/$v.md" "senko/advice-sample/$v-fixed.json" "senko/advice-sample/$v-hands.json" "senko/advice-sample/$v-vaio-snap.md"; done
       - name: 押して配信を起こす
         if: steps.ver.outputs.need == 'yes'
         env:
