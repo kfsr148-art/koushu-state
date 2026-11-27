@@ -1,20 +1,20 @@
 # 本物の iPhone のエラー（センコ用・VAIO が数える）
 
-書いた刻：2026-11-27 13:34:16（本体 v1538〜・パネル v269〜が送る・同じエラーは1端末から1時間に1通）
-記録した送り：102 通
+書いた刻：2026-11-27 13:37:07（本体 v1538〜・パネル v269〜が送る・同じエラーは1端末から1時間に1通）
+記録した送り：105 通
 
 ## エラーの文ごと × 版ごとの数
 
 - 【panel】読み込み失敗：IMG yoshi-machi2-t-240.png（resource・画面 main）— v277：1／v278：25／初 11-27 06:30・最後 11-27 10:51
 - 【panel】読み込み失敗：IMG yoshi-machi-t-240.png（resource・画面 main）— v278：24／初 11-27 10:51・最後 11-27 10:51
-- 【panel】読み込み失敗：IMG cat3-w.png（resource・画面 main）— v273：1／v279：16／v?：1／初 11-26 14:43・最後 11-27 12:52
-- 【panel】読み込み失敗：IMG cat2-w.png（resource・画面 main）— v279：16／初 11-27 12:52・最後 11-27 12:52
+- 【panel】読み込み失敗：IMG cat3-w.png（resource・画面 main）— v273：1／v279：17／v?：1／初 11-26 14:43・最後 11-27 12:52
+- 【panel】読み込み失敗：IMG cat2-w.png（resource・画面 main）— v279：17／初 11-27 12:52・最後 11-27 12:52
 - 【panel】読み込み失敗：IMG cat4-w.png（resource・画面 main）— v279：9／初 11-27 12:52・最後 11-27 12:52
-- 【panel】読み込み失敗：IMG cat0-w.png（resource・画面 main）— v279：8／初 11-27 12:52・最後 11-27 12:52
+- 【panel】読み込み失敗：IMG cat0-w.png（resource・画面 main）— v279：9／初 11-27 12:52・最後 11-27 12:52
 - 【panel】読み込み失敗：IMG cat-sleep-w.png（resource・画面 -）— v?：1／初 11-26 14:21・最後 11-26 14:21
 
 ## 新しい版（v279）で初めて出たエラー
 
-- 【panel】読み込み失敗：IMG cat2-w.png（resource）— v279：16 通
+- 【panel】読み込み失敗：IMG cat2-w.png（resource）— v279：17 通
 - 【panel】読み込み失敗：IMG cat4-w.png（resource）— v279：9 通
-- 【panel】読み込み失敗：IMG cat0-w.png（resource）— v279：8 通
+- 【panel】読み込み失敗：IMG cat0-w.png（resource）— v279：9 通
