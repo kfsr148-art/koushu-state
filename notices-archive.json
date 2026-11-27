@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🔗 新しい線",
+        "time":  1795589998,
+        "message":  "https://claude.ai/code/session_012aGgAFkJeNrR88okrdDbXp\n\nCode タブ：引き継ぎは試していない（claude-loop は新しい会話で立てた。pick-resume.log を見る）\n\n窓の claude（pid 8316）の remote-control の宛先です。\n＊記録は ~/.claude/inbox-watch.log。\n",
+        "eid":  ""
+    },
+    {
         "title":  "🪟 窓が止まっています（打ち込んでも進まない・受信箱の一番古い行 11-25 15:31）。Codeタブに一言打ってください",
         "time":  1795589754,
         "message":  "🪟 窓が止まっています（打ち込んでも進まない・受信箱の一番古い行 11-25 15:31）。Codeタブに一言打ってください\n",
@@ -252,10 +258,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794960185,
         "message":  "声をAACで作る：convert（今の声のAAC化）の雲の走りを待っている（v1506）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 二度目に届いた同じ指示（y1118-0500 が止まっている件）は、一件目と同じ。二重に起こさず、状態だけ確認した。塞がっていた訳＝私が長い手番の中で待っていた。部品974本は push 済み（main は origin と同じ）。convert は in_progress。\n実測: voice-m4a.yml の走り＝convert 実行中1本・parts 成功。job.yml の走りは無し。\nファイル: reports/y1118-0900.md CLAUDE.md（作法38）"
-    },
-    {
-        "title":  "🙋 ヨシしてください",
-        "time":  1794960135,
-        "message":  "声をAACで作る：雲の走り待ち（dial）\n印: y1118-0901\n待っているのは：なし（雲の走り 44202862262 の完了待ち。雲待ちに登録済み）\n要点：convert の成果（reports/voice-m4a-out 974件）を pull 済みと確認。voice-m4a.yml の走りが一本 in_progress（9/12 ジョブ済み）だったため、二重に起こさず雲待ちへ登録した。\n答え方：「y1118-0901 にヨシ」で進めます。裸の「ヨシ」は、いちばん新しい待ちへのヨシとして通ります。"
     }
 ]
