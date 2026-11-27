@@ -28,7 +28,8 @@
     "over:f6690aa8549d",
     "same:811456f27077"
    ],
-   "result": "reserved"
+   "result": "rejected",
+   "why": "title にやらない事の字"
   }
  ],
  "causes": []
