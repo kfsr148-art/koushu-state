@@ -1,4 +1,5 @@
 {
+"advice-sync": {"label":"助言の見本が公開の版に追いついていない（公開 v1553・見本 v1552）","at":1795776777,"every":30,"grace":0},
 "relay": {"at":1795771976,"bridge":63,"missing":0,"labels":[]},
 "snap-ring": {"label":"VAIOの写しの撮りため","at":1795776688,"every":5,"grace":10}
 }
