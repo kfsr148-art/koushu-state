@@ -1,5 +1,11 @@
 [
     {
+        "title":  "✅ 終わりました（返事不要）",
+        "time":  1795666939,
+        "message":  "枠 三百五十一（急ぎ）：雲待ちの印に runid が入らず 404 を繰り返し窓が起きない\n\n完了: 枠 三百五十一（急ぎ）の結果。元は、雲待ちの印の workflow が koushu-state の advice-sample.yml だったのに、見張り（kumo-wait.ps1）が koushu-handan の番地だけで走りを訊いて 404 を繰り返していたこと（12:39〜13:02・y1126-1245／1300／1310。runid も空）。①kumo-set.ps1：台帳に置き場（-Repo owner/name・既定は koushu-handan）を足し、waiting を書く前に、置き場・workflow・コミットで絞った走りの一覧を引いて runid を拾えるまで（最大約60秒）待つ。拾えない時は runid を空のまま台帳を書かず、札（🪟 雲待ちに登録できません）を一通出して終了コード3で終わる。窓から直に呼ぶ時に無い Get-MailToken・Run-Quiet も、無い時だけ最小の物を置いた。②kumo-wait.ps1：走りを見る時は台帳の repo を見る（無ければ koushu-handan）。走りを見る例外が続く時は、404 を繰り返すだけで黙らず、同じ待ちで5回目（約15分）に札を一通だけ出す。③今の y1126-1320（panel v268 の配信・check.yml）は kumo-set を打ち直して runid=45752572225 が入った。試した事：拾える時は runid が入る／拾えない時（koushu-state の走りが無い作り値）は約63秒で拾えないと判り、台帳は変わらず札の呼びが一回出る。常駐（inbox-watch.ps1）は kumo-wait.ps1 の更新（13:06）より後の 13:10:28 に起こし直した。\n未確認：実際に雲が終わった時に、数分以内に窓が起きること（今の y1126-1320 の終わりで確かめる）／koushu-state の workflow を待つ時は kumo-set に -Repo kfsr148-art/koushu-state を付ける（今の台帳は check.yml）。\nファイル: ~/.claude/kumo-set.ps1・kumo-wait.ps1\n実測: 作り値：runid 拾える→入る／拾えない→63秒で台帳を書かず札の呼び一回・構文検査 errors 0・常駐 13:10:28 起こし直し",
+        "eid":  "e1795666933"
+    },
+    {
         "title":  "📷 VAIOの写し",
         "time":  1795665653,
         "message":  "書いた刻：2026-11-26 13:00:41\n引き金：センコの頼み（snap-ask）\n番地：https://kfsr148-art.github.io/koushu-state/vaio-snap.md（センコ用は senko/vaio-snap.md）\n",
@@ -272,10 +278,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794968651,
         "message":  "ヨシ待ちの札を過去の札へ落とさない直し（panel v160）＋dial 3回目を待っている\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 過去の札を消す二枠は取り下げ（何も消していない）。直す所は一つだけ行った。\n実測: dial 2回目 起動 10:26:50・成功・5,340本。残り1,402本。\nファイル: ~/.claude/notify-record.ps1（bak-20261118t）git-push.ps1（bak-20261118u）yoshi-open.tsv panel.html panel-ver.txt"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794968054,
-        "message":  "dial 2回目（44215875427）の今の状態を見た（11:04：9/10 完了）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 11:03:58 に gh run view 44215875427 を見ただけ（新しい事は足していない）。status=in_progress。済んだジョブ 9／全ジョブ 10。make 0・1・3・4・5・6・7・8・9 が success、make 2 だけ in_progress。collect（まとめ）は make が全部終わってから。\n実測: 起動 10:26:50 から37分。ジョブの上限は40分（11:07 ごろ）。make 2 が上限で打ち切られても、他の9つの声はまとめに入る（collect は if: always）。"
     }
 ]
