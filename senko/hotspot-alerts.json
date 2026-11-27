@@ -1,22 +1,11 @@
 {
- "at": 1795712459,
+ "at": 1795744031,
  "third": [
-  {
-   "key": "panel.html｜function paintYoshiBtn｜1795479073",
-   "file": "panel.html",
-   "part": "function paintYoshiBtn",
-   "n": 8,
-   "why": [
-    "panel v231：ヨシの釦の鍵を知らせの Click で渡す（入れ物をやめる）棚 #10・枠 二百八／CLAUDE.md 作法47 五：棚の実測の呼び方",
-    "棚 #16 測りの台本（shape-aite）・#4 最終案・残りヨシ待ちの説明・panel v233（案内の一行を消す）・CLAUDE.md 作法48（段に切って並べる）",
-    "panel v240：ヨシの釦、覚えが無い時は「知らせを一度押すと」の案内をやめ、その場で名前の入れ口を出す（枠 二百四十一）"
-   ]
-  },
   {
    "key": "panel.html｜function send｜1795670837",
    "file": "panel.html",
    "part": "function send",
-   "n": 8,
+   "n": 10,
    "why": [
     "panel v270：橋の札の数とまとめて写すの数が合わない時、赤い行に一言出す（beats.json の relay・枠 三百五十三）",
     "v1539・panel v271：エラーを送る仕掛けは https の公開ページだけで送る（file:// の検査・手元の確かめからは送らない）・パネルの版の字を verTag か",
@@ -27,7 +16,7 @@
    "key": "panel-core.js｜function etaRow｜1795546986",
    "file": "panel-core.js",
    "part": "function etaRow",
-   "n": 7,
+   "n": 8,
    "why": [
     "panel v212：段を毎回計算（生の段 steps・stepsOf）・公開の版を pubVer で運ぶ・見込みの書き替えを直す（枠 七十七の続き・Opus）",
     "panel v213：見込みは見込みを書いた刻から数える（mikomiAt・mikomiEnd 一つ）・流れごとの見込み（記録が無ければ見込み不明で赤にしない）（枠 八十三・八十四",
@@ -43,17 +32,6 @@
     "panel v212：段を毎回計算（生の段 steps・stepsOf）・公開の版を pubVer で運ぶ・見込みの書き替えを直す（枠 七十七の続き・Opus）",
     "panel v250：猫と字の順を ヨシ待ち＞作業中＞まとめて写す＞待機中＞接続不良 に（ヨシ待ちが一件でもあれば作業中でもヨシ待ち・作り値の検査を足した・枠 二百七十一）",
     "panel v251：記録が3分途切れたら猫と字を接続不良へ（枠 二百七十二）・画面の写し取り一覧の釦を公開の大きさの釦に（枠 二百七十三・pack-site.js が site-"
-   ]
-  },
-  {
-   "key": "panel.html｜function paintShelf｜1795453832",
-   "file": "panel.html",
-   "part": "function paintShelf",
-   "n": 5,
-   "why": [
-    "panel v227：棚の一覧の頭に素振りの最後の結果の一行（棚 #11・枠 百九十三）",
-    "panel v235：棚の釦を「計N件・使用予定M%」に（雲に並んで札が出ていない枠の件数と週の見込み%の合計・元は cloud-queue.json）（枠 二百三十）",
-    "panel v236：棚は今まで通り見せ、雲の件数と使用予定%は釦の横と別の欄に足すだけ（枠 二百三十一）"
    ]
   },
   {
@@ -156,6 +134,28 @@
    ]
   },
   {
+   "key": "advice-tone-core.js｜const s｜1795731746",
+   "file": "advice-tone-core.js",
+   "part": "const s",
+   "n": 3,
+   "why": [
+    "v1497：方言を選んだ助言を、人格×方言の56人の人物が自分の言葉だけで通して話す（人物表・全文に人物の語尾・呼びかけと口癖・二人の語尾を混ぜない）。声は未作成（字が先）",
+    "v1543：方言の決まり文句に使う場面を付け、合う場所にだけ入れる（礼・詫び・挨拶は入れない／励ましは攻めの締め／驚きは大物手の攻め）（枠 三百六十五）",
+    "v1545：長さの詰めは本文の重なりを先に削り、人格の言葉（麻雀の言葉・面白み）を最後まで残す（枠 三百九十）"
+   ]
+  },
+  {
+   "key": "koushu-handan.html｜const s｜1795731746",
+   "file": "koushu-handan.html",
+   "part": "const s",
+   "n": 3,
+   "why": [
+    "v1497：方言を選んだ助言を、人格×方言の56人の人物が自分の言葉だけで通して話す（人物表・全文に人物の語尾・呼びかけと口癖・二人の語尾を混ぜない）。声は未作成（字が先）",
+    "v1543：方言の決まり文句に使う場面を付け、合う場所にだけ入れる（礼・詫び・挨拶は入れない／励ましは攻めの締め／驚きは大物手の攻め）（枠 三百六十五）",
+    "v1545：長さの詰めは本文の重なりを先に削り、人格の言葉（麻雀の言葉・面白み）を最後まで残す（枠 三百九十）"
+   ]
+  },
+  {
    "key": "koushu-handan.html｜const tl｜1795510886",
    "file": "koushu-handan.html",
    "part": "const tl",
@@ -224,12 +224,28 @@
  ],
  "oneSided": [
   {
+   "key": "3800ff2e5｜panel-ver.txt",
+   "sha": "3800ff2e5",
+   "s": "panel v278：題の行の高さを150pxに固定して下の釦が動かないようにした（雲の ⑤の二十六の二）",
+   "changed": "panel.html",
+   "missing": "panel-ver.txt",
+   "conf": 96
+  },
+  {
+   "key": "3800ff2e5｜panel-ver.txt",
+   "sha": "3800ff2e5",
+   "s": "panel v278：題の行の高さを150pxに固定して下の釦が動かないようにした（雲の ⑤の二十六の二）",
+   "changed": "panel-check.js",
+   "missing": "panel-ver.txt",
+   "conf": 84
+  },
+  {
    "key": "d0c1c5bad｜panel.html",
    "sha": "d0c1c5bad",
    "s": "panel-check：v277 の置き場の検査を改行が LF でも合う形に（雲の取り出しは LF・枠 三百七十五）",
    "changed": "panel-check.js",
    "missing": "panel.html",
-   "conf": 85
+   "conf": 86
   },
   {
    "key": "d0c1c5bad｜panel-ver.txt",
@@ -245,7 +261,7 @@
    "s": "panel-check.js：脈の赤い行・鳴った！釦（v268）と拾われなかったエラーの送り（v269）の検査を足す（項目 195→197）（枠 三百五十九）",
    "changed": "panel-check.js",
    "missing": "panel.html",
-   "conf": 85
+   "conf": 86
   },
   {
    "key": "ab63d98d0｜panel-ver.txt",
@@ -254,6 +270,38 @@
    "changed": "panel-check.js",
    "missing": "panel-ver.txt",
    "conf": 84
+  },
+  {
+   "key": "9becd4b48｜panel-check.js",
+   "sha": "9becd4b48",
+   "s": "v1539・panel v271：エラーを送る仕掛けは https の公開ページだけで送る（file:// の検査・手元の確かめからは送らない）・パネルの版の字を verTag か",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "4a4ef107f｜panel-check.js",
+   "sha": "4a4ef107f",
+   "s": "panel v270：橋の札の数とまとめて写すの数が合わない時、赤い行に一言出す（beats.json の relay・枠 三百五十三）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "4d999f6ad｜panel-check.js",
+   "sha": "4d999f6ad",
+   "s": "v1538・panel v269：拾われなかったエラー（error・unhandledrejection・読み込み失敗）を版・画面の名・文と場所だけ、センコ用の別の話題へ send",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "59fe6690a｜panel-check.js",
+   "sha": "59fe6690a",
+   "s": "panel v268：脈（senko/beats.json）が遅れた仕組みを赤い一行で出す・月一の知らせの試しの『鳴った！（試し）』釦（押すと beat-ack を ntfy へ）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
   },
   {
    "key": "a06717772｜ver.txt",
@@ -328,6 +376,30 @@
    "conf": 80
   },
   {
+   "key": "ec9c2c983｜panel-check.js",
+   "sha": "ec9c2c983",
+   "s": "panel v262：全部終わった待ちの猫は立っている現場猫でなく寝ている猫（cat-sleep）に替える・字は休憩中（枠 三百十五）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "c8bdf7789｜panel-check.js",
+   "sha": "c8bdf7789",
+   "s": "panel v260：ヨシ待ちの札の推しの釦を太枠・直しなら言葉を入れ欄へ（枠 三百六）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "06d6302a2｜panel-check.js",
+   "sha": "06d6302a2",
+   "s": "panel v258：まとめて写すの数は state.json の panelView.left だけを出す（枠 二百九十八）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
    "key": "2ae1daaa2｜panel-ver.txt",
    "sha": "2ae1daaa2",
    "s": "panel v257：遠隔の下の行を詰めて決め打ちの高さに収める（検査の直し・枠 二百八十八）",
@@ -341,7 +413,7 @@
    "s": "panel-check：題の字を消した後の測り直し（猫で見る）・⑯の二の記録を新しく（公開が止まっていた分・枠 二百八十二）",
    "changed": "panel-check.js",
    "missing": "panel.html",
-   "conf": 85
+   "conf": 86
   },
   {
    "key": "944d0d07f｜panel-ver.txt",
@@ -357,7 +429,7 @@
    "s": "panel-check：時刻（Date.now）から作る「あと N分」「見込みを過ぎた N分」の窓を広げて、時刻のずれで落ちないようにする（枠 二百六十三）",
    "changed": "panel-check.js",
    "missing": "panel.html",
-   "conf": 85
+   "conf": 86
   },
   {
    "key": "2cee0d681｜panel-ver.txt",
@@ -368,12 +440,44 @@
    "conf": 84
   },
   {
+   "key": "1b51d0631｜panel-check.js",
+   "sha": "1b51d0631",
+   "s": "panel v249：赤い行の予定を小数一桁で出す（3 → 3.0・足し算は丸めずに足して出す時に一度だけ丸める・枠 二百六十五）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "eaf400b58｜panel-check.js",
+   "sha": "eaf400b58",
+   "s": "panel v247：Fable の使用量も 0.1% まで出す（Fable の型で走った分の点から端数・枠 二百五十）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
    "key": "58e45565f｜panel-check.js",
    "sha": "58e45565f",
    "s": "panel v246：棚の各件を似た仕事の実測で（0.1%・手書きには印）・1セッション≒棚は窓・雲・棚の実測の組から（枠 二百四十八・二百四十九）",
    "changed": "panel-view.js",
    "missing": "panel-check.js",
    "conf": 94
+  },
+  {
+   "key": "58e45565f｜panel-check.js",
+   "sha": "58e45565f",
+   "s": "panel v246：棚の各件を似た仕事の実測で（0.1%・手書きには印）・1セッション≒棚は窓・雲・棚の実測の組から（枠 二百四十八・二百四十九）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
+  },
+  {
+   "key": "5ec2c9ea4｜panel-check.js",
+   "sha": "5ec2c9ea4",
+   "s": "panel v244：「直して」も字が二段（直しを送った→直しが通った）・受け側は直しの印も一覧から落とす（枠 二百四十六）",
+   "changed": "panel-core.js",
+   "missing": "panel-check.js",
+   "conf": 80
   }
  ]
 }
