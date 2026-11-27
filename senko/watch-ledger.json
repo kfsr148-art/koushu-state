@@ -9,6 +9,15 @@
    ],
    "result": "nocause",
    "why": "元を当てられなかった"
+  },
+  {
+   "at": 1795752568,
+   "atStr": "2026-11-27 13:09:28",
+   "run": "45938230875-1",
+   "fps": [
+    "wake:a26bff09e460"
+   ],
+   "result": "reserved"
   }
  ],
  "causes": []
