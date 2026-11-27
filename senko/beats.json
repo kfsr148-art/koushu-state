@@ -2,6 +2,6 @@
 "advice-cron": {"label":"助言の見本の雲の決まった時刻の仕事","at":1795755932,"every":0,"grace":0},
 "advice-sample": {"label":"助言の見本を作った最後（版ごと）","at":1795755932,"every":0,"grace":0},
 "relay": {"at":1795753882,"bridge":53,"missing":0,"labels":[]},
-"snap-ring": {"label":"VAIOの写しの撮りため","at":1795756696,"every":5,"grace":10},
+"snap-ring": {"label":"VAIOの写しの撮りため","at":1795757062,"every":5,"grace":10},
 "test": {"weekly":{"sentAt":1795753549,"ok":true},"monthly":{"id":"bt1795753549","sentAt":1795753549,"ok":true,"pressedAt":null}}
 }
