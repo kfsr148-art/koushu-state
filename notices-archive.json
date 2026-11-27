@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795673458,
+        "message":  "下見：できる（壁：台帳の未了が 16 行ある（前の枠の済み具合））\n枠 三百五十五の結果。①見本の起こし方：VAIO の beats-check.js（2分おき）が公開の版（koushu-handan の ver.txt）と見本の版（senko/advice-sample.md の「版：」）を比べ、食い違いが2分続いたら koushu-state の advice-sample.yml を直に起こす（版ごとに一度だけ）。②GitHub の schedule は控えとして残し、分を 00・15・30・45 からずらして 7・22・37・52 にした。③脈の見方：時刻（最後に動いた刻）でなく、公開の版と見本の版が違うまま30分続いた時だけ脈（beats.json の advice-sync・見込み30分）として赤と ntfy を一度出す。版が同じなら出さない（advice-cron は見込みを持たない形に替えた）。④VAIO の写しの「雲の走りの様子」に koushu-state の走り（直近5本）も足した（次に写しを作る時から載る）。⑤v1539 の見本：手で起こして作った（公開 senko/advice-sample.md の版：1539）。比べ（senko/advice-diff.md）は前の版 1537 と 0／30（1538・1539 はエラーを送る仕掛けだけで、助言の文は変わっていないので正しい）。\n直し方の読み替え：センコの案①は post-publish.yml から直に起こすものだったが、koushu-handan の走りには koushu-state の走りを起こせる鍵が無く（鍵を足すのは広い許しになる）、VAIO（gh の権限がある）から起こす形にした。VAIO が止まっていれば schedule の控えが動く。\n未確認：次の版が上がった時に、VAIO が2分＋掃除の間で直に起こす見え方（今回は手で起こした一本と VAIO が起こした一本が重なり、後の一本は同じ版を作り直しただけ）／schedule の遅れ・落ちを避けられたか。\n",
+        "eid":  ""
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795673449,
         "message":  "枠 三百五十七の結果。雲待ちが探す commit の取り違えを直した：koushu-handan の先頭は bot（post-publish-bot の「版 1539・ok」の commit など）が押すことがあり、bot の push からは走りが起きないので、その sha で state-deploy.yml を探すと見つからない（14:50 の雲待ち y1126-1450 がこれだった）。kumo-set.ps1 は、waiting で渡された sha が bot の commit（author 名が -bot で終わる）なら、その手前の bot でない最新の commit（自分の押し）に替えて待ち、台帳の記録（kumo-wait.log）に替えた旨を書く（koushu-handan の置き場の check.yml・job.yml・state-deploy.yml の時だけ）。v272 の公開：公開 panel-ver.txt は 272（panel.html に予定%の元の字）で、公開されていた（その後 v273 が配信中）。次の雲待ちは自分の押し（3bdcb4da1）の sha で登録し、runid が拾えた。公開の仕組みと post-publish の中身は変えていない。\n未確認：bot の commit を渡した時に自分の押しへ替わる所を、本物の雲待ちでは通していない（作者名の見分けと、構文検査・手元の git の読み出しだけ確かめた）。\n",
         "eid":  ""
@@ -253,10 +259,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794961092,
         "message":  "声をAACで作る（雲の走り待ち）\n（札が立たないまま次の仕事へ移っていた分）\n完了: pull 済み・走り中のため dial は起こさず雲待ちへ再登録"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794960185,
-        "message":  "声をAACで作る：convert（今の声のAAC化）の雲の走りを待っている（v1506）\n（札が立たないまま次の仕事へ移っていた分）\n種類: 外待ち\n完了: 二度目に届いた同じ指示（y1118-0500 が止まっている件）は、一件目と同じ。二重に起こさず、状態だけ確認した。塞がっていた訳＝私が長い手番の中で待っていた。部品974本は push 済み（main は origin と同じ）。convert は in_progress。\n実測: voice-m4a.yml の走り＝convert 実行中1本・parts 成功。job.yml の走りは無し。\nファイル: reports/y1118-0900.md CLAUDE.md（作法38）"
     }
 ]
