@@ -1,6 +1,12 @@
 [
     {
         "title":  "✅ 終わりました（返事不要）",
+        "time":  1795671455,
+        "message":  "枠 三百四十五の結果。①直しの溜まり場：tools/hotspots.js を作り、koushu-state の雲の走り hotspots.yml（6時間おき・履歴を全部取った koushu-handan の写しの上で回す）が、本体・パネル・口調表（koushu-handan.html・panel.html・panel-core.js・advice-tone-core.js）の直近30日の直しを、同じ部分（差分の見出しに出る関数・const の名）ごとに数えて senko/hotspots.md に多い順で並べる。30日のうちに同じ部分の三度目の直しが直近3日に入った物は、その部分と三度の直しの訳（commit の題）を印にして senko/hotspot-alerts.json に出し、VAIO の hotspots-card.js（beats-check が2分おきに起こし・実際に読むのは1時間に一度）が札にする。②一緒に変わる組：直近90日の commit から、A を直した commit の何割で B も直されたかを表にして senko/cochange.md に出し（5回以上直された A で7割以上の組）、8割以上の組で直近3日に A だけ変わった直しがあれば hotspot-alerts.json に出して同じ札で知らせる。札は一回の掃除で一通だけ（新しい物の数と先頭の数件）。実測（最初の雲の走り）：commit 219 件・部分の表・「いつも一緒に変わる組」には panel-ver.txt→panel.html 100%（202／202）・serifu.txt↔serifu-adv.txt 100%・ver.txt→koushu-handan.html 98% などが並び、三度目の印 29 件・片方だけ 21 件が出た（初回は一通にまとめて札にする）。\n未確認：差分の見出しが取れない所は「（見出し無し）」にまとまるので、panel.html・koushu-handan.html の「見出し無し」が上に来ている（細かい関数ごとの数は、見出しの取れる所だけ）／三度目の印は直近の大きな直しに引かれて多めに出る／札の見え方（初回は次の時間の掃除で出る）。\n",
+        "eid":  ""
+    },
+    {
+        "title":  "✅ 終わりました（返事不要）",
         "time":  1795670441,
         "message":  "枠 三百五十三（急ぎ）の結果。元：札の出口が二つ（橋と notices.json）あり、別々の手で書いていたため、「札を出す（番号ごと）」でまとめて出した時に橋だけ書かれて notices が漏れた（二重書きの漏れ）。直した：①窓が札を書く所は橋の一か所（bridge-card.js）。②bridge-card.js が札を組む時に、同じ本文を card-relay.js に控え（bridge-card-bodies/・card-relay.tsv）、VAIO の card-relay.js sweep が、控えた札のうち8分たっても notices.json に「枠 \u003c名\u003e」の札が入っていない物を、notify-record.ps1（-Gated）で足す。鍵は枠の名＋刻（card-relay.tsv の一行）で、写した物（relayed）・既に在る物（seen）は二度写さない。窓に notices へ直に書かせない。③beats-check.js（2分おき・起きた時・つなぎ直した時も）が sweep を回し、橋にあって notices に無い札を探して足す。④今日の七通（三百四十・四十一・四十二・四十三・四十四・四十六・四十九）と三百四十七を控えに登録して回した：notices に既に在った物 4 件を除き、足りなかった 四十一・四十二・四十三・四十七 の4通を足した（その他は既に在った）。⑤パネル v270：橋の札の数とまとめて写すの数が合わない時（beats.json の relay.missing が0より多い時）、赤い行に「橋の札 N 通のうち、まとめて写すに入っていない物が K 通（VAIO が数分で足します）」と一言出す。\n実測：控え8通のうち、足した 4・既に在る 4（card-relay.log）・今の差 0。\n未確認：実機のパネルで赤い一言が出る見え方（今は差が0なので出ない）／窓が今後橋に書いた札が、数分以内に必ず入ること（これからの札で確かめる）／card-out が出す札（パネルの札）はそのまま残しているので、橋の札と card-out の札が両方あっても二重にならない（枠の名で重なりを見ている）。\n",
         "eid":  ""
@@ -284,10 +290,5 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1794979212,
         "message":  "六件：yoshi-open 3本の原文・声の数の差・見張りの名前直し・郵便受け・検査の見込み・⑤の一覧（検査に不具合を見つけた）\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: 一、未回答3本の原文（yoshi-open.tsv.bak-20261118 の行そのまま・欄は「印｜立てた時刻｜題｜本文」）：\nファイル: ~/.claude/kumo-wait.ps1（bak-20261118y）、check.js、reports/old-voices-to-delete-y1118.txt\n実測: 荷 780MB・台帳 19,772＝18,627＋1,145。FAIL の走り 44240867311。"
-    },
-    {
-        "title":  "✅ 終わりました（返事不要）",
-        "time":  1794979090,
-        "message":  "v1506 を公開へ押した・自動検査と配信の結果待ち\n（次の枠が先に届いたため、止まる前に出した札。札の抜けではありません）\n種類: 外待ち\n完了: v1506 の push が通った（origin/main に 0bf2f46c が入っている・先頭は 304fe22e・ver.txt=1506）。一回目は main の先行で弾かれ、二回目で通った。次は検査の結果を読み、PASS なら iPhone Safari 再生の自動確認→古い声の除去（⑤）→v1507。stable は動かしていない。\n実測: origin/main に 0bf2f46c あり。荷 780MB・声の欠け0。"
     }
 ]
