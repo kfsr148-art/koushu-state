@@ -1,5 +1,11 @@
 [
     {
+        "title":  "🔁 直しの溜まり場の知らせ（三度目 2・片方だけ 4）",
+        "time":  1795746188,
+        "message":  "同じ部分の直しが三度目（直近3日）：2 件。多い順の先頭：\n・advice-tone-core.js｜const s｜30日で 3 回｜直しの訳：v1497：方言を選んだ助言を、人格×方言の56人の人物が自分の言葉だけ ／ v1543：方言の決まり文句に使う場面を付け、合う場所にだけ入れる（礼・ ／ v1545：長さの詰めは本文の重なりを先に削り、人格の言葉（麻雀の言葉・\n・koushu-handan.html｜const s｜30日で 3 回｜直しの訳：v1497：方言を選んだ助言を、人格×方言の56人の人物が自分の言葉だけ ／ v1543：方言の決まり文句に使う場面を付け、合う場所にだけ入れる（礼・ ／ v1545：長さの詰めは本文の重なりを先に削り、人格の言葉（麻雀の言葉・\n\n一緒に変わる組の片方だけ変わった直し（直近3日）：4 件。先頭：\n・panel v278：題の行の高さを150pxに固定して下の釦が動かないようにした（雲の ⑤の二十六（3800ff2e5）：panel.html は変わったが panel-ver.txt は変わっていない（いつもは 96%）\n・panel v278：題の行の高さを150pxに固定して下の釦が動かないようにした（雲の ⑤の二十六（3800ff2e5）：panel-check.js は変わったが panel-ver.txt は変わっていない（いつもは 84%）\n・v1539・panel v271：エラーを送る仕掛けは https の公開ページだけで送る（file（9becd4b48）：panel-core.js は変わったが panel-check.js は変わっていない（いつもは 80%）\n・panel v270：橋の札の数とまとめて写すの数が合わない時、赤い行に一言出す（beats.jso（4a4ef107f）：panel-core.js は変わったが panel-check.js は変わっていない（いつもは 80%）\n\n一覧は senko/hotspots.md と senko/cochange.md。\n",
+        "eid":  ""
+    },
+    {
         "title":  "⚠ 新しい版で初めて出たエラー（実機）",
         "time":  1795744354,
         "message":  "新しい版 v278 で、前の版では出ていないエラーが 1 件、実機から届いた。\n・【panel】読み込み失敗：IMG yoshi-machi-t-240.png（resource）1通\n数と版の一覧は senko/client-errors.md。\n",
@@ -291,12 +297,6 @@
         "title":  "✅ 終わりました（返事不要）",
         "time":  1795673449,
         "message":  "枠 三百五十七の結果。雲待ちが探す commit の取り違えを直した：koushu-handan の先頭は bot（post-publish-bot の「版 1539・ok」の commit など）が押すことがあり、bot の push からは走りが起きないので、その sha で state-deploy.yml を探すと見つからない（14:50 の雲待ち y1126-1450 がこれだった）。kumo-set.ps1 は、waiting で渡された sha が bot の commit（author 名が -bot で終わる）なら、その手前の bot でない最新の commit（自分の押し）に替えて待ち、台帳の記録（kumo-wait.log）に替えた旨を書く（koushu-handan の置き場の check.yml・job.yml・state-deploy.yml の時だけ）。v272 の公開：公開 panel-ver.txt は 272（panel.html に予定%の元の字）で、公開されていた（その後 v273 が配信中）。次の雲待ちは自分の押し（3bdcb4da1）の sha で登録し、runid が拾えた。公開の仕組みと post-publish の中身は変えていない。\n未確認：bot の commit を渡した時に自分の押しへ替わる所を、本物の雲待ちでは通していない（作者名の見分けと、構文検査・手元の git の読み出しだけ確かめた）。\n",
-        "eid":  ""
-    },
-    {
-        "title":  "🔁 直しの溜まり場の知らせ（三度目 29・片方だけ 21）",
-        "time":  1795672713,
-        "message":  "同じ部分の直しが三度目（直近3日）：29 件。多い順の先頭：\n・advice-tone-core.js｜const ADV_SHORT_SRC｜30日で 14 回｜直しの訳：v1514：守りの線（6巡目までに字牌と端と対子を7枚）を本体へ・乙の骨 ／ v1520：2124 の選びを入れた（守りの切り候補を浮き牌に揃える・兎 ／ v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士1\n・koushu-handan.html｜const ADV_SHORT_SRC｜30日で 14 回｜直しの訳：v1514：守りの線（6巡目までに字牌と端と対子を7枚）を本体へ・乙の骨 ／ v1520：2124 の選びを入れた（守りの切り候補を浮き牌に��える・ ／ v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士1\n・panel.html｜function paintYoshiBtn｜30日で 8 回｜直しの訳：panel v231：ヨシの釦の鍵を知らせの Click で渡す（入れ物 ／ 棚 #16 測りの台本（shape-aite）・#4 最終案・残りヨシ待 ／ panel v240：ヨシの釦、覚えが無い時は「知らせを一度押すと」の案\n・koushu-handan.html｜const DIALECT_WORDS｜30日で 7 回｜直しの訳：v1471 席を丸ごと外す：攻守の線を子に揃え、場風・自風の役牌を外�� ／ v1524：マダム（french）の助言を磨く（堪えどきの一文に『退きま ／ v1526：先生（sensei）の役満の一言 ph[4] が ph[0]\n・panel-core.js｜function headText｜30日で 7 回｜直しの訳：panel v212：段を毎回計算（生の段 steps・stepsOf） ／ panel v250：猫と字の順を ヨシ待ち＞作業中＞まとめて写す＞待機 ／ panel v251：記録が3分途切れたら猫と字を接続不良へ（枠 二百七\n・advice-tone-core.js｜function advRow｜30日で 6 回｜直しの訳：v1505 一九字牌の種類数で判断を分ける（9種＝九種九牌で流す・判定は ／ v1506：判定の一言が助言の頭・結論は一度だけ・受け直し・緩急と間・麻 ／ v1522：守りの対子の種（七対子は狙わない・2回続けて切れる）＋国士1\n\n一緒に変わる組の片方だけ変わった直し（直近3日）：21 件。先頭：\n・v1538・panel v269：拾われなかったエラー（error・unhandledrejecti（4d999f6ad）：panel-core.js は変わったが panel-check.js は変わっていない（いつもは 80%）\n・panel v268：脈（senko/beats.json）が遅れた仕組みを赤い一行で出す・月一の知（59fe6690a）：panel-core.js は変わったが panel-check.js は変わっていない（いつもは 80%）\n・本体と助言の核を v1536 に戻す（雲の数え上げの枝の押し戻しで作りかけが main に入ったため（a06717772）：koushu-handan.html は変わったが ver.txt は変わっていない（いつもは 96%）\n・advscan: 通し読みの数え上げ 2回目（前の切れ端を除く・枝）（272e25586）：koushu-handan.html は変わったが ver.txt は変わっていない（いつもは 96%）\n・advscan: 助言の通し読みの数え上げ（枝・本流に入れない）（15650e053）：koushu-handan.html は変わったが ver.txt は変わっていない（いつもは 96%）\n・panel v262���全部終わった待ちの猫は立っている現場猫でなく寝ている猫（cat-sleep（ec9c2c983）：panel-core.js は変わったが panel-check.js は変わっていない（いつもは 80%）\n\n一覧は senko/hotspots.md と senko/cochange.md。\n",
         "eid":  ""
     }
 ]
