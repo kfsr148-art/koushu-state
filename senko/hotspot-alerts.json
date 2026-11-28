@@ -1,5 +1,5 @@
 {
- "at": 1795797957,
+ "at": 1795829437,
  "third": [
   {
    "key": "panel.html｜function send｜1795670837",
@@ -10,17 +10,6 @@
     "panel v270：橋の札の数とまとめて写すの数が合わない時、赤い行に一言出す（beats.json の relay・枠 三百五十三）",
     "v1539・panel v271：エラーを送る仕掛けは https の公開ページだけで送る（file:// の検査・手元の確かめからは送らない）・パネルの版の字を verTag か",
     "panel v272：予定%の元を一つにする（今の枠は台帳の見込みの残り・待ちの枠は直近24時間の実測の中央値・件数×1%の決め打ちをやめ・横に元の短い字）（枠 三百五十二）"
-   ]
-  },
-  {
-   "key": "panel-core.js｜function etaRow｜1795546986",
-   "file": "panel-core.js",
-   "part": "function etaRow",
-   "n": 8,
-   "why": [
-    "panel v212：段を毎回計算（生の段 steps・stepsOf）・公開の版を pubVer で運ぶ・見込みの書き替えを直す（枠 七十七の続き・Opus）",
-    "panel v213：見込みは見込みを書いた刻から数える（mikomiAt・mikomiEnd 一つ）・流れごとの見込み（記録が無ければ見込み不明で赤にしない）（枠 八十三・八十四",
-    "panel v256：接続不良を二段に（5分で「確認中、、、。」・15分戻らない時だけ「接続不良、、、。」）（枠 二百八十七）"
    ]
   },
   {
@@ -90,6 +79,17 @@
    ]
   },
   {
+   "key": "koushu-handan.html｜window.ssMakeWarp｜1795799073",
+   "file": "koushu-handan.html",
+   "part": "window.ssMakeWarp",
+   "n": 4,
+   "why": [
+    "v1466 写真取込の読み直し：見本と牌を同じ大きさ・明るさ・色の濃さに揃え、上下左右にずらして形で比べる／同じ牌は4枚まで／受付ページの写真は止めず判定まで／縦の写真も手牌の列を",
+    "v1467 注釈の「°」を「度」に直す（v1466 が雲の⑬ 非日本語文字の混入で落ちた分）",
+    "v1558：写真を黒く塗ってずらすのをやめ、真ん中の枠のまわりから牌を一枚ずつ見つけて読み、合わせは13枚見つかったかで決める（枠 四百十一）"
+   ]
+  },
+  {
    "key": "koushu-handan.html｜const mkLines｜1795693210",
    "file": "koushu-handan.html",
    "part": "const mkLines",
@@ -145,17 +145,6 @@
    ]
   },
   {
-   "key": "panel.html｜function isCopied｜1795546986",
-   "file": "panel.html",
-   "part": "function isCopied",
-   "n": 3,
-   "why": [
-    "panel v251：記録が3分途切れたら猫と字を接続不良へ（枠 二百七十二）・画面の写し取り一覧の釦を公開の大きさの釦に（枠 二百七十三・pack-site.js が site-",
-    "panel v252：接続不良の線を3分から5分へ（LOST_SEC=300・枠 二百七十五）",
-    "panel v256：接続不良を二段に（5分で「確認中、、、。」・15分戻らない時だけ「接続不良、、、。」）（枠 二百八十七）"
-   ]
-  },
-  {
    "key": "panel.html｜function pointEnd｜1795755960",
    "file": "panel.html",
    "part": "function pointEnd",
@@ -178,14 +167,14 @@
    ]
   },
   {
-   "key": "panel.html｜function ybLabel｜1795548058",
-   "file": "panel.html",
-   "part": "function ybLabel",
+   "key": "koushu-handan.html｜window.ssPhotoQuality｜1795799601",
+   "file": "koushu-handan.html",
+   "part": "window.ssPhotoQuality",
    "n": 3,
    "why": [
-    "panel v244：「直して」も字が二段（直しを送った→直しが通った）・受け側は直しの印も一覧から落とす（枠 二百四十六）",
-    "panel v254：ヨシの釦の「通った」は約2秒・「送れなかった」は約4秒で元の字へ戻る（件数つき・件数が変わっても戻る・枠 二百七十八）",
-    "panel v257：ヨシの「やめる」は yoshi-stop を送る（枠 二百八十九）・底の八つの釦は決め打ちの高さ（枠 二百八十八）"
+    "v1477：撮り直しに足す・怪しい牌を二番目に似た牌へ替えて攻守が変わる時だけ撮り直す",
+    "v1558：写真を黒く塗ってずらすのをやめ、真ん中の枠のまわりから牌を一枚ずつ見つけて読み、合わせは13枚見つかったかで決める（枠 四百十一）",
+    "v1558 を打ち消し、main は v1557 の中身へ戻す（枠 四百十三で四百十一を止めた。直しは控えの枝 hold/w411）"
    ]
   }
  ],
@@ -389,14 +378,6 @@
    "changed": "panel-core.js",
    "missing": "panel-check.js",
    "conf": 81
-  },
-  {
-   "key": "2ae1daaa2｜panel-ver.txt",
-   "sha": "2ae1daaa2",
-   "s": "panel v257：遠隔の下の行を詰めて決め打ちの高さに収める（検査の直し・枠 二百八十八）",
-   "changed": "panel.html",
-   "missing": "panel-ver.txt",
-   "conf": 96
   }
  ]
 }

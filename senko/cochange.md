@@ -1,23 +1,23 @@
 # 一緒に変わる組（センコ用・数えて知らせるだけ）
 
-書いた刻：2026-11-28 01:45（日本時間）
-見る範囲：直近90日の commit 404 件・ファイル 16 本
+書いた刻：2026-11-28 10:30（日本時間）
+見る範囲：直近90日の commit 405 件・ファイル 16 本
 読み方：「A を直した commit の何割で B も直されたか」。5回以上直された A で7割以上の組だけ並べる。
 
 ## いつも一緒に変わる組（A→B・割合・A の直しの数）
 
-- panel-ver.txt → panel.html｜100%（200／200）
-- serifu-adv.txt → serifu.txt｜100%（101／101）
-- serifu.txt → serifu-adv.txt｜100%（101／101）
+- panel-ver.txt → panel.html｜100%（197／197）
+- serifu-adv.txt → serifu.txt｜100%（105／105）
+- serifu.txt → serifu-adv.txt｜100%（105／105）
 - panel-core.js → panel-ver.txt｜100%（75／75）
 - panel-core.js → panel.html｜100%（75／75）
-- ver.txt → koushu-handan.html｜98%（126／128）
-- serifu-adv.txt → koushu-handan.html｜98%（99／101）
-- serifu.txt → koushu-handan.html｜98%（99／101）
-- serifu-adv.txt → ver.txt｜97%（98／101）
-- serifu.txt → ver.txt｜97%（98／101）
-- koushu-handan.html → ver.txt｜96%（126／131）
-- panel.html → panel-ver.txt｜96%（200／209）
+- ver.txt → koushu-handan.html｜98%（130／132）
+- serifu-adv.txt → koushu-handan.html｜98%（103／105）
+- serifu.txt → koushu-handan.html｜98%（103／105）
+- serifu-adv.txt → ver.txt｜97%（102／105）
+- serifu.txt → ver.txt｜97%（102／105）
+- koushu-handan.html → ver.txt｜96%（130／135）
+- panel.html → panel-ver.txt｜96%（197／206）
 - panel-view.js → panel-check.js｜94%（32／34）
 - panel-view.js → panel-ver.txt｜94%（32／34）
 - panel-view.js → panel.html｜94%（32／34）
@@ -29,10 +29,10 @@
 - advice-tone-core.js → serifu-adv.txt｜80%（37／46）
 - advice-tone-core.js → serifu.txt｜80%（37／46）
 - advice-tone-core.js → ver.txt｜78%（36／46）
-- ver.txt → serifu-adv.txt｜77%（98／128）
-- ver.txt → serifu.txt｜77%（98／128）
-- koushu-handan.html → serifu-adv.txt｜76%（99／131）
-- koushu-handan.html → serifu.txt｜76%（99／131）
+- ver.txt → serifu-adv.txt｜77%（102／132）
+- ver.txt → serifu.txt｜77%（102／132）
+- koushu-handan.html → serifu-adv.txt｜76%（103／135）
+- koushu-handan.html → serifu.txt｜76%（103／135）
 - panel-view.js → panel-core.js｜74%（25／34）
 
 ## 直近3日の直しで、片方だけ変わった物（A→B が8割以上の組で、A だけ変わった commit）
@@ -62,4 +62,3 @@
 - 11/25 22:33 ec9c2c983 panel v262：全部終わった待ちの猫は立っている現場猫でなく寝ている猫（cat-sleep）に替える・字は休憩中（枠 三百十五）｜panel-core.js は変わったが panel-check.js は変わっていない（いつもは 81% で一緒）
 - 11/25 18:12 c8bdf7789 panel v260：ヨシ待ちの札の推しの釦を太枠・直しなら言葉を入れ欄へ（枠 三百六）｜panel-core.js は変わったが panel-check.js は変わっていない（いつもは 81% で一緒）
 - 11/25 13:10 06d6302a2 panel v258：まとめて写すの数は state.json の panelView.left だけを出す（枠 二百九十八）｜panel-core.js は変わったが panel-check.js は変わっていない（いつもは 81% で一緒）
-- 11/25 04:38 2ae1daaa2 panel v257：遠隔の下の行を詰めて決め打ちの高さに収める（検査の直し・枠 二百八十八）｜panel.html は変わったが panel-ver.txt は変わっていない（いつもは 96% で一緒）
